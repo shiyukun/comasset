@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Comasset Investment Lab</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">C</div>
+          <div>
+            <h1>Comasset</h1>
+            <p data-i18n="brandSubtitle">家庭投资研究台</p>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Primary">
+          <button class="nav-item active" data-view="dashboard">
+            <span>⌂</span>
+            <span data-i18n="navDashboard">工作台</span>
+          </button>
+          <button class="nav-item" data-view="recommendations">
+            <span>▤</span>
+            <span data-i18n="navRecommendations">推荐列表</span>
+          </button>
+          <button class="nav-item" data-view="analysis">
+            <span>◈</span>
+            <span data-i18n="navAnalysis">因子分析</span>
+          </button>
+          <button class="nav-item" data-view="portfolio">
+            <span>◇</span>
+            <span data-i18n="navPortfolio">家庭组合</span>
+          </button>
+          <button class="nav-item" data-view="simulation">
+            <span>≋</span>
+            <span data-i18n="navSimulation">虚拟演练</span>
+          </button>
+          <button class="nav-item" data-view="methodology">
+            <span>?</span>
+            <span data-i18n="navMethodology">方法与披露</span>
+          </button>
+        </nav>
+
+        <div class="sidebar-footer">
+          <span class="status-dot"></span>
+          <span data-i18n="weeklyCadence">每周推荐生成</span>
+        </div>
+      </aside>
+
+      <main>
+        <header class="topbar">
+          <div>
+            <p class="eyebrow" data-i18n="privateUse">家庭内部自用</p>
+            <h2 data-i18n="pageTitle">本周投资研究</h2>
+          </div>
+          <div class="topbar-actions">
+            <div class="date-pill">
+              <span data-i18n="asOf">截至</span>
+              <strong>2026-06-17</strong>
+            </div>
+            <div class="segmented" aria-label="Language">
+              <button class="lang-toggle active" data-lang="zh">中</button>
+              <button class="lang-toggle" data-lang="en">EN</button>
+            </div>
+          </div>
+        </header>
+
+        <section id="dashboard" class="view active">
+          <div class="hero-grid">
+            <div class="summary-panel">
+              <div class="panel-header">
+                <div>
+                  <p class="eyebrow" data-i18n="weeklyOutput">工具分析产出</p>
+                  <h3 data-i18n="summaryTitle">本周推荐概览</h3>
+                </div>
+                <span class="badge" data-i18n="mockBadge">原型数据</span>
+              </div>
+              <div class="summary-stats">
+                <div>
+                  <strong id="shortCount">0</strong>
+                  <span data-i18n="shortTerm">短期</span>
+                </div>
+                <div>
+                  <strong id="longCount">0</strong>
+                  <span data-i18n="longTerm">长期</span>
+                </div>
+                <div>
+                  <strong id="ultraCount">0</strong>
+                  <span data-i18n="ultraLong">超长期</span>
+                </div>
+              </div>
+              <canvas id="allocationChart" width="520" height="190" aria-label="Allocation chart"></canvas>
+            </div>
+
+            <div class="risk-panel">
+              <p class="eyebrow" data-i18n="reviewNeeded">需复核</p>
+              <h3 data-i18n="riskTitle">本周风险提醒</h3>
+              <ul class="risk-list">
+                <li>
+                  <span class="risk-level high">High</span>
+                  <span data-i18n="riskOne">FOMC 点阵图和利率预期可能影响成长股估值。</span>
+                </li>
+                <li>
+                  <span class="risk-level mid">Med</span>
+                  <span data-i18n="riskTwo">基金持仓需检查与现有科技股暴露的重叠。</span>
+                </li>
+                <li>
+                  <span class="risk-level low">Low</span>
+                  <span data-i18n="riskThree">短期交易建议需要等待成交量确认。</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section-heading">
+            <h3 data-i18n="topIdeas">本周 Top Ideas</h3>
+            <button class="text-button" data-view-link="recommendations" data-i18n="viewAll">查看全部</button>
+          </div>
+          <div id="topIdeas" class="idea-grid"></div>
+        </section>
+
+        <section id="recommendations" class="view">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow" data-i18n="weeklyRecommendations">每周推荐列表</p>
+              <h3 data-i18n="recommendationsTitle">短期、长期、超长期</h3>
+            </div>
+            <div class="filter-row">
+              <button class="filter-tab active" data-horizon="all" data-i18n="all">全部</button>
+              <button class="filter-tab" data-horizon="short" data-i18n="shortTerm">短期</button>
+              <button class="filter-tab" data-horizon="long" data-i18n="longTerm">长期</button>
+              <button class="filter-tab" data-horizon="ultra" data-i18n="ultraLong">超长期</button>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Ticker</th>
+                  <th data-i18n="assetType">类型</th>
+                  <th data-i18n="horizon">周期</th>
+                  <th data-i18n="score">评分</th>
+                  <th data-i18n="confidence">置信度</th>
+                  <th data-i18n="action">建议</th>
+                  <th data-i18n="reason">主要原因</th>
+                  <th data-i18n="familyStatus">家庭状态</th>
+                </tr>
+              </thead>
+              <tbody id="recommendationRows"></tbody>
+            </table>
+          </div>
+          <div id="detailPanel" class="detail-panel" aria-live="polite"></div>
+        </section>
+
+        <section id="analysis" class="view">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow" data-i18n="factorSystem">参数体系</p>
+              <h3 data-i18n="analysisTitle">影响股票与基金的核心因子</h3>
+            </div>
+          </div>
+          <div class="analysis-layout">
+            <div class="factor-matrix" id="factorMatrix"></div>
+            <div class="claude-panel">
+              <p class="eyebrow">Claude Financial Skill</p>
+              <h3 data-i18n="claudeTitle">分析层要求</h3>
+              <p data-i18n="claudeBody">股票、ETF 和共同基金分析必须保存 Claude 金融 skill 的摘要、输入范围、调用时间和版本，并与结构化数据共同进入评分流程。</p>
+              <div class="audit-box">
+                <span data-i18n="auditStatus">追溯状态</span>
+                <strong data-i18n="auditReady">已纳入 PRD</strong>
+              </div>
+              <div id="auditList" class="audit-list"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="portfolio" class="view">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow" data-i18n="portfolioEyebrow">家庭持仓</p>
+              <h3 data-i18n="portfolioTitle">组合暴露与推荐重叠</h3>
+            </div>
+          </div>
+          <div class="portfolio-grid">
+            <div class="portfolio-panel">
+              <div class="panel-header">
+                <div>
+                  <p class="eyebrow" data-i18n="portfolioValue">组合市值</p>
+                  <h3 id="portfolioTotalValue">$0</h3>
+                </div>
+                <span class="badge" id="portfolioAsOf">2026-06-17</span>
+              </div>
+              <canvas id="portfolioChart" width="520" height="220" aria-label="Portfolio exposure chart"></canvas>
+            </div>
+            <div class="portfolio-panel">
+              <p class="eyebrow" data-i18n="overlapRisk">重叠风险</p>
+              <h3 data-i18n="overlapTitle">与本周推荐的持仓重叠</h3>
+              <div id="overlapList" class="overlap-list"></div>
+            </div>
+          </div>
+          <div class="table-wrap portfolio-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Ticker</th>
+                  <th data-i18n="assetType">类型</th>
+                  <th data-i18n="assetClass">资产类别</th>
+                  <th data-i18n="sector">行业/主题</th>
+                  <th data-i18n="marketValue">市值</th>
+                  <th data-i18n="portfolioWeight">权重</th>
+                  <th data-i18n="unrealizedGain">未实现收益</th>
+                </tr>
+              </thead>
+              <tbody id="portfolioRows"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="simulation" class="view">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow" data-i18n="backtest">虚拟演练</p>
+              <h3 data-i18n="simulationTitle">10,000 美元月度投资模拟</h3>
+            </div>
+          </div>
+          <div class="simulation-grid">
+            <form class="sim-form" id="simulationForm">
+              <label>
+                <span data-i18n="initialCapital">初始资金</span>
+                <input id="initialCapitalInput" type="number" value="10000" min="1000" step="500" />
+              </label>
+              <label>
+                <span data-i18n="monthlyContribution">每月投入</span>
+                <input id="monthlyContributionInput" type="number" value="500" min="0" step="100" />
+              </label>
+              <label>
+                <span data-i18n="rebalance">调仓频率</span>
+                <select id="rebalanceSelect">
+                  <option value="monthly" data-i18n="monthly">每月</option>
+                  <option value="quarterly" data-i18n="quarterly">每季度</option>
+                </select>
+              </label>
+              <label>
+                <span data-i18n="strategySource">策略来源</span>
+                <select id="strategySelect">
+                  <option value="mixed" data-i18n="mixedStrategy">短期 + 长期 + 超长期混合</option>
+                  <option value="ultra" data-i18n="ultraOnly">仅超长期</option>
+                  <option value="benchmark" data-i18n="benchmarkStrategy">基准 SPY</option>
+                </select>
+              </label>
+            </form>
+            <div class="result-panel">
+              <canvas id="simulationChart" width="720" height="280" aria-label="Simulation chart"></canvas>
+              <div class="metric-row">
+                <div><span data-i18n="finalValue">最终资产</span><strong id="finalValueMetric">$0</strong></div>
+                <div><span data-i18n="totalReturn">总收益</span><strong id="totalReturnMetric">0%</strong></div>
+                <div><span data-i18n="maxDrawdown">最大回撤</span><strong id="maxDrawdownMetric">0%</strong></div>
+                <div><span>Sharpe</span><strong id="sharpeMetric">0.00</strong></div>
+              </div>
+              <div class="trade-log">
+                <h4 data-i18n="tradeLog">月度交易记录</h4>
+                <div id="tradeLogRows"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="methodology" class="view">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow" data-i18n="methodology">方法</p>
+              <h3 data-i18n="methodologyTitle">评分、更新与披露</h3>
+            </div>
+          </div>
+          <div class="method-grid">
+            <article>
+              <h4 data-i18n="methodOneTitle">每周快照</h4>
+              <p data-i18n="methodOneBody">正式推荐每周生成一次，并保存评分、数据范围和模型版本，供虚拟演练复盘。</p>
+            </article>
+            <article>
+              <h4 data-i18n="methodTwoTitle">结构化数据 + Skill</h4>
+              <p data-i18n="methodTwoBody">Claude 金融 skill 用于解释、摘要和风险识别，但最终推荐标签不能只由自然语言判断产生。</p>
+            </article>
+            <article>
+              <h4 data-i18n="methodThreeTitle">风险披露</h4>
+              <p data-i18n="methodThreeBody">本工具仅用于家庭内部研究和教育，不构成投资、法律或税务建议。</p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./data.js"></script>
+    <script src="./portfolio.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
