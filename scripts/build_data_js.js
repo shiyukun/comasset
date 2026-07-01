@@ -7,7 +7,13 @@ const outputPath = process.argv[3] || path.join(root, "web", "data.js");
 const snapshot = JSON.parse(fs.readFileSync(snapshotPath, "utf8"));
 
 function formatPrice(value, currency) {
-  if (currency !== "USD") return String(value);
+  if (currency === "SGD") {
+    return `S$${Number(value).toLocaleString("en-SG", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    })}`;
+  }
+  if (currency !== "USD") return `${currency || ""} ${value}`.trim();
   return `$${Number(value).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 }
 
@@ -32,6 +38,10 @@ const data = {
   recommendations: snapshot.recommendations.map((item) => ({
     ticker: item.ticker,
     type: item.type,
+    market: item.market,
+    exchange: item.exchange,
+    country: item.country,
+    currency: item.currency,
     horizon: item.horizon,
     score: item.score,
     confidence: item.confidence,
@@ -48,12 +58,13 @@ const data = {
     risksEn: item.risks.en,
     exitZh: item.exitRules.zh,
     exitEn: item.exitRules.en,
-    claude: {
-      version: item.claudeAudit.skillVersion,
-      calledAt: formatCalledAt(item.claudeAudit.calledAt),
-      inputScope: formatInputScope(item.claudeAudit.inputScope),
-      summaryZh: item.claudeAudit.summary.zh,
-      summaryEn: item.claudeAudit.summary.en,
+    newsEvents: item.newsEvents || { status: "missing", items: [] },
+    codex: {
+      version: item.codexAudit.skillVersion,
+      calledAt: formatCalledAt(item.codexAudit.calledAt),
+      inputScope: formatInputScope(item.codexAudit.inputScope),
+      summaryZh: item.codexAudit.summary.zh,
+      summaryEn: item.codexAudit.summary.en,
     },
   })),
   factorValues: snapshot.factorValues,

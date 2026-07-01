@@ -21,28 +21,55 @@
         "macroSensitivity": 61,
         "riskControl": 82
       },
-      "expectedRange": { "low": 0.09, "high": 0.18, "period": "12m" },
+      "expectedRange": {
+        "low": 0.09,
+        "high": 0.18,
+        "period": "12m"
+      },
       "reason": {
         "zh": "云业务、AI 产品化和自由现金流质量支持 2 年以上持有逻辑。",
         "en": "Cloud growth, AI monetization, and free cash flow quality support a 2+ year holding case."
       },
       "risks": {
-        "zh": ["估值处于历史偏高区间", "AI 资本开支回报需要持续验证", "美元走强可能影响海外收入"],
-        "en": ["Valuation is above historical norms", "AI capex returns need continued validation", "A stronger dollar may pressure overseas revenue"]
+        "zh": [
+          "估值处于历史偏高区间",
+          "AI 资本开支回报需要持续验证",
+          "美元走强可能影响海外收入"
+        ],
+        "en": [
+          "Valuation is above historical norms",
+          "AI capex returns need continued validation",
+          "A stronger dollar may pressure overseas revenue"
+        ]
       },
       "exitRules": {
-        "zh": ["云业务增速连续两个季度显著放缓", "自由现金流率明显恶化", "估值扩张脱离盈利增长"],
-        "en": ["Cloud growth slows materially for two quarters", "Free cash flow margin deteriorates", "Valuation expansion detaches from earnings growth"]
+        "zh": [
+          "云业务增速连续两个季度显著放缓",
+          "自由现金流率明显恶化",
+          "估值扩张脱离盈利增长"
+        ],
+        "en": [
+          "Cloud growth slows materially for two quarters",
+          "Free cash flow margin deteriorates",
+          "Valuation expansion detaches from earnings growth"
+        ]
       },
-      "claudeAudit": {
-        "skillVersion": "claude-finance-skill-2026.06",
+      "codexAudit": {
+        "skillVersion": "codex-public-equity-investing-0.1.29",
         "calledAt": "2026-06-17T07:42:00+08:00",
-        "inputScope": ["10-K", "last_4_quarters", "price_history", "major_news"],
+        "inputScope": [
+          "10-K",
+          "last_4_quarters",
+          "price_history",
+          "major_news"
+        ],
         "summary": {
           "zh": "Skill 摘要强调 Azure、Copilot 商业化和现金流质量，但提醒估值安全边际偏薄。",
           "en": "Skill summary highlights Azure, Copilot monetization, and cash flow quality, while flagging a thin valuation margin."
         },
-        "conflicts": []
+        "conflicts": [],
+        "provider": "legacy_migrated",
+        "status": "legacy_migrated_needs_codex_review"
       }
     },
     {
@@ -63,28 +90,55 @@
         "macroSensitivity": 66,
         "riskControl": 88
       },
-      "expectedRange": { "low": 0.06, "high": 0.11, "period": "12m" },
+      "expectedRange": {
+        "low": 0.06,
+        "high": 0.11,
+        "period": "12m"
+      },
       "reason": {
         "zh": "低费用、全市场暴露、适合作为家庭组合核心仓位。",
         "en": "Low cost, broad-market exposure, and suitable as a family portfolio core."
       },
       "risks": {
-        "zh": ["美股整体估值偏高", "科技权重仍然较大", "无法规避全市场回撤"],
-        "en": ["Overall U.S. equity valuation is elevated", "Technology weight remains high", "Cannot avoid broad market drawdowns"]
+        "zh": [
+          "美股整体估值偏高",
+          "科技权重仍然较大",
+          "无法规避全市场回撤"
+        ],
+        "en": [
+          "Overall U.S. equity valuation is elevated",
+          "Technology weight remains high",
+          "Cannot avoid broad market drawdowns"
+        ]
       },
       "exitRules": {
-        "zh": ["费用率相对同类明显失去优势", "跟踪误差异常放大", "家庭组合需要降低股票总暴露"],
-        "en": ["Expense ratio loses its advantage", "Tracking error expands abnormally", "Family portfolio needs lower equity exposure"]
+        "zh": [
+          "费用率相对同类明显失去优势",
+          "跟踪误差异常放大",
+          "家庭组合需要降低股票总暴露"
+        ],
+        "en": [
+          "Expense ratio loses its advantage",
+          "Tracking error expands abnormally",
+          "Family portfolio needs lower equity exposure"
+        ]
       },
-      "claudeAudit": {
-        "skillVersion": "claude-finance-skill-2026.06",
+      "codexAudit": {
+        "skillVersion": "codex-public-equity-investing-0.1.29",
         "calledAt": "2026-06-17T07:45:00+08:00",
-        "inputScope": ["ETF_factsheet", "holdings", "expense_ratio", "price_history"],
+        "inputScope": [
+          "ETF_factsheet",
+          "holdings",
+          "expense_ratio",
+          "price_history"
+        ],
         "summary": {
           "zh": "Skill 摘要认为 VTI 更适合作为基准型核心仓位，而非短期择时工具。",
           "en": "Skill summary treats VTI as a benchmark-like core holding rather than a short-term timing tool."
         },
-        "conflicts": []
+        "conflicts": [],
+        "provider": "legacy_migrated",
+        "status": "legacy_migrated_needs_codex_review"
       }
     },
     {
@@ -105,28 +159,55 @@
         "macroSensitivity": 64,
         "riskControl": 86
       },
-      "expectedRange": { "low": 0.06, "high": 0.1, "period": "12m" },
+      "expectedRange": {
+        "low": 0.06,
+        "high": 0.1,
+        "period": "12m"
+      },
       "reason": {
         "zh": "指数基金费用低、透明度高，适合长期定投观察。",
         "en": "Low-fee index fund with high transparency, suitable for long-term DCA review."
       },
       "risks": {
-        "zh": ["与 VTI 和 QQQM 可能存在持仓重叠", "集中在美国大盘股", "市场下跌时缺少防御机制"],
-        "en": ["May overlap with VTI and QQQM", "Concentrated in U.S. large caps", "Limited defensive mechanism in market drawdowns"]
+        "zh": [
+          "与 VTI 和 QQQM 可能存在持仓重叠",
+          "集中在美国大盘股",
+          "市场下跌时缺少防御机制"
+        ],
+        "en": [
+          "May overlap with VTI and QQQM",
+          "Concentrated in U.S. large caps",
+          "Limited defensive mechanism in market drawdowns"
+        ]
       },
       "exitRules": {
-        "zh": ["费用率优势消失", "家庭组合美股大盘暴露过高", "出现更优替代基金"],
-        "en": ["Fee advantage disappears", "Family portfolio has excessive U.S. large-cap exposure", "A better replacement fund appears"]
+        "zh": [
+          "费用率优势消失",
+          "家庭组合美股大盘暴露过高",
+          "出现更优替代基金"
+        ],
+        "en": [
+          "Fee advantage disappears",
+          "Family portfolio has excessive U.S. large-cap exposure",
+          "A better replacement fund appears"
+        ]
       },
-      "claudeAudit": {
-        "skillVersion": "claude-finance-skill-2026.06",
+      "codexAudit": {
+        "skillVersion": "codex-public-equity-investing-0.1.29",
         "calledAt": "2026-06-17T07:47:00+08:00",
-        "inputScope": ["fund_profile", "holdings", "expense_ratio", "historical_return"],
+        "inputScope": [
+          "fund_profile",
+          "holdings",
+          "expense_ratio",
+          "historical_return"
+        ],
         "summary": {
           "zh": "Skill 摘要强调其成本和透明度优势，同时提醒与其他美股核心仓位重叠。",
           "en": "Skill summary emphasizes cost and transparency while warning about overlap with other U.S. equity core holdings."
         },
-        "conflicts": []
+        "conflicts": [],
+        "provider": "legacy_migrated",
+        "status": "legacy_migrated_needs_codex_review"
       }
     },
     {
@@ -147,28 +228,55 @@
         "macroSensitivity": 70,
         "riskControl": 79
       },
-      "expectedRange": { "low": 0.05, "high": 0.12, "period": "12m" },
+      "expectedRange": {
+        "low": 0.05,
+        "high": 0.12,
+        "period": "12m"
+      },
       "reason": {
         "zh": "会员制零售质量高，但估值安全边际需要继续观察。",
         "en": "High-quality membership retail model, but valuation margin needs monitoring."
       },
       "risks": {
-        "zh": ["估值溢价高", "消费放缓可能影响客单价", "海外扩张执行风险"],
-        "en": ["Premium valuation", "Consumer slowdown may affect basket size", "Execution risk in overseas expansion"]
+        "zh": [
+          "估值溢价高",
+          "消费放缓可能影响客单价",
+          "海外扩张执行风险"
+        ],
+        "en": [
+          "Premium valuation",
+          "Consumer slowdown may affect basket size",
+          "Execution risk in overseas expansion"
+        ]
       },
       "exitRules": {
-        "zh": ["同店销售明显转弱", "会员续费率下降", "估值继续扩张而盈利未跟上"],
-        "en": ["Comparable sales weaken materially", "Membership renewal rate declines", "Valuation expands without earnings support"]
+        "zh": [
+          "同店销售明显转弱",
+          "会员续费率下降",
+          "估值继续扩张而盈利未跟上"
+        ],
+        "en": [
+          "Comparable sales weaken materially",
+          "Membership renewal rate declines",
+          "Valuation expands without earnings support"
+        ]
       },
-      "claudeAudit": {
-        "skillVersion": "claude-finance-skill-2026.06",
+      "codexAudit": {
+        "skillVersion": "codex-public-equity-investing-0.1.29",
         "calledAt": "2026-06-17T07:49:00+08:00",
-        "inputScope": ["last_4_quarters", "same_store_sales", "valuation", "news"],
+        "inputScope": [
+          "last_4_quarters",
+          "same_store_sales",
+          "valuation",
+          "news"
+        ],
         "summary": {
           "zh": "Skill 摘要认可商业模式质量，但建议等待更好的估值安全边际。",
           "en": "Skill summary recognizes business quality but suggests waiting for a better valuation margin."
         },
-        "conflicts": []
+        "conflicts": [],
+        "provider": "legacy_migrated",
+        "status": "legacy_migrated_needs_codex_review"
       }
     },
     {
@@ -189,28 +297,275 @@
         "macroSensitivity": 55,
         "riskControl": 73
       },
-      "expectedRange": { "low": 0.07, "high": 0.15, "period": "12m" },
+      "expectedRange": {
+        "low": 0.07,
+        "high": 0.15,
+        "period": "12m"
+      },
       "reason": {
         "zh": "成长股敞口清晰，费用低于同类核心科技指数产品。",
         "en": "Clear growth exposure with a lower fee than comparable core tech index products."
       },
       "risks": {
-        "zh": ["科技权重集中", "利率上行压制估值", "与 MSFT/NVDA 持仓重叠"],
-        "en": ["Concentrated tech exposure", "Rising rates may pressure valuation", "Overlap with MSFT/NVDA holdings"]
+        "zh": [
+          "科技权重集中",
+          "利率上行压制估值",
+          "与 MSFT/NVDA 持仓重叠"
+        ],
+        "en": [
+          "Concentrated tech exposure",
+          "Rising rates may pressure valuation",
+          "Overlap with MSFT/NVDA holdings"
+        ]
       },
       "exitRules": {
-        "zh": ["组合科技暴露过高", "动量转弱且宏观环境不支持成长股", "跟踪误差异常"],
-        "en": ["Portfolio tech exposure becomes too high", "Momentum weakens while macro turns hostile to growth", "Tracking error becomes abnormal"]
+        "zh": [
+          "组合科技暴露过高",
+          "动量转弱且宏观环境不支持成长股",
+          "跟踪误差异常"
+        ],
+        "en": [
+          "Portfolio tech exposure becomes too high",
+          "Momentum weakens while macro turns hostile to growth",
+          "Tracking error becomes abnormal"
+        ]
       },
-      "claudeAudit": {
-        "skillVersion": "claude-finance-skill-2026.06",
+      "codexAudit": {
+        "skillVersion": "codex-public-equity-investing-0.1.29",
         "calledAt": "2026-06-17T07:51:00+08:00",
-        "inputScope": ["ETF_holdings", "expense_ratio", "sector_exposure", "momentum"],
+        "inputScope": [
+          "ETF_holdings",
+          "expense_ratio",
+          "sector_exposure",
+          "momentum"
+        ],
         "summary": {
           "zh": "Skill 摘要认为 QQQM 适合作为成长仓位，但必须控制与个股持仓重叠。",
           "en": "Skill summary sees QQQM as a growth sleeve but requires overlap control with single-stock holdings."
         },
-        "conflicts": []
+        "conflicts": [],
+        "provider": "legacy_migrated",
+        "status": "legacy_migrated_needs_codex_review"
+      }
+    },
+    {
+      "ticker": "D05.SI",
+      "name": "DBS Group Holdings Ltd",
+      "type": "stock",
+      "market": "Singapore",
+      "exchange": "SGX",
+      "country": "SG",
+      "price": 44.0,
+      "currency": "SGD",
+      "horizon": "ultra",
+      "action": "watch",
+      "confidence": "medium",
+      "positionHint": "Singapore bank core watch",
+      "metrics": {
+        "fundamentals": 82,
+        "valuation": 68,
+        "momentum": 62,
+        "fundQuality": null,
+        "macroSensitivity": 69,
+        "riskControl": 70
+      },
+      "expectedRange": {
+        "low": 0.04,
+        "high": 0.1,
+        "period": "12m"
+      },
+      "reason": {
+        "zh": "新加坡大型银行，资本实力和分红属性适合作为新加坡市场核心观察。",
+        "en": "Large Singapore bank with capital strength and dividend characteristics, suitable as a core Singapore-market watch candidate."
+      },
+      "risks": {
+        "zh": [
+          "净息差受利率周期影响",
+          "新加坡和亚洲信贷周期可能拖累资产质量",
+          "缺少自动化本地财务数据接入，需人工复核"
+        ],
+        "en": [
+          "Net interest margin is sensitive to the rate cycle",
+          "Singapore and Asia credit cycles may pressure asset quality",
+          "Local financial data is not yet automated and requires manual review"
+        ]
+      },
+      "exitRules": {
+        "zh": [
+          "资产质量明显恶化",
+          "分红能力或资本充足率转弱",
+          "家庭组合金融板块暴露过高"
+        ],
+        "en": [
+          "Asset quality deteriorates materially",
+          "Dividend capacity or capital adequacy weakens",
+          "Family portfolio has excessive financial-sector exposure"
+        ]
+      }
+    },
+    {
+      "ticker": "O39.SI",
+      "name": "Oversea-Chinese Banking Corporation Limited",
+      "type": "stock",
+      "market": "Singapore",
+      "exchange": "SGX",
+      "country": "SG",
+      "price": 16.0,
+      "currency": "SGD",
+      "horizon": "ultra",
+      "action": "watch",
+      "confidence": "medium",
+      "positionHint": "Singapore bank income watch",
+      "metrics": {
+        "fundamentals": 78,
+        "valuation": 70,
+        "momentum": 58,
+        "fundQuality": null,
+        "macroSensitivity": 68,
+        "riskControl": 72
+      },
+      "expectedRange": {
+        "low": 0.04,
+        "high": 0.09,
+        "period": "12m"
+      },
+      "reason": {
+        "zh": "新加坡大型银行，收益和分红稳定性较适合超长期收入型观察。",
+        "en": "Large Singapore bank with earnings and dividend stability, suitable for ultra-long income-oriented monitoring."
+      },
+      "risks": {
+        "zh": [
+          "利率下行可能压缩银行收益",
+          "区域经济放缓可能影响贷款增长",
+          "本地财务和拨备数据需要人工复核"
+        ],
+        "en": [
+          "Falling rates may compress bank earnings",
+          "Regional slowdown may affect loan growth",
+          "Local financial and provisioning data needs manual review"
+        ]
+      },
+      "exitRules": {
+        "zh": [
+          "不良贷款率持续上行",
+          "分红政策明显保守化",
+          "估值显著高于历史中枢"
+        ],
+        "en": [
+          "Non-performing loans trend higher",
+          "Dividend policy turns materially more conservative",
+          "Valuation rises materially above historical norms"
+        ]
+      }
+    },
+    {
+      "ticker": "Z74.SI",
+      "name": "Singapore Telecommunications Limited",
+      "type": "stock",
+      "market": "Singapore",
+      "exchange": "SGX",
+      "country": "SG",
+      "price": 3.0,
+      "currency": "SGD",
+      "horizon": "long",
+      "action": "watch",
+      "confidence": "medium",
+      "positionHint": "Telecom turnaround watch",
+      "metrics": {
+        "fundamentals": 66,
+        "valuation": 72,
+        "momentum": 55,
+        "fundQuality": null,
+        "macroSensitivity": 61,
+        "riskControl": 67
+      },
+      "expectedRange": {
+        "low": 0.03,
+        "high": 0.09,
+        "period": "12m"
+      },
+      "reason": {
+        "zh": "电信现金流属性较强，可作为新加坡防御型股票观察，但增长弹性有限。",
+        "en": "Telecom cash-flow profile offers defensive Singapore exposure, though growth optionality is limited."
+      },
+      "risks": {
+        "zh": [
+          "核心电信业务增长慢",
+          "区域投资和汇率波动影响利润",
+          "转型进展需要继续验证"
+        ],
+        "en": [
+          "Core telecom growth is slow",
+          "Regional investments and FX volatility affect earnings",
+          "Turnaround progress still needs validation"
+        ]
+      },
+      "exitRules": {
+        "zh": [
+          "自由现金流转弱",
+          "分红覆盖不足",
+          "转型业务不能改善回报率"
+        ],
+        "en": [
+          "Free cash flow weakens",
+          "Dividend coverage becomes insufficient",
+          "Transformation businesses fail to improve returns"
+        ]
+      }
+    },
+    {
+      "ticker": "C6L.SI",
+      "name": "Singapore Airlines Limited",
+      "type": "stock",
+      "market": "Singapore",
+      "exchange": "SGX",
+      "country": "SG",
+      "price": 6.5,
+      "currency": "SGD",
+      "horizon": "short",
+      "action": "watch",
+      "confidence": "low",
+      "positionHint": "Cyclical travel watch",
+      "metrics": {
+        "fundamentals": 64,
+        "valuation": 60,
+        "momentum": 58,
+        "fundQuality": null,
+        "macroSensitivity": 52,
+        "riskControl": 55
+      },
+      "expectedRange": {
+        "low": -0.03,
+        "high": 0.08,
+        "period": "3m"
+      },
+      "reason": {
+        "zh": "航空股受旅游需求和油价影响大，更适合作为短期周期观察而非核心持仓。",
+        "en": "Airline exposure is highly sensitive to travel demand and fuel prices, making it more suitable as a short-term cyclical watch than a core holding."
+      },
+      "risks": {
+        "zh": [
+          "油价和航油成本波动",
+          "客运需求周期性强",
+          "短期新闻和运力数据未接入，置信度较低"
+        ],
+        "en": [
+          "Oil and jet-fuel costs are volatile",
+          "Passenger demand is cyclical",
+          "Short-term news and capacity data are not integrated, lowering confidence"
+        ]
+      },
+      "exitRules": {
+        "zh": [
+          "油价快速上行压缩利润",
+          "客座率或票价趋势转弱",
+          "短期动量跌破观察条件"
+        ],
+        "en": [
+          "Oil prices rise quickly and compress margins",
+          "Load factor or ticket-pricing trends weaken",
+          "Short-term momentum breaks below watch conditions"
+        ]
       }
     }
   ]

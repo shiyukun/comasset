@@ -1,0 +1,73 @@
+{
+  "runId": "20260630T204315Z-sources",
+  "scope": "sources",
+  "trigger": "scheduler:marketData",
+  "requestedBy": "system-scheduler",
+  "status": "completed",
+  "startedAt": "2026-06-30T20:43:15.484Z",
+  "completedAt": "2026-07-01T00:22:11.122Z",
+  "changed": false,
+  "dataChanged": true,
+  "sourceChanges": [
+    "data/live_prices.json",
+    "data/live_news_events.json"
+  ],
+  "outputs": {},
+  "logs": [
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/fetch_prices_yahoo.js",
+        "data/raw_candidates.json",
+        "data/live_prices.json",
+        "18",
+        "data/custom_watchlist.json"
+      ],
+      "startedAt": "2026-06-30T20:43:15.566Z",
+      "completedAt": "2026-07-01T00:22:08.821Z",
+      "code": 0,
+      "stdout": "Fetched 15 price series into data/live_prices.json.",
+      "stderr": "QQQ: fetch failed"
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/fetch_news_events.js",
+        "data/raw_candidates.json",
+        "data/sec_ticker_map.json",
+        "data/live_news_events.json",
+        "60",
+        "8",
+        "data/custom_watchlist.json"
+      ],
+      "startedAt": "2026-07-01T00:22:08.821Z",
+      "completedAt": "2026-07-01T00:22:10.895Z",
+      "code": 0,
+      "stdout": "Fetched news/events for 12/12 symbols into data/live_news_events.json.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/build_data_status.js",
+        "web/data_status.js"
+      ],
+      "startedAt": "2026-07-01T00:22:10.895Z",
+      "completedAt": "2026-07-01T00:22:10.993Z",
+      "code": 0,
+      "stdout": "Built web/data_status.js from live source coverage.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../../../bin/bash",
+        "scripts/build_static_site.sh"
+      ],
+      "startedAt": "2026-07-01T00:22:11.033Z",
+      "completedAt": "2026-07-01T00:22:11.122Z",
+      "code": 0,
+      "stdout": "Built static site at /Users/thomas/Documents/comasset/dist/aws-site",
+      "stderr": ""
+    }
+  ]
+}

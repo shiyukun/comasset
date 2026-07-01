@@ -3,7 +3,7 @@
   "asOf": "2026-06-17",
   "generatedAt": "2026-06-17T07:58:00+08:00",
   "modelVersion": "comasset-score-v0.1",
-  "claudeSkillVersion": "claude-finance-skill-2026.06",
+  "codexAuditSkillVersion": "codex-public-equity-investing-0.1.29",
   "dataCutoff": "2026-06-14T23:59:59-04:00",
   "marketContext": {
     "baseCurrency": "USD",
@@ -63,8 +63,8 @@
           "Valuation expansion detaches from earnings growth"
         ]
       },
-      "claudeAudit": {
-        "skillVersion": "claude-finance-skill-2026.06",
+      "codexAudit": {
+        "skillVersion": "codex-public-equity-investing-0.1.29",
         "calledAt": "2026-06-17T07:42+08:00",
         "inputScope": [
           "10-k",
@@ -76,7 +76,9 @@
           "zh": "Skill 摘要强调 Azure、Copilot 商业化和现金流质量，但提醒估值安全边际偏薄。",
           "en": "Skill summary highlights Azure, Copilot monetization, and cash flow quality, while flagging a thin valuation margin."
         },
-        "conflicts": []
+        "conflicts": [],
+        "provider": "legacy_migrated",
+        "status": "legacy_migrated_needs_codex_review"
       }
     },
     {
@@ -131,8 +133,8 @@
           "Family portfolio needs lower equity exposure"
         ]
       },
-      "claudeAudit": {
-        "skillVersion": "claude-finance-skill-2026.06",
+      "codexAudit": {
+        "skillVersion": "codex-public-equity-investing-0.1.29",
         "calledAt": "2026-06-17T07:45+08:00",
         "inputScope": [
           "etf_factsheet",
@@ -144,7 +146,9 @@
           "zh": "Skill 摘要认为 VTI 更适合作为基准型核心仓位，而非短期择时工具。",
           "en": "Skill summary treats VTI as a benchmark-like core holding rather than a short-term timing tool."
         },
-        "conflicts": []
+        "conflicts": [],
+        "provider": "legacy_migrated",
+        "status": "legacy_migrated_needs_codex_review"
       }
     },
     {
@@ -199,8 +203,8 @@
           "A better replacement fund appears"
         ]
       },
-      "claudeAudit": {
-        "skillVersion": "claude-finance-skill-2026.06",
+      "codexAudit": {
+        "skillVersion": "codex-public-equity-investing-0.1.29",
         "calledAt": "2026-06-17T07:47+08:00",
         "inputScope": [
           "fund_profile",
@@ -212,7 +216,9 @@
           "zh": "Skill 摘要强调其成本和透明度优势，同时提醒与其他美股核心仓位重叠。",
           "en": "Skill summary emphasizes cost and transparency while warning about overlap with other U.S. equity core holdings."
         },
-        "conflicts": []
+        "conflicts": [],
+        "provider": "legacy_migrated",
+        "status": "legacy_migrated_needs_codex_review"
       }
     },
     {
@@ -267,8 +273,8 @@
           "Valuation expands without earnings support"
         ]
       },
-      "claudeAudit": {
-        "skillVersion": "claude-finance-skill-2026.06",
+      "codexAudit": {
+        "skillVersion": "codex-public-equity-investing-0.1.29",
         "calledAt": "2026-06-17T07:49+08:00",
         "inputScope": [
           "last_4_quarters",
@@ -280,7 +286,9 @@
           "zh": "Skill 摘要认可商业模式质量，但建议等待更好的估值安全边际。",
           "en": "Skill summary recognizes business quality but suggests waiting for a better valuation margin."
         },
-        "conflicts": []
+        "conflicts": [],
+        "provider": "legacy_migrated",
+        "status": "legacy_migrated_needs_codex_review"
       }
     },
     {
@@ -335,8 +343,8 @@
           "Tracking error becomes abnormal"
         ]
       },
-      "claudeAudit": {
-        "skillVersion": "claude-finance-skill-2026.06",
+      "codexAudit": {
+        "skillVersion": "codex-public-equity-investing-0.1.29",
         "calledAt": "2026-06-17T07:51+08:00",
         "inputScope": [
           "etf_holdings",
@@ -348,7 +356,9 @@
           "zh": "Skill 摘要认为 QQQM 适合作为成长仓位，但必须控制与个股持仓重叠。",
           "en": "Skill summary sees QQQM as a growth sleeve but requires overlap control with single-stock holdings."
         },
-        "conflicts": []
+        "conflicts": [],
+        "provider": "legacy_migrated",
+        "status": "legacy_migrated_needs_codex_review"
       }
     },
     {
@@ -403,8 +413,8 @@
           "Revenue growth detaches from valuation expectations"
         ]
       },
-      "claudeAudit": {
-        "skillVersion": "claude-finance-skill-2026.06",
+      "codexAudit": {
+        "skillVersion": "codex-public-equity-investing-0.1.29",
         "calledAt": "2026-06-17T07:53+08:00",
         "inputScope": [
           "pipeline_news",
@@ -416,7 +426,9 @@
           "zh": "Skill 摘要强调管线优势，但把估值和监管事件列为主要复核项。",
           "en": "Skill summary highlights pipeline strength while placing valuation and regulatory events on the review list."
         },
-        "conflicts": []
+        "conflicts": [],
+        "provider": "legacy_migrated",
+        "status": "legacy_migrated_needs_codex_review"
       }
     },
     {
@@ -471,8 +483,8 @@
           "Peer guidance weakens"
         ]
       },
-      "claudeAudit": {
-        "skillVersion": "claude-finance-skill-2026.06",
+      "codexAudit": {
+        "skillVersion": "codex-public-equity-investing-0.1.29",
         "calledAt": "2026-06-17T07:55+08:00",
         "inputScope": [
           "price_momentum",
@@ -484,7 +496,9 @@
           "zh": "Skill 摘要认为基本面强，但短期交易必须以技术触发和仓位控制为前提。",
           "en": "Skill summary views fundamentals as strong but requires technical triggers and position sizing for short-term trades."
         },
-        "conflicts": []
+        "conflicts": [],
+        "provider": "legacy_migrated",
+        "status": "legacy_migrated_needs_codex_review"
       }
     },
     {
@@ -539,8 +553,8 @@
           "Credit-risk headlines intensify"
         ]
       },
-      "claudeAudit": {
-        "skillVersion": "claude-finance-skill-2026.06",
+      "codexAudit": {
+        "skillVersion": "codex-public-equity-investing-0.1.29",
         "calledAt": "2026-06-17T07:57+08:00",
         "inputScope": [
           "sector_etf_holdings",
@@ -551,7 +565,9 @@
           "zh": "Skill 摘要支持短期板块轮动逻辑，但提醒利率预期变化会快速改变结论。",
           "en": "Skill summary supports the short-term sector rotation case but warns that rate-expectation shifts can quickly change the conclusion."
         },
-        "conflicts": []
+        "conflicts": [],
+        "provider": "legacy_migrated",
+        "status": "legacy_migrated_needs_codex_review"
       }
     }
   ],

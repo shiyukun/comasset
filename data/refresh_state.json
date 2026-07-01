@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "processed": {
+    "recommendations": {
+      "fingerprint": "77d85255f486173da76c90b950f79655c8d7c7016211f61e93a6f30dbc02c86c",
+      "files": {
+        "data/raw_candidates.json": "7d4da77b4294296bd51ada3e106549ae9141ec03b97d6e95dd42617b3f4d705e",
+        "data/live_prices.json": "5e941b6a4c0279b8d2ba08d56d19e2b7a1006d96b672f2a7943c9399b9879c3d",
+        "data/live_fundamentals.json": "ad5e12432775050dd7e4da57de822c38cab1180c9fd3087900883769b3c91ae6",
+        "data/live_holdings.json": "572d3021162b86f436e0e4bf9712c4a33072abd81b1856fa01680f5ae3c5a08d",
+        "data/live_macro.json": "b0643bfa2c51b4225fd722a0dd0a2b335b5b807153a08f86b8141a58277f4d82",
+        "data/live_news_events.json": "6d8065ad9066fc63c7995786788faea8b8a456744c21e0527955c84409c019a0"
+      },
+      "processedAt": "2026-06-30T12:58:13.981Z",
+      "runId": "20260630T125606Z-recommendations"
+    },
+    "watchlist": {
+      "fingerprint": "23124eb39eaf021df278e9167bfe0d01de7b0a7878596e71d90a5496f96cb006",
+      "files": {
+        "data/custom_watchlist.json": "54fe01f329a315b9e0c23013373be473a76faf8d2fadc2b2b96abbaab4ba2003",
+        "data/live_prices.json": "df9dd1b9425c03acbf0f880b40b91aeaaca80da9846eb2fa55109e9b292b479d",
+        "data/live_fundamentals.json": "ad5e12432775050dd7e4da57de822c38cab1180c9fd3087900883769b3c91ae6",
+        "data/live_holdings.json": "572d3021162b86f436e0e4bf9712c4a33072abd81b1856fa01680f5ae3c5a08d",
+        "data/live_news_events.json": "6d8065ad9066fc63c7995786788faea8b8a456744c21e0527955c84409c019a0"
+      },
+      "processedAt": "2026-06-30T12:59:11.822Z",
+      "runId": "20260630T125856Z-watchlist"
+    }
+  },
+  "updatedAt": "2026-07-01T11:29:19.685Z"
+}

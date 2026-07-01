@@ -1,0 +1,304 @@
+{
+  "runId": "20260630T125008Z-all",
+  "scope": "all",
+  "trigger": "network_integration",
+  "requestedBy": "thomas",
+  "status": "completed",
+  "startedAt": "2026-06-30T12:50:08.348Z",
+  "completedAt": "2026-06-30T12:50:57.075Z",
+  "changed": true,
+  "sourceChanges": [
+    "data/live_prices.json",
+    "data/live_fundamentals.json",
+    "data/live_macro.json",
+    "data/live_news_events.json"
+  ],
+  "outputs": {
+    "recommendations": {
+      "changed": true,
+      "snapshotId": "2026-W27-scored-20260630T125054Z",
+      "generatedAt": "2026-06-30T12:50:54.252Z",
+      "codexAuditApplied": false,
+      "codexAuditGeneration": {
+        "attempted": true,
+        "completed": false,
+        "error": "codex exec failed (1): Reading additional input from stdin...\n2026-06-30T12:50:54.525351Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt: maximum of 3 prompts is supported path=/Users/thomas/.codex/plugins/cache/openai-primary-runtime/template-creator/26.623.12021/.codex-plugin/plugin.json\n2026-06-30T12:50:54.526839Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt: maximum of 3 prompts is supported path=/Users/thomas/.codex/plugins/cache/openai-primary-runtime/template-creator/26.623.12021/.codex-plugin/plugin.json\n2026-06-30T12:50:54.536521Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back\n2026-06-30T12:50:54.537129Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back\n2026-06-30T12:50:54.537547Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back\n2026-06-30T12:50:54.538004Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back\n2026-06-30T12:50:54.538515Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back\n2026-06-30T12:50:54.539055Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back\n2026-06-30T12:50:54.539470Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back\n2026-06-30T12:50:54.539904Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back\n2026-06-30T12:50:54.540505Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back\nOpenAI Codex v0.142.4\n--------\nworkdir: /Users/thomas/Documents/comasset\nmodel: gpt-5.5\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: medium\nreasoning summaries: none\nsession id: 019f1895-2185-75c1-aaec-c5e092b9cb5f\n--------\nuser\nUse the Public Equity Investing long-short-pitch workflow as an internal screen-grade audit, not as personal investment advice.\nRead only snapshots/scored-live.json and data/raw_candidates_live.json. Do not edit any repository files.\nReview every recommendation ticker: VTI, VFIAX, QQQM, O39.SI, D05.SI, C6L.SI, Z74.SI, COST, MSFT.\nFor each ticker, pressure-test the deterministic score, action, evidence conflicts, missing data, and suitability for a balanced-growth family research portfolio.\nKeep each Chinese and English summary concise. Treat local structured data as the source of truth and label missing valuation or live evidence explicitly.\nReturn only the JSON object required by the output schema, with one audits entry for every ticker.\n2026-06-30T12:50:54.819901Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt: maximum of 3 prompts is supported path=/Users/thomas/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime/plugins/template-creator/.codex-plugin/plugin.json\n2026-06-30T12:50:54.866246Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt[0]: prompt must be at most 128 characters path=/Users/thomas/.codex/.tmp/plugins/plugins/ngs-analysis/.codex-plugin/plugin.json\n2026-06-30T12:50:54.901751Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:54.901775Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:54.902539Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:54.902550Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:54.903316Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:54.903329Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:54.903909Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:54.903922Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:54.904479Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:54.904488Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:54.905934Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:54.905943Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:55.046443Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt: maximum of 3 prompts is supported path=/Users/thomas/.codex/plugins/cache/openai-primary-runtime/template-creator/26.623.12021/.codex-plugin/plugin.json\n2026-06-30T12:50:55.048318Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt: maximum of 3 prompts is supported path=/Users/thomas/.codex/plugins/cache/openai-primary-runtime/template-creator/26.623.12021/.codex-plugin/plugin.json\n2026-06-30T12:50:55.141395Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt[0]: prompt must be at most 128 characters path=/Users/thomas/.codex/.tmp/plugins/plugins/ngs-analysis/.codex-plugin/plugin.json\n2026-06-30T12:50:55.145053Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt[0]: prompt must be at most 128 characters path=/Users/thomas/.codex/.tmp/plugins/plugins/ngs-analysis/.codex-plugin/plugin.json\n2026-06-30T12:50:56.222201Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt: maximum of 3 prompts is supported path=/Users/thomas/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime/plugins/template-creator/.codex-plugin/plugin.json\n2026-06-30T12:50:56.231611Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt[0]: prompt must be at most 128 characters path=/Users/thomas/.codex/.tmp/plugins/plugins/ngs-analysis/.codex-plugin/plugin.json\n2026-06-30T12:50:56.250778Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.250802Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.251321Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.251334Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.251837Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.251846Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.252363Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.252373Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.252868Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.252877Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.253957Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.253966Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\nERROR: {\n  \"type\": \"error\",\n  \"error\": {\n    \"type\": \"invalid_request_error\",\n    \"code\": \"invalid_json_schema\",\n    \"message\": \"Invalid schema for response_format 'codex_output_schema': In context=(), 'additionalProperties' is required to be supplied and to be false.\",\n    \"param\": \"text.format.schema\"\n  },\n  \"status\": 400\n}\nERROR: {\n  \"type\": \"error\",\n  \"error\": {\n    \"type\": \"invalid_request_error\",\n    \"code\": \"invalid_json_schema\",\n    \"message\": \"Invalid schema for response_format 'codex_output_schema': In context=(), 'additionalProperties' is required to be supplied and to be false.\",\n    \"param\": \"text.format.schema\"\n  },\n  \"status\": 400\n}"
+      },
+      "codexAuditStatus": "needs_review_after_data_refresh",
+      "report": "reports/2026-W27-scored-20260630T125054Z.md"
+    },
+    "watchlist": {
+      "changed": true,
+      "generatedAt": "2026-06-30T12:50:56.964Z",
+      "itemCount": 3
+    }
+  },
+  "logs": [
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/fetch_prices_yahoo.js",
+        "data/raw_candidates.json",
+        "data/live_prices.json",
+        "18",
+        "data/custom_watchlist.json"
+      ],
+      "startedAt": "2026-06-30T12:50:08.420Z",
+      "completedAt": "2026-06-30T12:50:09.533Z",
+      "code": 0,
+      "stdout": "Fetched 16 price series into data/live_prices.json.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/fetch_fundamentals_sec.js",
+        "data/raw_candidates.json",
+        "data/sec_ticker_map.json",
+        "data/live_fundamentals.json",
+        "data/custom_watchlist.json"
+      ],
+      "startedAt": "2026-06-30T12:50:09.533Z",
+      "completedAt": "2026-06-30T12:50:11.587Z",
+      "code": 0,
+      "stdout": "Fetched 4 SEC company facts into data/live_fundamentals.json.",
+      "stderr": "D05.SI: outside SEC companyfacts coverage\nO39.SI: outside SEC companyfacts coverage\nZ74.SI: outside SEC companyfacts coverage\nC6L.SI: outside SEC companyfacts coverage"
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/fetch_holdings_official.js",
+        "config/holdings_sources.json",
+        "data/live_holdings.json"
+      ],
+      "startedAt": "2026-06-30T12:50:11.587Z",
+      "completedAt": "2026-06-30T12:50:50.897Z",
+      "code": 0,
+      "stdout": "Imported official holdings for 4/4 funds into data/live_holdings.json.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/fetch_macro_fred.js",
+        "data/live_macro.json"
+      ],
+      "startedAt": "2026-06-30T12:50:50.897Z",
+      "completedAt": "2026-06-30T12:50:51.986Z",
+      "code": 0,
+      "stdout": "Fetched 8 macro series into data/live_macro.json.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/fetch_news_events.js",
+        "data/raw_candidates.json",
+        "data/sec_ticker_map.json",
+        "data/live_news_events.json",
+        "60",
+        "8",
+        "data/custom_watchlist.json"
+      ],
+      "startedAt": "2026-06-30T12:50:51.986Z",
+      "completedAt": "2026-06-30T12:50:54.040Z",
+      "code": 0,
+      "stdout": "Fetched news/events for 12/12 symbols into data/live_news_events.json.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/build_data_status.js",
+        "web/data_status.js"
+      ],
+      "startedAt": "2026-06-30T12:50:54.040Z",
+      "completedAt": "2026-06-30T12:50:54.140Z",
+      "code": 0,
+      "stdout": "Built web/data_status.js from live source coverage.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/enrich_candidates_real.js"
+      ],
+      "startedAt": "2026-06-30T12:50:54.209Z",
+      "completedAt": "2026-06-30T12:50:54.262Z",
+      "code": 0,
+      "stdout": "Wrote data/raw_candidates_live.json with 9 real-data enriched candidates.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/score_candidates.js",
+        "data/raw_candidates_live.json",
+        "snapshots/scored-live.json",
+        "config/app_config.json",
+        "data/live_prices.json"
+      ],
+      "startedAt": "2026-06-30T12:50:54.262Z",
+      "completedAt": "2026-06-30T12:50:54.306Z",
+      "code": 0,
+      "stdout": "Scored 9 candidates into snapshots/scored-live.json.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../../../Applications/Codex.app/Contents/Resources/codex",
+        "exec",
+        "--ephemeral",
+        "--color",
+        "never",
+        "--sandbox",
+        "read-only",
+        "--cd",
+        "/Users/thomas/Documents/comasset",
+        "--output-schema",
+        "config/codex_audit_schema.json",
+        "--output-last-message",
+        "data/codex_public_equity_audit.generated.json",
+        "Use the Public Equity Investing long-short-pitch workflow as an internal screen-grade audit, not as personal investment advice.\nRead only snapshots/scored-live.json and data/raw_candidates_live.json. Do not edit any repository files.\nReview every recommendation ticker: VTI, VFIAX, QQQM, O39.SI, D05.SI, C6L.SI, Z74.SI, COST, MSFT.\nFor each ticker, pressure-test the deterministic score, action, evidence conflicts, missing data, and suitability for a balanced-growth family research portfolio.\nKeep each Chinese and English summary concise. Treat local structured data as the source of truth and label missing valuation or live evidence explicitly.\nReturn only the JSON object required by the output schema, with one audits entry for every ticker."
+      ],
+      "startedAt": "2026-06-30T12:50:54.307Z",
+      "completedAt": "2026-06-30T12:50:56.490Z",
+      "code": 1,
+      "stdout": "",
+      "stderr": "-30T12:50:54.905943Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:55.046443Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt: maximum of 3 prompts is supported path=/Users/thomas/.codex/plugins/cache/openai-primary-runtime/template-creator/26.623.12021/.codex-plugin/plugin.json\n2026-06-30T12:50:55.048318Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt: maximum of 3 prompts is supported path=/Users/thomas/.codex/plugins/cache/openai-primary-runtime/template-creator/26.623.12021/.codex-plugin/plugin.json\n2026-06-30T12:50:55.141395Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt[0]: prompt must be at most 128 characters path=/Users/thomas/.codex/.tmp/plugins/plugins/ngs-analysis/.codex-plugin/plugin.json\n2026-06-30T12:50:55.145053Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt[0]: prompt must be at most 128 characters path=/Users/thomas/.codex/.tmp/plugins/plugins/ngs-analysis/.codex-plugin/plugin.json\n2026-06-30T12:50:56.222201Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt: maximum of 3 prompts is supported path=/Users/thomas/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime/plugins/template-creator/.codex-plugin/plugin.json\n2026-06-30T12:50:56.231611Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt[0]: prompt must be at most 128 characters path=/Users/thomas/.codex/.tmp/plugins/plugins/ngs-analysis/.codex-plugin/plugin.json\n2026-06-30T12:50:56.250778Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.250802Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.251321Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.251334Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.251837Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.251846Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.252363Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.252373Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.252868Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.252877Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.253957Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.253966Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\nERROR: {\n  \"type\": \"error\",\n  \"error\": {\n    \"type\": \"invalid_request_error\",\n    \"code\": \"invalid_json_schema\",\n    \"message\": \"Invalid schema for response_format 'codex_output_schema': In context=(), 'additionalProperties' is required to be supplied and to be false.\",\n    \"param\": \"text.format.schema\"\n  },\n  \"status\": 400\n}\nERROR: {\n  \"type\": \"error\",\n  \"error\": {\n    \"type\": \"invalid_request_error\",\n    \"code\": \"invalid_json_schema\",\n    \"message\": \"Invalid schema for response_format 'codex_output_schema': In context=(), 'additionalProperties' is required to be supplied and to be false.\",\n    \"param\": \"text.format.schema\"\n  },\n  \"status\": 400\n}"
+    },
+    {
+      "command": [
+        "codex-public-equity-audit"
+      ],
+      "startedAt": "2026-06-30T12:50:56.490Z",
+      "completedAt": "2026-06-30T12:50:56.490Z",
+      "code": 1,
+      "stdout": "",
+      "stderr": "codex exec failed (1): Reading additional input from stdin...\n2026-06-30T12:50:54.525351Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt: maximum of 3 prompts is supported path=/Users/thomas/.codex/plugins/cache/openai-primary-runtime/template-creator/26.623.12021/.codex-plugin/plugin.json\n2026-06-30T12:50:54.526839Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt: maximum of 3 prompts is supported path=/Users/thomas/.codex/plugins/cache/openai-primary-runtime/template-creator/26.623.12021/.codex-plugin/plugin.json\n2026-06-30T12:50:54.536521Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back\n2026-06-30T12:50:54.537129Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back\n2026-06-30T12:50:54.537547Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back\n2026-06-30T12:50:54.538004Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back\n2026-06-30T12:50:54.538515Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back\n2026-06-30T12:50:54.539055Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back\n2026-06-30T12:50:54.539470Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back\n2026-06-30T12:50:54.539904Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back\n2026-06-30T12:50:54.540505Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back\nOpenAI Codex v0.142.4\n--------\nworkdir: /Users/thomas/Documents/comasset\nmodel: gpt-5.5\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: medium\nreasoning summaries: none\nsession id: 019f1895-2185-75c1-aaec-c5e092b9cb5f\n--------\nuser\nUse the Public Equity Investing long-short-pitch workflow as an internal screen-grade audit, not as personal investment advice.\nRead only snapshots/scored-live.json and data/raw_candidates_live.json. Do not edit any repository files.\nReview every recommendation ticker: VTI, VFIAX, QQQM, O39.SI, D05.SI, C6L.SI, Z74.SI, COST, MSFT.\nFor each ticker, pressure-test the deterministic score, action, evidence conflicts, missing data, and suitability for a balanced-growth family research portfolio.\nKeep each Chinese and English summary concise. Treat local structured data as the source of truth and label missing valuation or live evidence explicitly.\nReturn only the JSON object required by the output schema, with one audits entry for every ticker.\n2026-06-30T12:50:54.819901Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt: maximum of 3 prompts is supported path=/Users/thomas/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime/plugins/template-creator/.codex-plugin/plugin.json\n2026-06-30T12:50:54.866246Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt[0]: prompt must be at most 128 characters path=/Users/thomas/.codex/.tmp/plugins/plugins/ngs-analysis/.codex-plugin/plugin.json\n2026-06-30T12:50:54.901751Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:54.901775Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:54.902539Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:54.902550Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:54.903316Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:54.903329Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:54.903909Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:54.903922Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:54.904479Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:54.904488Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:54.905934Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:54.905943Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:55.046443Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt: maximum of 3 prompts is supported path=/Users/thomas/.codex/plugins/cache/openai-primary-runtime/template-creator/26.623.12021/.codex-plugin/plugin.json\n2026-06-30T12:50:55.048318Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt: maximum of 3 prompts is supported path=/Users/thomas/.codex/plugins/cache/openai-primary-runtime/template-creator/26.623.12021/.codex-plugin/plugin.json\n2026-06-30T12:50:55.141395Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt[0]: prompt must be at most 128 characters path=/Users/thomas/.codex/.tmp/plugins/plugins/ngs-analysis/.codex-plugin/plugin.json\n2026-06-30T12:50:55.145053Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt[0]: prompt must be at most 128 characters path=/Users/thomas/.codex/.tmp/plugins/plugins/ngs-analysis/.codex-plugin/plugin.json\n2026-06-30T12:50:56.222201Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt: maximum of 3 prompts is supported path=/Users/thomas/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime/plugins/template-creator/.codex-plugin/plugin.json\n2026-06-30T12:50:56.231611Z  WARN codex_core_plugins::manifest: ignoring interface.defaultPrompt[0]: prompt must be at most 128 characters path=/Users/thomas/.codex/.tmp/plugins/plugins/ngs-analysis/.codex-plugin/plugin.json\n2026-06-30T12:50:56.250778Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.250802Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.251321Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.251334Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.251837Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.251846Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.252363Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.252373Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.252868Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.252877Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.253957Z  WARN codex_core_skills::loader: ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\n2026-06-30T12:50:56.253966Z  WARN codex_core_skills::loader: ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\nERROR: {\n  \"type\": \"error\",\n  \"error\": {\n    \"type\": \"invalid_request_error\",\n    \"code\": \"invalid_json_schema\",\n    \"message\": \"Invalid schema for response_format 'codex_output_schema': In context=(), 'additionalProperties' is required to be supplied and to be false.\",\n    \"param\": \"text.format.schema\"\n  },\n  \"status\": 400\n}\nERROR: {\n  \"type\": \"error\",\n  \"error\": {\n    \"type\": \"invalid_request_error\",\n    \"code\": \"invalid_json_schema\",\n    \"message\": \"Invalid schema for response_format 'codex_output_schema': In context=(), 'additionalProperties' is required to be supplied and to be false.\",\n    \"param\": \"text.format.schema\"\n  },\n  \"status\": 400\n}"
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/validate_snapshot.js",
+        "snapshots/scored-live.json"
+      ],
+      "startedAt": "2026-06-30T12:50:56.490Z",
+      "completedAt": "2026-06-30T12:50:56.530Z",
+      "code": 0,
+      "stdout": "Snapshot 2026-W27-scored-20260630T125054Z is valid (9 recommendations).",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/publish_weekly_snapshot.js",
+        "snapshots/scored-live.json",
+        "snapshots/latest.json",
+        "web/snapshot.js",
+        "web/latest.json"
+      ],
+      "startedAt": "2026-06-30T12:50:56.530Z",
+      "completedAt": "2026-06-30T12:50:56.574Z",
+      "code": 0,
+      "stdout": "Published 2026-W27-scored-20260630T125054Z.\n- snapshots/history/2026-W27-scored-20260630T125054Z.json\n- snapshots/latest.json\n- web/snapshot.js\n- web/latest.json",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/build_data_js.js",
+        "snapshots/latest.json",
+        "web/data.js"
+      ],
+      "startedAt": "2026-06-30T12:50:56.574Z",
+      "completedAt": "2026-06-30T12:50:56.635Z",
+      "code": 0,
+      "stdout": "Wrote web/data.js from snapshots/latest.json.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/run_snapshot_backtest.js",
+        "--strategy",
+        "mixed",
+        "--initial",
+        "10000",
+        "--monthly",
+        "500",
+        "--rebalance",
+        "monthly",
+        "--member",
+        "pipeline"
+      ],
+      "startedAt": "2026-06-30T12:50:56.635Z",
+      "completedAt": "2026-06-30T12:50:56.754Z",
+      "code": 0,
+      "stdout": "Built web/backtest_data.js with 4 snapshots and 5 saved runs.\nSaved backtest 20260630T125056Z-mixed to data/simulation_runs/20260630T125056Z-mixed.json.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/build_data_status.js",
+        "web/data_status.js"
+      ],
+      "startedAt": "2026-06-30T12:50:56.754Z",
+      "completedAt": "2026-06-30T12:50:56.824Z",
+      "code": 0,
+      "stdout": "Built web/data_status.js from live source coverage.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/generate_report.js",
+        "snapshots/scored-live.json",
+        "data/raw_candidates_live.json",
+        "web/data_status.js",
+        "reports/2026-W27-scored-20260630T125054Z.md",
+        "data/live_holdings.json",
+        "data/simulation_runs/latest.json"
+      ],
+      "startedAt": "2026-06-30T12:50:56.824Z",
+      "completedAt": "2026-06-30T12:50:56.891Z",
+      "code": 0,
+      "stdout": "Wrote reports/2026-W27-scored-20260630T125054Z.md.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/build_custom_watchlist.js"
+      ],
+      "startedAt": "2026-06-30T12:50:56.923Z",
+      "completedAt": "2026-06-30T12:50:56.974Z",
+      "code": 0,
+      "stdout": "Built custom watchlist analysis for 3 items.\n- data/custom_watchlist_live.json\n- web/watchlist.js\n- web/watchlist.json",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/validate_custom_watchlist.js"
+      ],
+      "startedAt": "2026-06-30T12:50:56.974Z",
+      "completedAt": "2026-06-30T12:50:57.014Z",
+      "code": 0,
+      "stdout": "Validated 3 custom watchlist items; none appear in 9 recommendations.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../../../bin/bash",
+        "scripts/build_static_site.sh"
+      ],
+      "startedAt": "2026-06-30T12:50:57.014Z",
+      "completedAt": "2026-06-30T12:50:57.075Z",
+      "code": 0,
+      "stdout": "Built static site at /Users/thomas/Documents/comasset/dist/aws-site",
+      "stderr": ""
+    }
+  ]
+}

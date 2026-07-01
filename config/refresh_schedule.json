@@ -1,0 +1,29 @@
+{
+  "timezone": "Asia/Singapore",
+  "pollIntervalSeconds": 60,
+  "codexAutoAudit": {
+    "enabled": true,
+    "timeoutMinutes": 15,
+    "command": "/Applications/Codex.app/Contents/Resources/codex"
+  },
+  "jobs": {
+    "marketData": {
+      "enabled": true,
+      "scope": "sources",
+      "intervalMinutes": 360,
+      "runOnStart": false
+    },
+    "recommendations": {
+      "enabled": true,
+      "scope": "recommendations",
+      "intervalMinutes": 10080,
+      "runOnStart": false
+    },
+    "watchlist": {
+      "enabled": true,
+      "scope": "watchlist",
+      "intervalMinutes": 1440,
+      "runOnStart": false
+    }
+  }
+}

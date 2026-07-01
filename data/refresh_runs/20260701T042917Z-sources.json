@@ -1,0 +1,73 @@
+{
+  "runId": "20260701T042917Z-sources",
+  "scope": "sources",
+  "trigger": "scheduler:marketData",
+  "requestedBy": "system-scheduler",
+  "status": "completed",
+  "startedAt": "2026-07-01T04:29:17.873Z",
+  "completedAt": "2026-07-01T06:31:14.554Z",
+  "changed": false,
+  "dataChanged": true,
+  "sourceChanges": [
+    "data/live_prices.json",
+    "data/live_news_events.json"
+  ],
+  "outputs": {},
+  "logs": [
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/fetch_prices_yahoo.js",
+        "data/raw_candidates.json",
+        "data/live_prices.json",
+        "18",
+        "data/custom_watchlist.json"
+      ],
+      "startedAt": "2026-07-01T04:29:17.973Z",
+      "completedAt": "2026-07-01T04:29:19.202Z",
+      "code": 0,
+      "stdout": "Fetched 16 price series into data/live_prices.json.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/fetch_news_events.js",
+        "data/raw_candidates.json",
+        "data/sec_ticker_map.json",
+        "data/live_news_events.json",
+        "60",
+        "8",
+        "data/custom_watchlist.json"
+      ],
+      "startedAt": "2026-07-01T04:29:19.202Z",
+      "completedAt": "2026-07-01T06:31:14.280Z",
+      "code": 0,
+      "stdout": "Fetched news/events for 11/12 symbols into data/live_news_events.json.",
+      "stderr": "Z74.SI Yahoo: fetch failed"
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/build_data_status.js",
+        "web/data_status.js"
+      ],
+      "startedAt": "2026-07-01T06:31:14.280Z",
+      "completedAt": "2026-07-01T06:31:14.442Z",
+      "code": 0,
+      "stdout": "Built web/data_status.js from live source coverage.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../../../bin/bash",
+        "scripts/build_static_site.sh"
+      ],
+      "startedAt": "2026-07-01T06:31:14.479Z",
+      "completedAt": "2026-07-01T06:31:14.554Z",
+      "code": 0,
+      "stdout": "Built static site at /Users/thomas/Documents/comasset/dist/aws-site",
+      "stderr": ""
+    }
+  ]
+}

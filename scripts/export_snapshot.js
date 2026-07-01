@@ -38,7 +38,7 @@ const snapshot = {
   asOf: "2026-06-17",
   generatedAt: "2026-06-17T07:58:00+08:00",
   modelVersion: "comasset-score-v0.1",
-  claudeSkillVersion: "claude-finance-skill-2026.06",
+  codexAuditSkillVersion: "codex-public-equity-investing-0.1.29",
   dataCutoff: "2026-06-14T23:59:59-04:00",
   marketContext: {
     baseCurrency: "USD",
@@ -72,13 +72,13 @@ const snapshot = {
       zh: item.exitZh,
       en: item.exitEn,
     },
-    claudeAudit: {
-      skillVersion: item.claude.version,
-      calledAt: toIsoLike(item.claude.calledAt),
-      inputScope: normalizeInputScope(item.claude.inputScope),
+    codexAudit: {
+      skillVersion: item.codex.version,
+      calledAt: toIsoLike(item.codex.calledAt),
+      inputScope: normalizeInputScope(item.codex.inputScope),
       summary: {
-        zh: item.claude.summaryZh,
-        en: item.claude.summaryEn,
+        zh: item.codex.summaryZh,
+        en: item.codex.summaryEn,
       },
       conflicts: [],
     },

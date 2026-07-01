@@ -1,0 +1,215 @@
+{
+  "runs": [
+    {
+      "runId": "20260630T125813Z-mixed",
+      "file": "20260630T125813Z-mixed.json",
+      "owner": "pipeline",
+      "strategy": "mixed",
+      "generatedAt": "2026-06-30T12:58:13.753Z",
+      "period": {
+        "start": "2026-06-18",
+        "end": "2026-06-29",
+        "valuationPoints": 3,
+        "historicalSnapshots": 6
+      },
+      "summary": {
+        "finalValue": 9809.482555208295,
+        "investedCapital": 10000,
+        "profit": -190.5174447917052,
+        "moneyWeightedSimpleReturn": -0.019051744479170574,
+        "timeWeightedReturn": -0.019051744479170574,
+        "annualizedReturn": -0.28352828053116563,
+        "annualizedVolatility": 0.07985776710620665,
+        "maxDrawdown": -0.019122504394573525,
+        "maxDrawdownStart": "2026-06-18",
+        "maxDrawdownEnd": "2026-06-26",
+        "sharpe": -3.5504158306115405,
+        "turnoverTrades": 3
+      },
+      "sourceSnapshotIds": [
+        "2026-W25-scored"
+      ]
+    },
+    {
+      "runId": "20260630T125350Z-mixed",
+      "file": "20260630T125350Z-mixed.json",
+      "owner": "pipeline",
+      "strategy": "mixed",
+      "generatedAt": "2026-06-30T12:53:50.406Z",
+      "period": {
+        "start": "2026-06-18",
+        "end": "2026-06-29",
+        "valuationPoints": 3,
+        "historicalSnapshots": 5
+      },
+      "summary": {
+        "finalValue": 9809.482555208295,
+        "investedCapital": 10000,
+        "profit": -190.5174447917052,
+        "moneyWeightedSimpleReturn": -0.019051744479170574,
+        "timeWeightedReturn": -0.019051744479170574,
+        "annualizedReturn": -0.28352828053116563,
+        "annualizedVolatility": 0.07985776710620665,
+        "maxDrawdown": -0.019122504394573525,
+        "maxDrawdownStart": "2026-06-18",
+        "maxDrawdownEnd": "2026-06-26",
+        "sharpe": -3.5504158306115405,
+        "turnoverTrades": 3
+      },
+      "sourceSnapshotIds": [
+        "2026-W25-scored"
+      ]
+    },
+    {
+      "runId": "20260630T125056Z-mixed",
+      "file": "20260630T125056Z-mixed.json",
+      "owner": "pipeline",
+      "strategy": "mixed",
+      "generatedAt": "2026-06-30T12:50:56.687Z",
+      "period": {
+        "start": "2026-06-18",
+        "end": "2026-06-29",
+        "valuationPoints": 3,
+        "historicalSnapshots": 4
+      },
+      "summary": {
+        "finalValue": 9809.482555208295,
+        "investedCapital": 10000,
+        "profit": -190.5174447917052,
+        "moneyWeightedSimpleReturn": -0.019051744479170574,
+        "timeWeightedReturn": -0.019051744479170574,
+        "annualizedReturn": -0.28352828053116563,
+        "annualizedVolatility": 0.07985776710620665,
+        "maxDrawdown": -0.019122504394573525,
+        "maxDrawdownStart": "2026-06-18",
+        "maxDrawdownEnd": "2026-06-26",
+        "sharpe": -3.5504158306115405,
+        "turnoverTrades": 3
+      },
+      "sourceSnapshotIds": [
+        "2026-W25-scored"
+      ]
+    },
+    {
+      "runId": "20260630T124909Z-mixed",
+      "file": "20260630T124909Z-mixed.json",
+      "owner": "pipeline",
+      "strategy": "mixed",
+      "generatedAt": "2026-06-30T12:49:09.619Z",
+      "period": {
+        "start": "2026-06-18",
+        "end": "2026-06-26",
+        "valuationPoints": 2,
+        "historicalSnapshots": 3
+      },
+      "summary": {
+        "finalValue": 9803.870568576238,
+        "investedCapital": 10000,
+        "profit": -196.12943142376207,
+        "moneyWeightedSimpleReturn": -0.01961294314237616,
+        "timeWeightedReturn": -0.01961294314237616,
+        "annualizedReturn": -0.40250153378758746,
+        "annualizedVolatility": 0.09495651329989807,
+        "maxDrawdown": -0.019122504394573525,
+        "maxDrawdownStart": "2026-06-18",
+        "maxDrawdownEnd": "2026-06-26",
+        "sharpe": -4.238798580528962,
+        "turnoverTrades": 3
+      },
+      "sourceSnapshotIds": [
+        "2026-W25-scored"
+      ]
+    },
+    {
+      "runId": "20260627T032244Z-mixed",
+      "file": "20260627T032244Z-mixed.json",
+      "owner": "pipeline",
+      "strategy": "mixed",
+      "generatedAt": "2026-06-27T03:22:44.442Z",
+      "period": {
+        "start": "2026-06-18",
+        "end": "2026-06-26",
+        "valuationPoints": 2,
+        "historicalSnapshots": 2
+      },
+      "summary": {
+        "finalValue": 9803.870568576238,
+        "investedCapital": 10000,
+        "profit": -196.12943142376207,
+        "moneyWeightedSimpleReturn": -0.01961294314237616,
+        "timeWeightedReturn": -0.01961294314237616,
+        "annualizedReturn": -0.40250153378758746,
+        "annualizedVolatility": 0.09495651329989807,
+        "maxDrawdown": -0.019122504394573525,
+        "maxDrawdownStart": "2026-06-18",
+        "maxDrawdownEnd": "2026-06-26",
+        "sharpe": -4.238798580528962,
+        "turnoverTrades": 3
+      },
+      "sourceSnapshotIds": [
+        "2026-W25-scored"
+      ]
+    },
+    {
+      "runId": "20260627T031447Z-mixed",
+      "file": "20260627T031447Z-mixed.json",
+      "owner": "pipeline",
+      "strategy": "mixed",
+      "generatedAt": "2026-06-27T03:14:47.861Z",
+      "period": {
+        "start": "2026-06-18",
+        "end": "2026-06-26",
+        "valuationPoints": 2,
+        "historicalSnapshots": 2
+      },
+      "summary": {
+        "finalValue": 9803.870568576238,
+        "investedCapital": 10000,
+        "profit": -196.12943142376207,
+        "moneyWeightedSimpleReturn": -0.01961294314237616,
+        "timeWeightedReturn": -0.01961294314237616,
+        "annualizedReturn": -0.40250153378758746,
+        "annualizedVolatility": 0.09495651329989807,
+        "maxDrawdown": -0.019122504394573525,
+        "maxDrawdownStart": "2026-06-18",
+        "maxDrawdownEnd": "2026-06-26",
+        "sharpe": -4.238798580528962,
+        "turnoverTrades": 3
+      },
+      "sourceSnapshotIds": [
+        "2026-W25-scored"
+      ]
+    },
+    {
+      "runId": "20260627T031237Z-mixed",
+      "file": "20260627T031237Z-mixed.json",
+      "owner": "pipeline",
+      "strategy": "mixed",
+      "generatedAt": "2026-06-27T03:12:37.286Z",
+      "period": {
+        "start": "2026-06-18",
+        "end": "2026-06-25",
+        "valuationPoints": 2,
+        "historicalSnapshots": 2
+      },
+      "summary": {
+        "finalValue": 9702.982676425785,
+        "investedCapital": 10000,
+        "profit": -297.01732357421497,
+        "moneyWeightedSimpleReturn": -0.029701732357421462,
+        "timeWeightedReturn": -0.02970173235742135,
+        "annualizedReturn": -0.5433992127496486,
+        "annualizedVolatility": 0.1464251807096429,
+        "maxDrawdown": -0.02921634052768529,
+        "maxDrawdownStart": "2026-06-18",
+        "maxDrawdownEnd": "2026-06-25",
+        "sharpe": -3.7111049487259598,
+        "turnoverTrades": 3
+      },
+      "sourceSnapshotIds": [
+        "2026-W25-scored"
+      ]
+    }
+  ],
+  "updatedAt": "2026-06-30T12:58:13.756Z"
+}

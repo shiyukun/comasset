@@ -1,0 +1,193 @@
+{
+  "runId": "20260630T124909Z-all",
+  "scope": "all",
+  "trigger": "verification",
+  "requestedBy": "system",
+  "status": "completed",
+  "startedAt": "2026-06-30T12:49:09.119Z",
+  "completedAt": "2026-06-30T12:49:10.029Z",
+  "changed": true,
+  "sourceChanges": [],
+  "outputs": {
+    "recommendations": {
+      "changed": true,
+      "snapshotId": "2026-W26-scored-20260630T124909Z",
+      "generatedAt": "2026-06-30T12:49:09.367Z",
+      "codexAuditApplied": false,
+      "codexAuditGeneration": {
+        "attempted": false,
+        "reason": "disabled"
+      },
+      "codexAuditStatus": "needs_review_after_data_refresh",
+      "report": "reports/2026-W26-scored-20260630T124909Z.md"
+    },
+    "watchlist": {
+      "changed": true,
+      "generatedAt": "2026-06-30T12:49:09.901Z",
+      "itemCount": 3
+    }
+  },
+  "logs": [
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/build_data_status.js",
+        "web/data_status.js"
+      ],
+      "startedAt": "2026-06-30T12:49:09.163Z",
+      "completedAt": "2026-06-30T12:49:09.259Z",
+      "code": 0,
+      "stdout": "Built web/data_status.js from live source coverage.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/enrich_candidates_real.js"
+      ],
+      "startedAt": "2026-06-30T12:49:09.322Z",
+      "completedAt": "2026-06-30T12:49:09.376Z",
+      "code": 0,
+      "stdout": "Wrote data/raw_candidates_live.json with 9 real-data enriched candidates.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/score_candidates.js",
+        "data/raw_candidates_live.json",
+        "snapshots/scored-live.json",
+        "config/app_config.json",
+        "data/live_prices.json"
+      ],
+      "startedAt": "2026-06-30T12:49:09.376Z",
+      "completedAt": "2026-06-30T12:49:09.420Z",
+      "code": 0,
+      "stdout": "Scored 9 candidates into snapshots/scored-live.json.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/validate_snapshot.js",
+        "snapshots/scored-live.json"
+      ],
+      "startedAt": "2026-06-30T12:49:09.422Z",
+      "completedAt": "2026-06-30T12:49:09.461Z",
+      "code": 0,
+      "stdout": "Snapshot 2026-W26-scored-20260630T124909Z is valid (9 recommendations).",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/publish_weekly_snapshot.js",
+        "snapshots/scored-live.json",
+        "snapshots/latest.json",
+        "web/snapshot.js",
+        "web/latest.json"
+      ],
+      "startedAt": "2026-06-30T12:49:09.461Z",
+      "completedAt": "2026-06-30T12:49:09.506Z",
+      "code": 0,
+      "stdout": "Published 2026-W26-scored-20260630T124909Z.\n- snapshots/history/2026-W26-scored-20260630T124909Z.json\n- snapshots/latest.json\n- web/snapshot.js\n- web/latest.json",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/build_data_js.js",
+        "snapshots/latest.json",
+        "web/data.js"
+      ],
+      "startedAt": "2026-06-30T12:49:09.506Z",
+      "completedAt": "2026-06-30T12:49:09.568Z",
+      "code": 0,
+      "stdout": "Wrote web/data.js from snapshots/latest.json.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/run_snapshot_backtest.js",
+        "--strategy",
+        "mixed",
+        "--initial",
+        "10000",
+        "--monthly",
+        "500",
+        "--rebalance",
+        "monthly",
+        "--member",
+        "pipeline"
+      ],
+      "startedAt": "2026-06-30T12:49:09.568Z",
+      "completedAt": "2026-06-30T12:49:09.687Z",
+      "code": 0,
+      "stdout": "Built web/backtest_data.js with 3 snapshots and 4 saved runs.\nSaved backtest 20260630T124909Z-mixed to data/simulation_runs/20260630T124909Z-mixed.json.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/build_data_status.js",
+        "web/data_status.js"
+      ],
+      "startedAt": "2026-06-30T12:49:09.687Z",
+      "completedAt": "2026-06-30T12:49:09.757Z",
+      "code": 0,
+      "stdout": "Built web/data_status.js from live source coverage.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/generate_report.js",
+        "snapshots/scored-live.json",
+        "data/raw_candidates_live.json",
+        "web/data_status.js",
+        "reports/2026-W26-scored-20260630T124909Z.md",
+        "data/live_holdings.json",
+        "data/simulation_runs/latest.json"
+      ],
+      "startedAt": "2026-06-30T12:49:09.757Z",
+      "completedAt": "2026-06-30T12:49:09.824Z",
+      "code": 0,
+      "stdout": "Wrote reports/2026-W26-scored-20260630T124909Z.md.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/build_custom_watchlist.js"
+      ],
+      "startedAt": "2026-06-30T12:49:09.858Z",
+      "completedAt": "2026-06-30T12:49:09.911Z",
+      "code": 0,
+      "stdout": "Built custom watchlist analysis for 3 items.\n- data/custom_watchlist_live.json\n- web/watchlist.js\n- web/watchlist.json",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/validate_custom_watchlist.js"
+      ],
+      "startedAt": "2026-06-30T12:49:09.911Z",
+      "completedAt": "2026-06-30T12:49:09.952Z",
+      "code": 0,
+      "stdout": "Validated 3 custom watchlist items; none appear in 9 recommendations.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../../../bin/bash",
+        "scripts/build_static_site.sh"
+      ],
+      "startedAt": "2026-06-30T12:49:09.953Z",
+      "completedAt": "2026-06-30T12:49:10.029Z",
+      "code": 0,
+      "stdout": "Built static site at /Users/thomas/Documents/comasset/dist/aws-site",
+      "stderr": ""
+    }
+  ]
+}

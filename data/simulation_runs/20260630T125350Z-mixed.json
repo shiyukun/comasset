@@ -1,0 +1,166 @@
+{
+  "runId": "20260630T125350Z-mixed",
+  "owner": "pipeline",
+  "storage": "filesystem",
+  "dataProvenance": {
+    "historyDir": "snapshots/history",
+    "prices": "data/live_prices.json",
+    "priceSource": "Yahoo Finance public chart endpoint",
+    "priceAsOf": "2026-06-30"
+  },
+  "engineVersion": "snapshot-backtest-v1.0",
+  "generatedAt": "2026-06-30T12:53:50.406Z",
+  "strategy": "mixed",
+  "assumptions": {
+    "initialCapital": 10000,
+    "monthlyContribution": 500,
+    "rebalance": "monthly",
+    "topN": 5,
+    "slippage": 0.0005,
+    "baseCurrency": "USD",
+    "allowShort": false
+  },
+  "period": {
+    "start": "2026-06-18",
+    "end": "2026-06-29",
+    "valuationPoints": 3,
+    "historicalSnapshots": 5
+  },
+  "summary": {
+    "finalValue": 9809.482555208295,
+    "investedCapital": 10000,
+    "profit": -190.5174447917052,
+    "moneyWeightedSimpleReturn": -0.019051744479170574,
+    "timeWeightedReturn": -0.019051744479170574,
+    "annualizedReturn": -0.28352828053116563,
+    "annualizedVolatility": 0.07985776710620665,
+    "maxDrawdown": -0.019122504394573525,
+    "maxDrawdownStart": "2026-06-18",
+    "maxDrawdownEnd": "2026-06-26",
+    "sharpe": -3.5504158306115405,
+    "turnoverTrades": 3
+  },
+  "equityCurve": [
+    {
+      "date": "2026-06-18",
+      "value": 9995,
+      "investedCapital": 10000,
+      "periodReturn": -0.0004999999999999449,
+      "snapshotId": "2026-W25-scored"
+    },
+    {
+      "date": "2026-06-26",
+      "value": 9803.870568576238,
+      "investedCapital": 10000,
+      "periodReturn": -0.019122504394573525,
+      "snapshotId": "2026-W25-scored"
+    },
+    {
+      "date": "2026-06-29",
+      "value": 9809.482555208295,
+      "investedCapital": 10000,
+      "periodReturn": 0.0005724256142307649,
+      "snapshotId": "2026-W26-scored"
+    }
+  ],
+  "monthlyRows": [
+    {
+      "month": "2026-06",
+      "return": -0.019051744479170574,
+      "value": 9809.482555208295
+    }
+  ],
+  "trades": [
+    {
+      "date": "2026-06-18",
+      "side": "buy",
+      "ticker": "VFIAX",
+      "shares": 4.801087496130057,
+      "nativePrice": 693.940002,
+      "currency": "USD",
+      "fxToUsd": 1,
+      "grossValueUsd": 3333.3333333333335,
+      "slippageUsd": 1.666666666666515,
+      "snapshotId": "2026-W25-scored"
+    },
+    {
+      "date": "2026-06-18",
+      "side": "buy",
+      "ticker": "MSFT",
+      "shares": 8.781409381536962,
+      "nativePrice": 379.399994,
+      "currency": "USD",
+      "fxToUsd": 1,
+      "grossValueUsd": 3333.3333333333335,
+      "slippageUsd": 1.666666666666515,
+      "snapshotId": "2026-W25-scored"
+    },
+    {
+      "date": "2026-06-18",
+      "side": "buy",
+      "ticker": "VTI",
+      "shares": 9.030650899238742,
+      "nativePrice": 368.928741,
+      "currency": "USD",
+      "fxToUsd": 1,
+      "grossValueUsd": 3333.3333333333335,
+      "slippageUsd": 1.666666666666515,
+      "snapshotId": "2026-W25-scored"
+    }
+  ],
+  "rebalanceLog": [
+    {
+      "date": "2026-06-18",
+      "snapshotId": "2026-W25-scored",
+      "snapshotGeneratedAt": "2026-06-17T07:58:00+08:00",
+      "tickers": [
+        "VFIAX",
+        "MSFT",
+        "VTI"
+      ],
+      "contribution": 0,
+      "status": "executed"
+    }
+  ],
+  "snapshotUsage": [
+    {
+      "snapshotId": "2026-W25-scored",
+      "generatedAt": "2026-06-17T07:58:00+08:00",
+      "tradeDate": "2026-06-18",
+      "noFutureDataRulePassed": true
+    }
+  ],
+  "finalHoldings": [
+    {
+      "ticker": "VFIAX",
+      "shares": 4.801087496130057,
+      "currency": "USD",
+      "nativePrice": 678.51001,
+      "fxToUsd": 1,
+      "marketValueUsd": 3257.58592501008
+    },
+    {
+      "ticker": "MSFT",
+      "shares": 8.781409381536962,
+      "currency": "USD",
+      "nativePrice": 368.570007,
+      "fxToUsd": 1,
+      "marketValueUsd": 3236.5641172229434
+    },
+    {
+      "ticker": "VTI",
+      "shares": 9.030650899238742,
+      "currency": "USD",
+      "nativePrice": 367.119995,
+      "fxToUsd": 1,
+      "marketValueUsd": 3315.3325129752725
+    }
+  ],
+  "warnings": [
+    "Only 5 historical snapshots are available; results are not statistically meaningful.",
+    "Only 3 weekly valuation points are available."
+  ],
+  "sourceSnapshotIds": [
+    "2026-W25-scored"
+  ]
+}

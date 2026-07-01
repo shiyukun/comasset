@@ -2,7 +2,16 @@
 
 This document describes the first deterministic scoring model used by `scripts/score_candidates.js`.
 
-The model is intentionally simple and auditable. Claude financial skill output is required for explanation and risk review, but the final score is calculated from structured factor scores.
+The model is intentionally simple and auditable. Codex Public Equity Investing skill output is required for explanation and risk review, but the final score is calculated from structured factor scores.
+
+`scripts/score_candidates.js` can also read a normalized weekly price file. When enough price points exist for a ticker, the script updates:
+
+- current `price`
+- `momentum`, based on 1-week, 1-month, and available 3-month returns
+- `riskControl`, based on weekly volatility and maximum drawdown
+- `priceSignals`, saved into the scored snapshot for review and reporting
+
+If price data is missing or too short, the candidate remains scoreable from structured factors, but its `priceSignals.status` is marked as `missing`.
 
 ## Input Factors
 
@@ -83,9 +92,18 @@ Each recommendation must include:
 - bilingual reason
 - bilingual risks
 - bilingual exit rules
-- Claude financial skill version
-- Claude skill call time
-- Claude skill input scope
-- bilingual Claude summary
+- Codex Public Equity Investing skill version
+- Codex Public Equity Investing skill call time
+- Codex Public Equity Investing skill input scope
+- bilingual Codex summary
 
 The scoring script should fail validation if these fields are missing after snapshot generation.
+
+## Price Import Rules
+
+`scripts/import_prices.js` accepts either:
+
+- JSON with a top-level `prices` object
+- CSV with `ticker,date,close` headers
+
+Each ticker must have at least two price points. For real weekly runs, use adjusted close prices so dividends and splits do not distort momentum or drawdown calculations.

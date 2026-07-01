@@ -29,7 +29,7 @@ function assertScore(value, context) {
   }
 }
 
-["snapshotId", "asOf", "generatedAt", "modelVersion", "claudeSkillVersion", "dataCutoff"].forEach((key) => {
+["snapshotId", "asOf", "generatedAt", "modelVersion", "codexAuditSkillVersion", "dataCutoff"].forEach((key) => {
   requireField(snapshot, key, "snapshot");
 });
 
@@ -42,6 +42,7 @@ if (!Array.isArray(snapshot.recommendations) || snapshot.recommendations.length 
   ["ticker", "type", "horizon", "action", "score", "confidence", "price", "currency"].forEach((key) => {
     requireField(item, key, context);
   });
+  if (item.currency !== "USD" && !item.market) errors.push(`${context}: non-USD recommendation must include market`);
   assertEnum(item.type, types, `${context}.type`);
   assertEnum(item.horizon, horizons, `${context}.horizon`);
   assertEnum(item.action, actions, `${context}.action`);
@@ -61,13 +62,18 @@ if (!Array.isArray(snapshot.recommendations) || snapshot.recommendations.length 
   });
 
   ["skillVersion", "calledAt", "inputScope", "summary"].forEach((key) => {
-    requireField(item.claudeAudit || {}, key, `${context}.claudeAudit`);
+    requireField(item.codexAudit || {}, key, `${context}.codexAudit`);
   });
-  if (!item.claudeAudit?.summary?.zh || !item.claudeAudit?.summary?.en) {
-    errors.push(`${context}: claudeAudit.summary must be bilingual`);
+  if (!item.codexAudit?.summary?.zh || !item.codexAudit?.summary?.en) {
+    errors.push(`${context}: codexAudit.summary must be bilingual`);
   }
-  if (!Array.isArray(item.claudeAudit?.inputScope) || item.claudeAudit.inputScope.length === 0) {
-    errors.push(`${context}: claudeAudit.inputScope must be a non-empty array`);
+  if (!Array.isArray(item.codexAudit?.inputScope) || item.codexAudit.inputScope.length === 0) {
+    errors.push(`${context}: codexAudit.inputScope must be a non-empty array`);
+  }
+  if (snapshot.marketContext?.newsEventsSource) {
+    if (!item.newsEvents || !Array.isArray(item.newsEvents.items)) {
+      errors.push(`${context}: live snapshot must include newsEvents.items`);
+    }
   }
 });
 

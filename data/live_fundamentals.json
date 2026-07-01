@@ -1,0 +1,113 @@
+{
+  "asOf": "2026-06-30T12:59:00.040Z",
+  "source": "SEC companyfacts API",
+  "userAgent": "comasset internal family research contact@example.com",
+  "errors": [
+    "D05.SI: outside SEC companyfacts coverage",
+    "O39.SI: outside SEC companyfacts coverage",
+    "Z74.SI: outside SEC companyfacts coverage",
+    "C6L.SI: outside SEC companyfacts coverage"
+  ],
+  "companies": {
+    "MSFT": {
+      "ticker": "MSFT",
+      "cik": "0000789019",
+      "entityName": "MICROSOFT CORPORATION",
+      "fiscalYear": 2025,
+      "periodEnd": "2025-06-30",
+      "facts": {
+        "revenue": 281724000000,
+        "netIncome": 101832000000,
+        "operatingCashFlow": 136162000000,
+        "capex": 64551000000,
+        "assets": 619003000000,
+        "liabilities": 275524000000,
+        "equity": 343479000000,
+        "freeCashFlow": 71611000000
+      },
+      "metrics": {
+        "revenueGrowth": 0.14932156232406713,
+        "netIncomeGrowth": 0.15539620586366532,
+        "freeCashFlowMargin": 0.2541884965427156,
+        "debtToEquity": 0.8021567548525529,
+        "fundamentalsScore": 98,
+        "riskScore": 90
+      }
+    },
+    "COST": {
+      "ticker": "COST",
+      "cik": "0000909832",
+      "entityName": "COSTCO WHOLESALE CORP /NEW",
+      "fiscalYear": 2025,
+      "periodEnd": "2025-08-31",
+      "facts": {
+        "revenue": 275235000000,
+        "netIncome": 8099000000,
+        "operatingCashFlow": 13335000000,
+        "capex": 5498000000,
+        "assets": 77099000000,
+        "liabilities": 47935000000,
+        "equity": 29164000000,
+        "freeCashFlow": 7837000000
+      },
+      "metrics": {
+        "revenueGrowth": 0.08167323631476142,
+        "netIncomeGrowth": 0.09936201981810777,
+        "freeCashFlowMargin": 0.028473849619416135,
+        "debtToEquity": 1.6436359895761898,
+        "fundamentalsScore": 71,
+        "riskScore": 78
+      }
+    },
+    "GRAB": {
+      "ticker": "GRAB",
+      "cik": "0001855612",
+      "entityName": "GRAB HOLDINGS LIMITED",
+      "fiscalYear": null,
+      "periodEnd": null,
+      "facts": {
+        "revenue": null,
+        "netIncome": null,
+        "operatingCashFlow": null,
+        "capex": null,
+        "assets": null,
+        "liabilities": null,
+        "equity": null,
+        "freeCashFlow": null
+      },
+      "metrics": {
+        "revenueGrowth": null,
+        "netIncomeGrowth": null,
+        "freeCashFlowMargin": null,
+        "debtToEquity": null,
+        "fundamentalsScore": 55,
+        "riskScore": 90
+      }
+    },
+    "SPCX": {
+      "ticker": "SPCX",
+      "cik": "0001181412",
+      "entityName": "SPACE EXPLORATION TECHNOLOGIES CORP",
+      "fiscalYear": null,
+      "periodEnd": null,
+      "facts": {
+        "revenue": null,
+        "netIncome": null,
+        "operatingCashFlow": null,
+        "capex": null,
+        "assets": null,
+        "liabilities": null,
+        "equity": null,
+        "freeCashFlow": null
+      },
+      "metrics": {
+        "revenueGrowth": null,
+        "netIncomeGrowth": null,
+        "freeCashFlowMargin": null,
+        "debtToEquity": null,
+        "fundamentalsScore": 55,
+        "riskScore": 90
+      }
+    }
+  }
+}

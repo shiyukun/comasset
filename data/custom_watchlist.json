@@ -1,0 +1,275 @@
+{
+  "version": "watchlist-v2",
+  "updatedAt": "2026-06-27T13:30:00+08:00",
+  "horizonAnalysisAsOf": "2026-06-27",
+  "horizonAnalysisPolicy": "Screen-grade Public Equity Investing judgments for research use; not account-specific trade instructions.",
+  "items": [
+    {
+      "ticker": "GRAB",
+      "displayName": "Grab Holdings Limited",
+      "type": "stock",
+      "market": "United States",
+      "exchange": "Nasdaq",
+      "country": "SG",
+      "currency": "USD",
+      "researchPriority": "high",
+      "triageStatus": "watchlist_needs_trigger",
+      "recommendationEligible": false,
+      "backtestEligible": false,
+      "horizonRecommendations": {
+        "sixMonths": {
+          "action": "hold",
+          "confidence": "medium",
+          "rationale": {
+            "zh": "Q1 收入和盈利能力继续改善，但台湾 foodpanda 交易、银行业务扩张和贷款组合快速增长会在未来两个季度带来整合与信用成本不确定性。已有仓位以持有观察为主，不追涨。",
+            "en": "Q1 revenue and profitability improved, but the Taiwan foodpanda transaction, banking expansion, and rapid loan-book growth add integration and credit-cost uncertainty over the next two quarters. Hold existing exposure rather than chase it."
+          },
+          "upgradeTrigger": {
+            "zh": "维持 2026 年收入与 Adjusted EBITDA 指引，且信用成本、并购整合和自由现金流没有恶化。",
+            "en": "Maintain 2026 revenue and Adjusted EBITDA guidance without deterioration in credit costs, integration, or free cash flow."
+          },
+          "downgradeTrigger": {
+            "zh": "下调全年指引、金融服务亏损重新扩大，或连续两个季度自由现金流转弱。",
+            "en": "A full-year guidance cut, renewed widening of Financial Services losses, or two consecutive quarters of weaker free cash flow."
+          }
+        },
+        "oneYear": {
+          "action": "buy",
+          "confidence": "medium",
+          "rationale": {
+            "zh": "若 2026 年 20%-22% 收入增长和 40%-44% Adjusted EBITDA 增长兑现，平台经营杠杆和回购有望支撑未来一年的风险回报，适合分批建立而不是一次性重仓。",
+            "en": "If 2026 revenue growth of 20%-22% and Adjusted EBITDA growth of 40%-44% are delivered, platform operating leverage and the buyback should support one-year risk/reward. Build gradually rather than in one step."
+          },
+          "upgradeTrigger": {
+            "zh": "Deliveries 利润率继续扩张，金融服务接近盈亏平衡，且并购没有显著摊薄回报。",
+            "en": "Further Deliveries margin expansion, Financial Services approaching breakeven, and no material return dilution from acquisitions."
+          },
+          "downgradeTrigger": {
+            "zh": "用户增长依赖更高补贴，贷款损失率快速上升，或资本配置偏离现金回报纪律。",
+            "en": "User growth requires materially higher incentives, loan losses rise sharply, or capital allocation departs from cash-return discipline."
+          }
+        },
+        "twoPlusYears": {
+          "action": "buy",
+          "confidence": "medium",
+          "rationale": {
+            "zh": "东南亚移动出行、配送、广告和金融服务的交叉销售仍有长期复利空间；核心前提是金融服务风险可控、并购整合不破坏现金流。长期仅建议分批买进。",
+            "en": "Cross-selling across Southeast Asian mobility, deliveries, advertising, and financial services retains long-duration compounding potential. The case requires controlled financial-services risk and M&A that does not impair cash flow; use phased buying only."
+          },
+          "upgradeTrigger": {
+            "zh": "持续正向自由现金流、核心业务份额稳定，并证明新市场扩张可以获得合理资本回报。",
+            "en": "Sustained positive free cash flow, stable core-market share, and evidence that new-market expansion earns acceptable returns."
+          },
+          "downgradeTrigger": {
+            "zh": "监管限制削弱平台经济性，金融服务出现结构性信用损失，或长期 ROIC 无法覆盖资本成本。",
+            "en": "Regulation impairs platform economics, Financial Services develops structural credit losses, or long-run ROIC fails to cover the cost of capital."
+          }
+        }
+      },
+      "summary": {
+        "zh": "东南亚超级应用平台，核心观察点是移动出行、外卖和金融服务之间的经营杠杆，以及并购扩张后的资本配置纪律。",
+        "en": "A Southeast Asian superapp; the key watch items are operating leverage across mobility, deliveries, and financial services, plus capital discipline after acquisitions."
+      },
+      "whyNow": {
+        "zh": "公司正在执行股份回购，同时推进金融服务和区域并购，2026 年的整合质量可能重塑盈利路径。",
+        "en": "The company is executing a buyback while expanding financial services and regional M&A, making 2026 integration quality important to the earnings path."
+      },
+      "watchFor": {
+        "zh": ["Adjusted EBITDA 与自由现金流转换", "金融服务贷款增长和信用成本", "台湾 foodpanda、Stash 与 Superbank 整合进度"],
+        "en": ["Adjusted EBITDA and free-cash-flow conversion", "Financial-services loan growth and credit costs", "Integration of Taiwan foodpanda, Stash, and Superbank"]
+      },
+      "risks": {
+        "zh": ["高强度竞争和补贴可能压缩利润", "金融服务扩张增加信用及监管风险", "并购整合可能稀释管理注意力和资本回报"],
+        "en": ["Competition and incentives may pressure margins", "Financial-services expansion adds credit and regulatory risk", "M&A integration may dilute management focus and returns on capital"]
+      },
+      "nextResearch": {
+        "zh": "复核 Q1 2026 分部数据、2026 指引和三项并购的资金占用。",
+        "en": "Review Q1 2026 segment data, 2026 guidance, and funding needs for the three transactions."
+      },
+      "sources": [
+        { "label": "Grab Quarterly Results", "url": "https://investors.grab.com/financial-information/quarterly-results/default.aspx", "type": "company_ir" },
+        { "label": "Grab Q1 2026 Results", "url": "https://s205.q4cdn.com/179588156/files/doc_financials/2026/q1/Grab-Reports-Q1-2026-Results.pdf", "type": "company_ir" },
+        { "label": "Grab News and Events", "url": "https://investors.grab.com/news-and-events/default.aspx", "type": "company_ir" }
+      ]
+    },
+    {
+      "ticker": "SPCX",
+      "displayName": "SpaceX",
+      "legalName": "Space Exploration Technologies Corp.",
+      "type": "stock",
+      "market": "United States",
+      "exchange": "Nasdaq",
+      "country": "US",
+      "currency": "USD",
+      "researchPriority": "high",
+      "triageStatus": "watchlist_ipo_price_discovery",
+      "recommendationEligible": false,
+      "backtestEligible": false,
+      "horizonRecommendations": {
+        "sixMonths": {
+          "action": "sell",
+          "confidence": "low",
+          "rationale": {
+            "zh": "上市后只有极短价格历史，当前价格仍高于 135 美元 IPO 价，而公司 Q1 仍录得重大净亏损和资本开支压力。短期更适合降低已有暴露、回避新增，等待价格发现和首批上市公司财报。",
+            "en": "Post-IPO price history is extremely short, the current price remains above the $135 IPO price, and Q1 still showed a major net loss and heavy capital demands. Reduce existing exposure or avoid new exposure while price discovery and the first public-company reports develop."
+          },
+          "upgradeTrigger": {
+            "zh": "至少两个季度证明 Connectivity 利润增长可以覆盖 Space 与 AI 的亏损和资本投入。",
+            "en": "At least two quarters showing Connectivity profit growth can absorb Space and AI losses and capital investment."
+          },
+          "downgradeTrigger": {
+            "zh": "AI 亏损继续加速、Starlink ARPU 下滑快于用户增长贡献，或 IPO 后稀释和解禁压力上升。",
+            "en": "AI losses continue to accelerate, Starlink ARPU declines faster than subscriber growth offsets, or post-IPO dilution and lockup pressure increase."
+          }
+        },
+        "oneYear": {
+          "action": "hold",
+          "confidence": "low",
+          "rationale": {
+            "zh": "Connectivity 业务增长和盈利能力很强，但 Space、AI、数据中心及发射基础设施投入令合并报表波动极大。一年视角应等待 2-4 个公开季度建立估值锚，再决定是否增加暴露。",
+            "en": "Connectivity growth and profitability are strong, but Space, AI, data-center, and launch-infrastructure investment make consolidated results highly volatile. Over one year, wait for two to four public quarters to establish a valuation anchor before adding exposure."
+          },
+          "upgradeTrigger": {
+            "zh": "Starlink 用户、ARPU 和利润率形成可持续组合，Starship 进度改善，且自由现金流路径变得可验证。",
+            "en": "A durable combination of Starlink subscribers, ARPU, and margins, better Starship execution, and a verifiable free-cash-flow path."
+          },
+          "downgradeTrigger": {
+            "zh": "合并经营亏损继续扩大、资本开支缺乏回报证据，或治理和股权稀释风险恶化。",
+            "en": "Further widening of consolidated operating losses, capex without evidence of returns, or worsening governance and dilution risk."
+          }
+        },
+        "twoPlusYears": {
+          "action": "hold",
+          "confidence": "low",
+          "rationale": {
+            "zh": "Starlink、可重复使用发射和 Starship 具备长期战略价值，但当前缺少足够上市历史、分部自由现金流和可靠估值锚，尚不足以给出长期买进判断。保留观察仓位，等待证据。",
+            "en": "Starlink, reusable launch, and Starship have long-duration strategic value, but public history, segment free cash flow, and a reliable valuation anchor remain insufficient for a long-term buy call. Keep only a monitoring position and wait for evidence."
+          },
+          "upgradeTrigger": {
+            "zh": "Connectivity 自由现金流能够稳定资助 Space 与 AI，Starship 单位经济性得到验证，估值回报开始可计算。",
+            "en": "Connectivity free cash flow can consistently fund Space and AI, Starship unit economics are proven, and valuation returns become measurable."
+          },
+          "downgradeTrigger": {
+            "zh": "Starship 商业化长期延迟、资本需求持续超预期，或公司治理导致少数股东回报受损。",
+            "en": "Persistent Starship commercialization delays, capital needs that repeatedly exceed expectations, or governance that impairs minority shareholder returns."
+          }
+        }
+      },
+      "summary": {
+        "zh": "新上市的航天、卫星连接与计算基础设施公司；长期叙事强，但上市后价格发现、资本开支和持续亏损使证据仍不完整。",
+        "en": "A newly listed space, satellite-connectivity, and compute-infrastructure company; the long-term narrative is powerful, but post-IPO price discovery, capex, and ongoing losses leave the evidence incomplete."
+      },
+      "whyNow": {
+        "zh": "股票于 2026 年 6 月 12 日开始交易，IPO 后首批公开申报和价格历史正在形成。",
+        "en": "Shares began trading on June 12, 2026, so the first public filings and post-IPO price history are only beginning to form."
+      },
+      "watchFor": {
+        "zh": ["Starlink 用户、ARPU 和利润率", "Starship 发射节奏及单位经济性", "资本开支、现金消耗和新增融资需求", "IPO 后内部人、锁定期和流通股变化"],
+        "en": ["Starlink users, ARPU, and margins", "Starship launch cadence and unit economics", "Capex, cash burn, and financing needs", "Post-IPO insider, lockup, and float changes"]
+      },
+      "risks": {
+        "zh": ["公开交易历史极短，波动和估值锚不足", "公司仍有巨额亏损和高资本开支", "治理集中、执行风险和监管风险较高"],
+        "en": ["Very short trading history and limited valuation anchors", "Large losses and heavy capital expenditure", "Concentrated governance, execution risk, and regulatory exposure"]
+      },
+      "nextResearch": {
+        "zh": "以 S-1 为基础拆分 Space、Connectivity 和 AI 业务，并等待至少一个完整季度的上市公司披露。",
+        "en": "Use the S-1 to separate Space, Connectivity, and AI economics, then wait for at least one full quarter of public-company reporting."
+      },
+      "sources": [
+        { "label": "SpaceX IPO Closing", "url": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Closing-of-Initial-Public-Offering-Including-Full-Exercise-of-Underwriters-Option-to-Purchase-Additional-Shares-2026-RgoR-Y1Vwh/default.aspx", "type": "company_ir" },
+        { "label": "SpaceX Form S-1", "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm", "type": "regulatory_filing" },
+        { "label": "SEC IPO Filing", "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042466/spaceexplorationtechnologi.htm", "type": "regulatory_filing" },
+        { "label": "SEC Form 8-K", "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026043288/spaceexplorationtechnologi.htm", "type": "regulatory_filing" }
+      ]
+    },
+    {
+      "ticker": "AIQ",
+      "displayName": "Global X Artificial Intelligence & Technology ETF",
+      "type": "etf",
+      "market": "United States",
+      "exchange": "Nasdaq",
+      "country": "US",
+      "currency": "USD",
+      "researchPriority": "medium",
+      "triageStatus": "watchlist_overlap_review",
+      "recommendationEligible": false,
+      "backtestEligible": false,
+      "horizonRecommendations": {
+        "sixMonths": {
+          "action": "hold",
+          "confidence": "medium",
+          "rationale": {
+            "zh": "AIQ 三个月涨幅较大后出现短期回撤，且组合约 79% 暴露于信息技术、对标普 500 Beta 约 1.69。半年视角不宜追涨，已有仓位以持有和控制权重为主。",
+            "en": "AIQ has pulled back after a strong three-month advance, while roughly 79% of exposure is in Information Technology and beta versus the S&P 500 is about 1.69. Do not chase over six months; hold existing exposure and control weight."
+          },
+          "upgradeTrigger": {
+            "zh": "主要持仓盈利预期继续上修，同时组合回撤使估值和风险回报重新具有吸引力。",
+            "en": "Continued earnings upgrades across top holdings combined with a pullback that restores attractive valuation and risk/reward."
+          },
+          "downgradeTrigger": {
+            "zh": "半导体盈利预期下修、AI 资本开支周期放缓，或主题拥挤导致波动显著高于历史区间。",
+            "en": "Semiconductor earnings downgrades, a slowdown in the AI capex cycle, or theme crowding that pushes volatility materially above its historical range."
+          }
+        },
+        "oneYear": {
+          "action": "hold",
+          "confidence": "medium",
+          "rationale": {
+            "zh": "AI 主题基本面仍强，但 0.68% 费用率、科技集中和与 QQQM/MSFT 的持仓重叠削弱了新增配置的边际价值。一年内先持有并复核组合重叠。",
+            "en": "AI fundamentals remain strong, but the 0.68% expense ratio, technology concentration, and overlap with QQQM/MSFT reduce the marginal value of adding exposure. Hold over one year while reviewing portfolio overlap."
+          },
+          "upgradeTrigger": {
+            "zh": "与家庭现有科技持仓重叠可控、指数盈利增长超过估值扩张，且再平衡降低单一主题集中。",
+            "en": "Manageable overlap with existing family technology holdings, index earnings growth exceeding multiple expansion, and rebalancing that reduces single-theme concentration."
+          },
+          "downgradeTrigger": {
+            "zh": "持仓重叠过高、相对 QQQM 持续跑输且费用拖累明显，或估值重新脱离盈利增长。",
+            "en": "Excessive holdings overlap, persistent underperformance versus QQQM with visible fee drag, or valuation again disconnecting from earnings growth."
+          }
+        },
+        "twoPlusYears": {
+          "action": "buy",
+          "confidence": "medium",
+          "rationale": {
+            "zh": "两年以上可以把 AIQ 作为分散化的 AI 产业链卫星仓位，覆盖半导体、平台和基础设施；买进应采用分批方式，并受科技总暴露和 0.68% 费用率约束。",
+            "en": "Over two-plus years, AIQ can serve as a diversified satellite allocation across semiconductors, platforms, and AI infrastructure. Buy gradually, constrained by total technology exposure and the 0.68% expense ratio."
+          },
+          "upgradeTrigger": {
+            "zh": "指数成分盈利持续复利、主题收入兑现度提高，并且相较宽基或 QQQM 的净费后超额回报稳定。",
+            "en": "Sustained constituent earnings compounding, stronger realization of AI-linked revenue, and stable after-fee excess returns versus broad-market funds or QQQM."
+          },
+          "downgradeTrigger": {
+            "zh": "AI 主题商业化低于预期、指数方法持续引入弱 AI 暴露公司，或费用和换手长期侵蚀超额收益。",
+            "en": "AI commercialization falls short, the index methodology persistently adds weak AI exposure, or fees and turnover structurally erode excess returns."
+          }
+        }
+      },
+      "expenseRatio": 0.0068,
+      "indexName": "Indxx Artificial Intelligence & Big Data Index",
+      "summary": {
+        "zh": "覆盖人工智能软件、平台、半导体和数据基础设施的主题 ETF；比单一个股分散，但费用和科技集中度明显高于宽基指数。",
+        "en": "A thematic ETF spanning AI software, platforms, semiconductors, and data infrastructure; more diversified than one stock, but cost and technology concentration are materially above broad-market funds."
+      },
+      "whyNow": {
+        "zh": "AI 主题仍处于高关注阶段，重点不是预测主题是否继续上涨，而是核对持仓暴露、估值和家庭组合重叠。",
+        "en": "AI remains a high-attention theme; the useful question is not whether the theme keeps rising, but whether holdings, valuation, and family-portfolio overlap justify the exposure."
+      },
+      "watchFor": {
+        "zh": ["前十大持仓和半导体权重", "与 QQQM、MSFT 和现有科技持仓的重叠", "费用率、跟踪差异和再平衡变化"],
+        "en": ["Top-10 and semiconductor concentration", "Overlap with QQQM, MSFT, and existing technology holdings", "Expense ratio, tracking difference, and rebalance changes"]
+      },
+      "risks": {
+        "zh": ["0.68% 费用率显著高于宽基 ETF", "主题和估值拥挤风险", "指数方法可能纳入 AI 收入暴露较弱的公司"],
+        "en": ["The 0.68% expense ratio is high versus broad-market ETFs", "Theme and valuation crowding risk", "Index methodology may include companies with weak direct AI revenue exposure"]
+      },
+      "nextResearch": {
+        "zh": "用真实持仓计算与家庭组合、QQQM 和 VTI 的重叠率，再决定是否值得继续深入。",
+        "en": "Use actual holdings to calculate overlap with the family portfolio, QQQM, and VTI before deciding whether deeper work is warranted."
+      },
+      "sources": [
+        { "label": "Global X AIQ Fund Page", "url": "https://www.globalxetfs.com/funds/aiq", "type": "issuer" },
+        { "label": "SEC N-PORT Filing", "url": "https://www.sec.gov/Archives/edgar/data/1432353/000175272425016356/0001752724-25-016356-index.html", "type": "regulatory_filing" }
+      ]
+    }
+  ]
+}

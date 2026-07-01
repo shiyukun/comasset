@@ -1,0 +1,70 @@
+{
+  "sources": [
+    {
+      "id": "prices",
+      "purpose": "Adjusted daily or weekly close prices for scoring, simulation, and current price display.",
+      "preferredProvider": "Polygon",
+      "fallbackProvider": "Yahoo Finance public chart endpoint",
+      "cadence": "every 6 hours while the local scheduler is running",
+      "requiredFields": ["ticker", "date", "adjustedClose"],
+      "localInput": "data/live_prices.json",
+      "script": "scripts/fetch_prices_yahoo.js",
+      "status": "connector_ready"
+    },
+    {
+      "id": "fundamentals",
+      "purpose": "Revenue, EPS, margin, cash flow, balance sheet, and valuation inputs for stocks. SEC automation currently covers U.S. stocks; Singapore stocks use manual baseline metrics until SGX/company-announcement ingestion is added.",
+      "preferredProvider": "Financial Modeling Prep",
+      "fallbackProvider": "SEC companyfacts API",
+      "cadence": "weekly refresh after earnings season updates",
+      "requiredFields": ["ticker", "period", "revenueGrowth", "epsRevision", "freeCashFlowMargin", "debtToEquity"],
+      "localInput": "data/live_fundamentals.json",
+      "script": "scripts/fetch_fundamentals_sec.js",
+      "status": "connector_ready"
+    },
+    {
+      "id": "fund_holdings",
+      "purpose": "ETF and mutual fund holdings, fees, concentration, overlap, and style exposure.",
+      "preferredProvider": "Issuer official CSV or factsheets",
+      "fallbackProvider": "SEC N-PORT filings",
+      "cadence": "monthly or when issuer updates holdings",
+      "requiredFields": ["ticker", "asOf", "expenseRatio", "aum", "topHoldings", "sectorExposure"],
+      "localInput": "data/live_holdings.json",
+      "script": "scripts/fetch_holdings_official.js",
+      "status": "connector_ready"
+    },
+    {
+      "id": "macro",
+      "purpose": "Rates, inflation, VIX, dollar, oil, and other macro fields for macro sensitivity.",
+      "preferredProvider": "FRED/Treasury/BLS/BEA",
+      "fallbackProvider": "manual CSV",
+      "cadence": "weekly",
+      "requiredFields": ["date", "tenYearYield", "fedFunds", "cpi", "vix", "dxy"],
+      "localInput": "data/live_macro.json",
+      "script": "scripts/fetch_macro_fred.js",
+      "status": "connector_ready"
+    },
+    {
+      "id": "news_events",
+      "purpose": "Earnings, ratings, regulatory events, product events, and major news risk review.",
+      "preferredProvider": "Yahoo Finance ticker news RSS plus SEC EDGAR submissions",
+      "fallbackProvider": "manual event notes",
+      "cadence": "every 6 hours while the local scheduler is running",
+      "requiredFields": ["ticker", "publishedAt", "eventType", "headline", "summary", "source"],
+      "localInput": "data/live_news_events.json",
+      "script": "scripts/fetch_news_events.js",
+      "status": "connector_ready"
+    },
+    {
+      "id": "codex_public_equity_skill",
+      "purpose": "Use Codex Public Equity Investing skill for explanation, risk review, conflict detection, and bilingual summaries.",
+      "preferredProvider": "Codex Public Equity Investing skill",
+      "fallbackProvider": "manual Codex audit JSON review file",
+      "cadence": "after every changed recommendation snapshot",
+      "requiredFields": ["skillVersion", "calledAt", "inputScope", "summary", "conflicts"],
+      "localInput": "data/codex_public_equity_audit.json -> recommendations[].codexAudit",
+      "script": "scripts/apply_codex_public_equity_audit.js",
+      "status": "workflow_ready"
+    }
+  ]
+}

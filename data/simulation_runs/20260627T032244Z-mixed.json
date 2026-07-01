@@ -1,0 +1,159 @@
+{
+  "runId": "20260627T032244Z-mixed",
+  "owner": "pipeline",
+  "storage": "filesystem",
+  "dataProvenance": {
+    "historyDir": "snapshots/history",
+    "prices": "data/live_prices.json",
+    "priceSource": "Yahoo Finance public chart endpoint",
+    "priceAsOf": "2026-06-26"
+  },
+  "engineVersion": "snapshot-backtest-v1.0",
+  "generatedAt": "2026-06-27T03:22:44.442Z",
+  "strategy": "mixed",
+  "assumptions": {
+    "initialCapital": 10000,
+    "monthlyContribution": 500,
+    "rebalance": "monthly",
+    "topN": 5,
+    "slippage": 0.0005,
+    "baseCurrency": "USD",
+    "allowShort": false
+  },
+  "period": {
+    "start": "2026-06-18",
+    "end": "2026-06-26",
+    "valuationPoints": 2,
+    "historicalSnapshots": 2
+  },
+  "summary": {
+    "finalValue": 9803.870568576238,
+    "investedCapital": 10000,
+    "profit": -196.12943142376207,
+    "moneyWeightedSimpleReturn": -0.01961294314237616,
+    "timeWeightedReturn": -0.01961294314237616,
+    "annualizedReturn": -0.40250153378758746,
+    "annualizedVolatility": 0.09495651329989807,
+    "maxDrawdown": -0.019122504394573525,
+    "maxDrawdownStart": "2026-06-18",
+    "maxDrawdownEnd": "2026-06-26",
+    "sharpe": -4.238798580528962,
+    "turnoverTrades": 3
+  },
+  "equityCurve": [
+    {
+      "date": "2026-06-18",
+      "value": 9995,
+      "investedCapital": 10000,
+      "periodReturn": -0.0004999999999999449,
+      "snapshotId": "2026-W25-scored"
+    },
+    {
+      "date": "2026-06-26",
+      "value": 9803.870568576238,
+      "investedCapital": 10000,
+      "periodReturn": -0.019122504394573525,
+      "snapshotId": "2026-W25-scored"
+    }
+  ],
+  "monthlyRows": [
+    {
+      "month": "2026-06",
+      "return": -0.01961294314237616,
+      "value": 9803.870568576238
+    }
+  ],
+  "trades": [
+    {
+      "date": "2026-06-18",
+      "side": "buy",
+      "ticker": "VFIAX",
+      "shares": 4.801087496130057,
+      "nativePrice": 693.940002,
+      "currency": "USD",
+      "fxToUsd": 1,
+      "grossValueUsd": 3333.3333333333335,
+      "slippageUsd": 1.666666666666515,
+      "snapshotId": "2026-W25-scored"
+    },
+    {
+      "date": "2026-06-18",
+      "side": "buy",
+      "ticker": "MSFT",
+      "shares": 8.781409381536962,
+      "nativePrice": 379.399994,
+      "currency": "USD",
+      "fxToUsd": 1,
+      "grossValueUsd": 3333.3333333333335,
+      "slippageUsd": 1.666666666666515,
+      "snapshotId": "2026-W25-scored"
+    },
+    {
+      "date": "2026-06-18",
+      "side": "buy",
+      "ticker": "VTI",
+      "shares": 9.030650899238742,
+      "nativePrice": 368.928741,
+      "currency": "USD",
+      "fxToUsd": 1,
+      "grossValueUsd": 3333.3333333333335,
+      "slippageUsd": 1.666666666666515,
+      "snapshotId": "2026-W25-scored"
+    }
+  ],
+  "rebalanceLog": [
+    {
+      "date": "2026-06-18",
+      "snapshotId": "2026-W25-scored",
+      "snapshotGeneratedAt": "2026-06-17T07:58:00+08:00",
+      "tickers": [
+        "VFIAX",
+        "MSFT",
+        "VTI"
+      ],
+      "contribution": 0,
+      "status": "executed"
+    }
+  ],
+  "snapshotUsage": [
+    {
+      "snapshotId": "2026-W25-scored",
+      "generatedAt": "2026-06-17T07:58:00+08:00",
+      "tradeDate": "2026-06-18",
+      "noFutureDataRulePassed": true
+    }
+  ],
+  "finalHoldings": [
+    {
+      "ticker": "VFIAX",
+      "shares": 4.801087496130057,
+      "currency": "USD",
+      "nativePrice": 678.51001,
+      "fxToUsd": 1,
+      "marketValueUsd": 3257.58592501008
+    },
+    {
+      "ticker": "MSFT",
+      "shares": 8.781409381536962,
+      "currency": "USD",
+      "nativePrice": 372.970001,
+      "fxToUsd": 1,
+      "marketValueUsd": 3275.2022658132505
+    },
+    {
+      "ticker": "VTI",
+      "shares": 9.030650899238742,
+      "currency": "USD",
+      "nativePrice": 362.220001,
+      "fxToUsd": 1,
+      "marketValueUsd": 3271.082377752908
+    }
+  ],
+  "warnings": [
+    "Only 2 historical snapshots are available; results are not statistically meaningful.",
+    "Only 2 weekly valuation points are available."
+  ],
+  "sourceSnapshotIds": [
+    "2026-W25-scored"
+  ]
+}

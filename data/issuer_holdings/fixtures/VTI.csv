@@ -1,0 +1,3 @@
+fundTicker,holdingTicker,name,weight,sector,country,shares,marketValue,asOf,expenseRatio,aum
+VTI,NVDA,NVIDIA Corp,6.70,Information Technology,US,100,1000,2026-03-31,0.0003,
+VTI,MSFT,Microsoft Corp,6.10,Information Technology,US,100,900,2026-03-31,0.0003,

@@ -1,0 +1,3 @@
+fundTicker,holdingTicker,name,weight,sector,country,shares,marketValue,asOf,expenseRatio,aum
+VFIAX,NVDA,NVIDIA Corp,7.10,Information Technology,US,100,1000,2026-03-31,0.0004,
+VFIAX,MSFT,Microsoft Corp,6.50,Information Technology,US,100,900,2026-03-31,0.0004,

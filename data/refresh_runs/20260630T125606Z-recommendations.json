@@ -1,0 +1,279 @@
+{
+  "runId": "20260630T125606Z-recommendations",
+  "scope": "recommendations",
+  "trigger": "manual_web",
+  "requestedBy": "thomas",
+  "status": "completed",
+  "startedAt": "2026-06-30T12:56:06.100Z",
+  "completedAt": "2026-06-30T12:58:14.065Z",
+  "changed": true,
+  "sourceChanges": [
+    "data/live_prices.json"
+  ],
+  "outputs": {
+    "recommendations": {
+      "changed": true,
+      "snapshotId": "2026-W27-scored-20260630T125631Z",
+      "generatedAt": "2026-06-30T12:58:13.493Z",
+      "codexAuditApplied": true,
+      "codexAuditGeneration": {
+        "attempted": true,
+        "completed": true,
+        "output": "data/codex_public_equity_audit.json"
+      },
+      "codexAuditStatus": "reviewed",
+      "report": "reports/2026-W27-scored-20260630T125631Z.md"
+    }
+  },
+  "logs": [
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/fetch_prices_yahoo.js",
+        "data/raw_candidates.json",
+        "data/live_prices.json",
+        "18",
+        "data/custom_watchlist.json"
+      ],
+      "startedAt": "2026-06-30T12:56:06.168Z",
+      "completedAt": "2026-06-30T12:56:07.359Z",
+      "code": 0,
+      "stdout": "Fetched 16 price series into data/live_prices.json.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/fetch_fundamentals_sec.js",
+        "data/raw_candidates.json",
+        "data/sec_ticker_map.json",
+        "data/live_fundamentals.json",
+        "data/custom_watchlist.json"
+      ],
+      "startedAt": "2026-06-30T12:56:07.359Z",
+      "completedAt": "2026-06-30T12:56:09.223Z",
+      "code": 0,
+      "stdout": "Fetched 4 SEC company facts into data/live_fundamentals.json.",
+      "stderr": "D05.SI: outside SEC companyfacts coverage\nO39.SI: outside SEC companyfacts coverage\nZ74.SI: outside SEC companyfacts coverage\nC6L.SI: outside SEC companyfacts coverage"
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/fetch_holdings_official.js",
+        "config/holdings_sources.json",
+        "data/live_holdings.json"
+      ],
+      "startedAt": "2026-06-30T12:56:09.223Z",
+      "completedAt": "2026-06-30T12:56:28.776Z",
+      "code": 0,
+      "stdout": "Imported official holdings for 4/4 funds into data/live_holdings.json.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/fetch_macro_fred.js",
+        "data/live_macro.json"
+      ],
+      "startedAt": "2026-06-30T12:56:28.776Z",
+      "completedAt": "2026-06-30T12:56:30.230Z",
+      "code": 0,
+      "stdout": "Fetched 8 macro series into data/live_macro.json.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/fetch_news_events.js",
+        "data/raw_candidates.json",
+        "data/sec_ticker_map.json",
+        "data/live_news_events.json",
+        "60",
+        "8",
+        "data/custom_watchlist.json"
+      ],
+      "startedAt": "2026-06-30T12:56:30.230Z",
+      "completedAt": "2026-06-30T12:56:31.682Z",
+      "code": 0,
+      "stdout": "Fetched news/events for 12/12 symbols into data/live_news_events.json.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/build_data_status.js",
+        "web/data_status.js"
+      ],
+      "startedAt": "2026-06-30T12:56:31.682Z",
+      "completedAt": "2026-06-30T12:56:31.782Z",
+      "code": 0,
+      "stdout": "Built web/data_status.js from live source coverage.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/enrich_candidates_real.js"
+      ],
+      "startedAt": "2026-06-30T12:56:31.858Z",
+      "completedAt": "2026-06-30T12:56:31.911Z",
+      "code": 0,
+      "stdout": "Wrote data/raw_candidates_live.json with 9 real-data enriched candidates.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/score_candidates.js",
+        "data/raw_candidates_live.json",
+        "snapshots/scored-live.json",
+        "config/app_config.json",
+        "data/live_prices.json"
+      ],
+      "startedAt": "2026-06-30T12:56:31.911Z",
+      "completedAt": "2026-06-30T12:56:31.957Z",
+      "code": 0,
+      "stdout": "Scored 9 candidates into snapshots/scored-live.json.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../../../Applications/Codex.app/Contents/Resources/codex",
+        "exec",
+        "--ephemeral",
+        "--color",
+        "never",
+        "--sandbox",
+        "read-only",
+        "--cd",
+        "/Users/thomas/Documents/comasset",
+        "--output-schema",
+        "config/codex_audit_schema.json",
+        "--output-last-message",
+        "data/codex_public_equity_audit.generated.json",
+        "Use the Public Equity Investing long-short-pitch workflow as an internal screen-grade audit, not as personal investment advice.\nRead only snapshots/scored-live.json and data/raw_candidates_live.json. Do not edit any repository files.\nReview every recommendation ticker: VTI, VFIAX, QQQM, O39.SI, D05.SI, C6L.SI, Z74.SI, COST, MSFT.\nFor each ticker, pressure-test the deterministic score, action, evidence conflicts, missing data, and suitability for a balanced-growth family research portfolio.\nKeep each Chinese and English summary concise. Treat local structured data as the source of truth and label missing valuation or live evidence explicitly.\nReturn only the JSON object required by the output schema, with one audits entry for every ticker."
+      ],
+      "startedAt": "2026-06-30T12:56:31.958Z",
+      "completedAt": "2026-06-30T12:58:13.440Z",
+      "code": 0,
+      "stdout": "rn Air India or Wizz Air and are weakly related to Singapore Airlines despite ticker tagging.\"},{\"severity\":\"medium\",\"description\":\"Raw-to-scored momentum changes 58→79 without methodology.\"}],\"missingDataWarnings\":[\"Live fundamentals input is null; capacity, load factor, yields, fuel hedging, and balance-sheet evidence are absent.\",\"No live valuation multiples or normalized-cycle valuation evidence.\"],\"familySuitability\":{\"zh\":\"不适合作为平衡增长家庭研究组合核心；最多作为很小的周期观察仓。\",\"en\":\"Unsuitable as a balanced-growth family portfolio core; at most a very small cyclical watch sleeve.\"}},{\"ticker\":\"Z74.SI\",\"summary\":{\"zh\":\"58分及观察动作偏保守且合理；动量55降至44、风险控制67降至42，但估值72缺少底层依据。\",\"en\":\"The 58 score and watch action are conservatively reasonable; momentum falls 55→44 and risk control 67→42, while valuation 72 lacks underlying support.\"},\"inputScope\":[\"snapshots/scored-live.json\",\"data/raw_candidates_live.json\"],\"conflicts\":[{\"severity\":\"medium\",\"description\":\"Raw confidence is medium versus scored low, with unexplained momentum and risk-control reductions.\"},{\"severity\":\"high\",\"description\":\"News tagged to Z74.SI includes StarHub CEO succession and Grab/Superbank items, creating material relevance contamination.\"}],\"missingDataWarnings\":[\"Live fundamentals input is null; segment cash flow, leverage, dividends, and asset-sale progress are absent.\",\"No live valuation multiples, sum-of-parts analysis, or peer comparison.\"],\"familySuitability\":{\"zh\":\"可作为小比例防御型新加坡卫星观察仓，但低增长、证据污染和数据缺口限制适用性。\",\"en\":\"Potential small defensive Singapore satellite, but low growth, contaminated evidence, and data gaps limit suitability.\"}},{\"ticker\":\"COST\",\"summary\":{\"zh\":\"55分及观察动作符合等待安全边际的逻辑；但原始动量72降至40、风险控制79降至37，变化幅度削弱确定性评分的可信度。\",\"en\":\"The 55 score and watch action fit a wait-for-margin-of-safety stance, but momentum drops 72→40 and risk control 79→37, weakening deterministic-score credibility.\"},\"inputScope\":[\"snapshots/scored-live.json\",\"data/raw_candidates_live.json\"],\"conflicts\":[{\"severity\":\"high\",\"description\":\"Large unexplained raw-to-scored changes in momentum and risk control materially drive the low score.\"},{\"severity\":\"medium\",\"description\":\"Several news items are generic market, Target-lease, or consumer-stress stories rather than direct Costco evidence.\"}],\"missingDataWarnings\":[\"No live P/E, free-cash-flow yield, growth-adjusted valuation, or peer comparison.\",\"SEC fundamentals are named as an input, but the authorized files contain no underlying statements or same-store-sales series.\"],\"familySuitability\":{\"zh\":\"商业质量可支持长期观察，但在估值证据缺失且趋势偏弱时，仅适合作为候选卫星仓。\",\"en\":\"Business quality supports long-term monitoring, but absent valuation evidence and weak scored trends limit it to a candidate satellite.\"}},{\"ticker\":\"MSFT\",\"summary\":{\"zh\":\"54分与观察动作和原始98分基本面形成强烈张力；原始买入/高置信度变为观察/低置信度，风险控制86降至7。\",\"en\":\"The 54 score and watch action sharply conflict with raw fundamentals of 98: raw buy/high confidence becomes watch/low confidence, while risk control collapses 86→7.\"},\"inputScope\":[\"snapshots/scored-live.json\",\"data/raw_candidates_live.json\"],\"conflicts\":[{\"severity\":\"high\",\"description\":\"Action changes buy→watch and confidence high→low; momentum changes 77→31 and risk control 86→7 without a reproducible bridge.\"},{\"severity\":\"high\",\"description\":\"The news set contains Tesla and TransAct items plus broad market stories, materially contaminating ticker-specific live evidence.\"},{\"severity\":\"medium\",\"description\":\"The legacy audit cites a thin valuation margin, but no valuation calculation is present in either authorized file.\"}],\"missingDataWarnings\":[\"No live P/E, free-cash-flow yield, Azure growth series, capex trend, or valuation methodology.\",\"SEC fundamentals are named as an input, but underlying filings and calculations are absent from the authorized snapshots.\"],\"familySuitability\":{\"zh\":\"可作为高质量成长候选，但当前审计仅支持观察；若与QQQM或VTI并持，必须控制科技集中度。\",\"en\":\"A high-quality growth candidate, but this audit supports watch only; technology concentration must be controlled alongside QQQM or VTI.\"}}]}",
+      "stderr": "z Air and are weakly related to Singapore Airlines despite ticker tagging.\"},{\"severity\":\"medium\",\"description\":\"Raw-to-scored momentum changes 58→79 without methodology.\"}],\"missingDataWarnings\":[\"Live fundamentals input is null; capacity, load factor, yields, fuel hedging, and balance-sheet evidence are absent.\",\"No live valuation multiples or normalized-cycle valuation evidence.\"],\"familySuitability\":{\"zh\":\"不适合作为平衡增长家庭研究组合核心；最多作为很小的周期观察仓。\",\"en\":\"Unsuitable as a balanced-growth family portfolio core; at most a very small cyclical watch sleeve.\"}},{\"ticker\":\"Z74.SI\",\"summary\":{\"zh\":\"58分及观察动作偏保守且合理；动量55降至44、风险控制67降至42，但估值72缺少底层依据。\",\"en\":\"The 58 score and watch action are conservatively reasonable; momentum falls 55→44 and risk control 67→42, while valuation 72 lacks underlying support.\"},\"inputScope\":[\"snapshots/scored-live.json\",\"data/raw_candidates_live.json\"],\"conflicts\":[{\"severity\":\"medium\",\"description\":\"Raw confidence is medium versus scored low, with unexplained momentum and risk-control reductions.\"},{\"severity\":\"high\",\"description\":\"News tagged to Z74.SI includes StarHub CEO succession and Grab/Superbank items, creating material relevance contamination.\"}],\"missingDataWarnings\":[\"Live fundamentals input is null; segment cash flow, leverage, dividends, and asset-sale progress are absent.\",\"No live valuation multiples, sum-of-parts analysis, or peer comparison.\"],\"familySuitability\":{\"zh\":\"可作为小比例防御型新加坡卫星观察仓，但低增长、证据污染和数据缺口限制适用性。\",\"en\":\"Potential small defensive Singapore satellite, but low growth, contaminated evidence, and data gaps limit suitability.\"}},{\"ticker\":\"COST\",\"summary\":{\"zh\":\"55分及观察动作符合等待安全边际的逻辑；但原始动量72降至40、风险控制79降至37，变化幅度削弱确定性评分的可信度。\",\"en\":\"The 55 score and watch action fit a wait-for-margin-of-safety stance, but momentum drops 72→40 and risk control 79→37, weakening deterministic-score credibility.\"},\"inputScope\":[\"snapshots/scored-live.json\",\"data/raw_candidates_live.json\"],\"conflicts\":[{\"severity\":\"high\",\"description\":\"Large unexplained raw-to-scored changes in momentum and risk control materially drive the low score.\"},{\"severity\":\"medium\",\"description\":\"Several news items are generic market, Target-lease, or consumer-stress stories rather than direct Costco evidence.\"}],\"missingDataWarnings\":[\"No live P/E, free-cash-flow yield, growth-adjusted valuation, or peer comparison.\",\"SEC fundamentals are named as an input, but the authorized files contain no underlying statements or same-store-sales series.\"],\"familySuitability\":{\"zh\":\"商业质量可支持长期观察，但在估值证据缺失且趋势偏弱时，仅适合作为候选卫星仓。\",\"en\":\"Business quality supports long-term monitoring, but absent valuation evidence and weak scored trends limit it to a candidate satellite.\"}},{\"ticker\":\"MSFT\",\"summary\":{\"zh\":\"54分与观察动作和原始98分基本面形成强烈张力；原始买入/高置信度变为观察/低置信度，风险控制86降至7。\",\"en\":\"The 54 score and watch action sharply conflict with raw fundamentals of 98: raw buy/high confidence becomes watch/low confidence, while risk control collapses 86→7.\"},\"inputScope\":[\"snapshots/scored-live.json\",\"data/raw_candidates_live.json\"],\"conflicts\":[{\"severity\":\"high\",\"description\":\"Action changes buy→watch and confidence high→low; momentum changes 77→31 and risk control 86→7 without a reproducible bridge.\"},{\"severity\":\"high\",\"description\":\"The news set contains Tesla and TransAct items plus broad market stories, materially contaminating ticker-specific live evidence.\"},{\"severity\":\"medium\",\"description\":\"The legacy audit cites a thin valuation margin, but no valuation calculation is present in either authorized file.\"}],\"missingDataWarnings\":[\"No live P/E, free-cash-flow yield, Azure growth series, capex trend, or valuation methodology.\",\"SEC fundamentals are named as an input, but underlying filings and calculations are absent from the authorized snapshots.\"],\"familySuitability\":{\"zh\":\"可作为高质量成长候选，但当前审计仅支持观察；若与QQQM或VTI并持，必须控制科技集中度。\",\"en\":\"A high-quality growth candidate, but this audit supports watch only; technology concentration must be controlled alongside QQQM or VTI.\"}}]}\ntokens used\n36,940"
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/apply_codex_public_equity_audit.js",
+        "snapshots/scored-live.json",
+        "data/codex_public_equity_audit.json",
+        "snapshots/scored-live.json",
+        "config/app_config.json"
+      ],
+      "startedAt": "2026-06-30T12:58:13.442Z",
+      "completedAt": "2026-06-30T12:58:13.505Z",
+      "code": 0,
+      "stdout": "Applied Codex Public Equity Investing audit for 9 recommendations into snapshots/scored-live.json.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/validate_snapshot.js",
+        "snapshots/scored-live.json"
+      ],
+      "startedAt": "2026-06-30T12:58:13.506Z",
+      "completedAt": "2026-06-30T12:58:13.554Z",
+      "code": 0,
+      "stdout": "Snapshot 2026-W27-scored-20260630T125631Z is valid (9 recommendations).",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/publish_weekly_snapshot.js",
+        "snapshots/scored-live.json",
+        "snapshots/latest.json",
+        "web/snapshot.js",
+        "web/latest.json"
+      ],
+      "startedAt": "2026-06-30T12:58:13.554Z",
+      "completedAt": "2026-06-30T12:58:13.609Z",
+      "code": 0,
+      "stdout": "Published 2026-W27-scored-20260630T125631Z.\n- snapshots/history/2026-W27-scored-20260630T125631Z.json\n- snapshots/latest.json\n- web/snapshot.js\n- web/latest.json",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/build_data_js.js",
+        "snapshots/latest.json",
+        "web/data.js"
+      ],
+      "startedAt": "2026-06-30T12:58:13.609Z",
+      "completedAt": "2026-06-30T12:58:13.682Z",
+      "code": 0,
+      "stdout": "Wrote web/data.js from snapshots/latest.json.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/run_snapshot_backtest.js",
+        "--strategy",
+        "mixed",
+        "--initial",
+        "10000",
+        "--monthly",
+        "500",
+        "--rebalance",
+        "monthly",
+        "--member",
+        "pipeline"
+      ],
+      "startedAt": "2026-06-30T12:58:13.682Z",
+      "completedAt": "2026-06-30T12:58:13.833Z",
+      "code": 0,
+      "stdout": "Built web/backtest_data.js with 6 snapshots and 7 saved runs.\nSaved backtest 20260630T125813Z-mixed to data/simulation_runs/20260630T125813Z-mixed.json.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/build_data_status.js",
+        "web/data_status.js"
+      ],
+      "startedAt": "2026-06-30T12:58:13.833Z",
+      "completedAt": "2026-06-30T12:58:13.911Z",
+      "code": 0,
+      "stdout": "Built web/data_status.js from live source coverage.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/generate_report.js",
+        "snapshots/scored-live.json",
+        "data/raw_candidates_live.json",
+        "web/data_status.js",
+        "reports/2026-W27-scored-20260630T125631Z.md",
+        "data/live_holdings.json",
+        "data/simulation_runs/latest.json"
+      ],
+      "startedAt": "2026-06-30T12:58:13.911Z",
+      "completedAt": "2026-06-30T12:58:13.981Z",
+      "code": 0,
+      "stdout": "Wrote reports/2026-W27-scored-20260630T125631Z.md.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../../../bin/bash",
+        "scripts/build_static_site.sh"
+      ],
+      "startedAt": "2026-06-30T12:58:13.981Z",
+      "completedAt": "2026-06-30T12:58:14.065Z",
+      "code": 0,
+      "stdout": "Built static site at /Users/thomas/Documents/comasset/dist/aws-site",
+      "stderr": ""
+    }
+  ]
+}

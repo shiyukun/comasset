@@ -1,0 +1,95 @@
+{
+  "runs": [
+    {
+      "runId": "20260701T112916Z-sources",
+      "scope": "sources",
+      "trigger": "scheduler:marketData",
+      "status": "completed",
+      "startedAt": "2026-07-01T11:29:16.503Z",
+      "completedAt": "2026-07-01T11:29:19.685Z",
+      "snapshotId": null,
+      "changed": false
+    },
+    {
+      "runId": "20260701T042917Z-sources",
+      "scope": "sources",
+      "trigger": "scheduler:marketData",
+      "status": "completed",
+      "startedAt": "2026-07-01T04:29:17.873Z",
+      "completedAt": "2026-07-01T06:31:14.554Z",
+      "snapshotId": null,
+      "changed": false
+    },
+    {
+      "runId": "20260630T204315Z-sources",
+      "scope": "sources",
+      "trigger": "scheduler:marketData",
+      "status": "completed",
+      "startedAt": "2026-06-30T20:43:15.484Z",
+      "completedAt": "2026-07-01T00:22:11.122Z",
+      "snapshotId": null,
+      "changed": false
+    },
+    {
+      "runId": "20260630T125856Z-watchlist",
+      "scope": "watchlist",
+      "trigger": "manual_web",
+      "status": "completed",
+      "startedAt": "2026-06-30T12:58:56.430Z",
+      "completedAt": "2026-06-30T12:59:11.890Z",
+      "snapshotId": null,
+      "changed": true
+    },
+    {
+      "runId": "20260630T125606Z-recommendations",
+      "scope": "recommendations",
+      "trigger": "manual_web",
+      "status": "completed",
+      "startedAt": "2026-06-30T12:56:06.100Z",
+      "completedAt": "2026-06-30T12:58:14.065Z",
+      "snapshotId": "2026-W27-scored-20260630T125631Z",
+      "changed": true
+    },
+    {
+      "runId": "20260630T125401Z-all",
+      "scope": "all",
+      "trigger": "no_change_verification",
+      "status": "completed",
+      "startedAt": "2026-06-30T12:54:01.451Z",
+      "completedAt": "2026-06-30T12:54:01.701Z",
+      "snapshotId": null,
+      "changed": false
+    },
+    {
+      "runId": "20260630T125211Z-recommendations",
+      "scope": "recommendations",
+      "trigger": "codex_audit_retry",
+      "status": "completed",
+      "startedAt": "2026-06-30T12:52:11.425Z",
+      "completedAt": "2026-06-30T12:53:50.689Z",
+      "snapshotId": "2026-W27-scored-20260630T125211Z",
+      "changed": true
+    },
+    {
+      "runId": "20260630T125008Z-all",
+      "scope": "all",
+      "trigger": "network_integration",
+      "status": "completed",
+      "startedAt": "2026-06-30T12:50:08.348Z",
+      "completedAt": "2026-06-30T12:50:57.075Z",
+      "snapshotId": "2026-W27-scored-20260630T125054Z",
+      "changed": true
+    },
+    {
+      "runId": "20260630T124909Z-all",
+      "scope": "all",
+      "trigger": "verification",
+      "status": "completed",
+      "startedAt": "2026-06-30T12:49:09.119Z",
+      "completedAt": "2026-06-30T12:49:10.029Z",
+      "snapshotId": "2026-W26-scored-20260630T124909Z",
+      "changed": true
+    }
+  ],
+  "updatedAt": "2026-07-01T11:29:19.686Z"
+}

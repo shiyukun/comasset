@@ -1,0 +1,3762 @@
+window.comassetSnapshot = {
+  "snapshotId": "2026-W27-scored-20260630T125631Z",
+  "asOf": "2026-06-30",
+  "generatedAt": "2026-06-30T12:58:13.493Z",
+  "modelVersion": "comasset-score-v0.2",
+  "codexAuditSkillVersion": "codex-public-equity-investing-0.1.29",
+  "dataCutoff": "2026-06-30",
+  "marketContext": {
+    "baseCurrency": "USD",
+    "benchmark": "SPY",
+    "updateCadence": "weekly",
+    "source": "data/raw_candidates.json",
+    "priceSource": "data/live_prices.json",
+    "newsEventsSource": "data/live_news_events.json"
+  },
+  "recommendations": [
+    {
+      "ticker": "VTI",
+      "name": "Vanguard Total Stock Market ETF",
+      "type": "etf",
+      "market": "US",
+      "exchange": null,
+      "country": "US",
+      "horizon": "ultra",
+      "action": "dca",
+      "score": 74,
+      "confidence": "medium",
+      "price": 367.119995,
+      "currency": "USD",
+      "expectedRange": {
+        "low": 0.06,
+        "high": 0.11,
+        "period": "12m"
+      },
+      "positionHint": "Portfolio core",
+      "factorScores": {
+        "fundamentals": 76,
+        "valuation": 74,
+        "momentum": 64,
+        "fundQuality": 92,
+        "macroSensitivity": 72,
+        "riskControl": 48
+      },
+      "priceSignals": {
+        "status": "ready",
+        "points": 79,
+        "oneWeekReturn": 0.013527673752063096,
+        "oneMonthReturn": 0.013198340935715702,
+        "threeMonthReturn": 0.09886898417376333,
+        "maxDrawdown": -0.17392152582724896,
+        "annualizedVolatility": 0.1600801898758766
+      },
+      "reason": {
+        "zh": "最新结构化评分 74/100；相对优势为基金质量 92、基本面 76，主要约束为风险控制 48。 低费用、全市场暴露、适合作为家庭组合核心仓位。",
+        "en": "Latest structured score is 74/100; relative strengths are fund quality 92 and fundamentals 76, while the main constraint is risk control 48. Low cost, broad-market exposure, and suitable as a family portfolio core."
+      },
+      "structuredAnalysis": {
+        "generatedAt": "2026-06-30T12:56:31.903Z",
+        "provider": "comasset_deterministic_factor_analysis",
+        "score": 74,
+        "strongestFactors": [
+          {
+            "factor": "fundQuality",
+            "value": 92
+          },
+          {
+            "factor": "fundamentals",
+            "value": 76
+          }
+        ],
+        "weakestFactor": {
+          "factor": "riskControl",
+          "value": 48
+        },
+        "summary": {
+          "zh": "最新结构化评分 74/100；相对优势为基金质量 92、基本面 76，主要约束为风险控制 48。",
+          "en": "Latest structured score is 74/100; relative strengths are fund quality 92 and fundamentals 76, while the main constraint is risk control 48."
+        }
+      },
+      "risks": {
+        "zh": [
+          "美股整体估值偏高",
+          "科技权重仍然较大",
+          "无法规避全市场回撤"
+        ],
+        "en": [
+          "Overall U.S. equity valuation is elevated",
+          "Technology weight remains high",
+          "Cannot avoid broad market drawdowns"
+        ]
+      },
+      "exitRules": {
+        "zh": [
+          "费用率相对同类明显失去优势",
+          "跟踪误差异常放大",
+          "家庭组合需要降低股票总暴露"
+        ],
+        "en": [
+          "Expense ratio loses its advantage",
+          "Tracking error expands abnormally",
+          "Family portfolio needs lower equity exposure"
+        ]
+      },
+      "holdings": {
+        "asOf": "2026-03-31",
+        "sourceType": "sec_nport",
+        "source": "https://www.sec.gov/Archives/edgar/data/36405/000003640526000323/primary_doc.xml",
+        "holdingsCount": 3524,
+        "top10Weight": 0.32103891208077,
+        "sectorExposure": {
+          "Equity": 0.9964021426508398,
+          "Short-Term Investment Vehicle": 0.00606692703946,
+          "EP": 2.3481410000000002e-8,
+          "DE": -0.000005785758959999998
+        },
+        "topHoldings": [
+          {
+            "ticker": "67066G104",
+            "name": "NVIDIA Corp",
+            "weight": 0.06419132792125,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 733080870,
+            "marketValue": 127849303728,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "037833100",
+            "name": "Apple Inc",
+            "weight": 0.059406695682499996,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 466211410,
+            "marketValue": 118319793743.9,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "594918104",
+            "name": "Microsoft Corp",
+            "weight": 0.043826103172339995,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 235805345,
+            "marketValue": 87288064558.65,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "023135106",
+            "name": "Amazon.com Inc",
+            "weight": 0.03208255355206,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 306806261,
+            "marketValue": 63898539978.47,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "02079K305",
+            "name": "Alphabet Inc",
+            "weight": 0.026694405704280003,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 184890156,
+            "marketValue": 53167013259.36,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "11135F101",
+            "name": "Broadcom Inc",
+            "weight": 0.023397570191649997,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 150562938,
+            "marketValue": 46600734940.38,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "02079K107",
+            "name": "Alphabet Inc",
+            "weight": 0.021139380332500003,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 146772356,
+            "marketValue": 42103118042.16,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "30303M102",
+            "name": "Meta Platforms Inc",
+            "weight": 0.019951667253330002,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 69455474,
+            "marketValue": 39737560339.62,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "88160R101",
+            "name": "Tesla Inc",
+            "weight": 0.01668246357891,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 89378120,
+            "marketValue": 33226316110,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "084670702",
+            "name": "Berkshire Hathaway Inc",
+            "weight": 0.013666744691949999,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 56802870,
+            "marketValue": 27219935304,
+            "identifierType": "CUSIP"
+          }
+        ]
+      },
+      "newsEvents": {
+        "status": "ready",
+        "asOf": "2026-06-30T12:56:30.263Z",
+        "itemCount": 8,
+        "highImpactCount": 0,
+        "latestPublishedAt": "2026-06-30T11:03:58.000Z",
+        "items": [
+          {
+            "id": "yahoo-rss-f9da51a9-b48e-3dbf-bfc8-feb59805bc69",
+            "ticker": "VTI",
+            "kind": "news",
+            "category": "product",
+            "headline": "SpaceX landed in millions of 401(k)s through index funds — and the same rules open the door to OpenAI and Anthropic",
+            "summary": "SpaceX landed in your index funds 5 trading days after its IPO. OpenAI and Anthropic — worth a combined $3.6 trillion alongside it — are built to follow the same path into the funds you already own.",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-28T21:45:00.000Z",
+            "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/spacex-landed-millions-401-k-214500017.html?.tsrc=rss",
+            "relatedTickers": [
+              "VTI"
+            ],
+            "confidence": "medium",
+            "impact": "medium",
+            "decisionPressure": 69,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 3,
+            "actionabilityScore": 3,
+            "priority": "medium"
+          },
+          {
+            "id": "yahoo-rss-51d98c40-5d14-3de2-a165-6187dbf613c1",
+            "ticker": "VTI",
+            "kind": "news",
+            "category": "other",
+            "headline": "VTI vs. SPTM: Which Total Stock Market ETF Is the Better Buy for Investors?",
+            "summary": "Compare diversification, expense ratios, and holdings for these two low-cost ETFs that offer total market exposure.",
+            "publisher": "fool.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-30T11:03:58.000Z",
+            "sourceUrl": "https://www.fool.com/coverage/etfs/2026/06/30/vti-vs-sptm-which-total-stock-market-etf-is-the-better-buy-for-investors/?.tsrc=rss",
+            "relatedTickers": [
+              "VTI"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-7585f80c-9bc0-3e03-af68-50f4ede56689",
+            "ticker": "VTI",
+            "kind": "news",
+            "category": "macro",
+            "headline": "You Make $200K and Still Have No Real Portfolio. These 3 ETFs Fix That in an Afternoon",
+            "summary": "You pull in $200,000 a year, your checking account looks healthy, and yet your “investments” consist of a 401(k) you barely glance at and a savings account quietly losing ground to inflation. That holding pattern is not a portfolio strategy, and the fix takes one afternoon, three tickers, and a willingness to stop overthinking it. ... You Make $200K and Still Have No Real Portfolio. These 3 ETFs Fix That in an Afternoon",
+            "publisher": "247wallst.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-29T23:05:53.000Z",
+            "sourceUrl": "https://247wallst.com/investing/etf/2026/06/29/you-make-200k-and-still-have-no-real-portfolio-these-3-etfs-fix-that-in-an-afternoon/?.tsrc=rss",
+            "relatedTickers": [
+              "VTI"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-891a7fab-780b-30a1-9b04-34538b8b8067",
+            "ticker": "VTI",
+            "kind": "news",
+            "category": "other",
+            "headline": "Which Is the Better Total Market ETF: Vanguard's VTI or State Street's SPTM?",
+            "summary": "Compare diversification, income, and fund size as two low-cost ETFs compete for total market exposure. Subtle differences could impact your portfolio strategy.",
+            "publisher": "fool.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-29T19:29:43.000Z",
+            "sourceUrl": "https://www.fool.com/coverage/etfs/2026/06/29/which-is-the-better-total-market-etf-vanguard-s-vti-or-state-street-s-sptm/?.tsrc=rss",
+            "relatedTickers": [
+              "VTI"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-5f0905ed-c925-33f5-80fb-eb9b98ff6c04",
+            "ticker": "VTI",
+            "kind": "news",
+            "category": "other",
+            "headline": "Is Now a Better Time to Invest in the S&P 500 or Entire Stock Market?",
+            "summary": "There's lots of overlap between them, but the answer comes down to one thing.",
+            "publisher": "fool.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-29T12:50:00.000Z",
+            "sourceUrl": "https://www.fool.com/investing/2026/06/29/is-now-time-to-invest-in-sp-500-or-entire-market/?.tsrc=rss",
+            "relatedTickers": [
+              "VTI"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-5ae8f8b8-7e10-3560-8ee5-60bd403da99c",
+            "ticker": "VTI",
+            "kind": "news",
+            "category": "other",
+            "headline": "Vanguard VTI vs. Schwab SCHB: Which Broad Market ETF Is the Better Buy for Investors?",
+            "summary": "Compare portfolio depth, sector weights, and holdings to see how these two low-cost ETFs stack up for investors seeking total market exposure.",
+            "publisher": "fool.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-29T07:20:01.000Z",
+            "sourceUrl": "https://www.fool.com/coverage/etfs/2026/06/29/vanguard-vti-vs-schwab-schb-which-broad-market-etf-is-the-better-buy-for-investors/?.tsrc=rss",
+            "relatedTickers": [
+              "VTI"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-a8e34480-d697-32eb-957e-56b4c2c31d90",
+            "ticker": "VTI",
+            "kind": "news",
+            "category": "other",
+            "headline": "This Unstoppable Vanguard ETF Could Set You Up for Life With $300 a Month. Here's How.",
+            "summary": "The right investment could help build life-changing wealth.",
+            "publisher": "fool.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-28T22:50:00.000Z",
+            "sourceUrl": "https://www.fool.com/investing/2026/06/28/this-unstoppable-vanguard-etf-could-set-you-up-for/?.tsrc=rss",
+            "relatedTickers": [
+              "VTI"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-8904f397-1768-3f3d-82fb-2ab1388378dd",
+            "ticker": "VTI",
+            "kind": "news",
+            "category": "other",
+            "headline": "Could Buying VTI Today Set You Up for Life?",
+            "summary": "History gives one clear, encouraging answer.",
+            "publisher": "fool.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-27T09:28:00.000Z",
+            "sourceUrl": "https://www.fool.com/investing/2026/06/27/could-buying-vti-today-set-you-up-for-life/?.tsrc=rss",
+            "relatedTickers": [
+              "VTI"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          }
+        ]
+      },
+      "codexAudit": {
+        "skillVersion": "codex-public-equity-investing-0.1.29",
+        "calledAt": "2026-06-30T12:58:13.441Z",
+        "inputScope": [
+          "snapshots/scored-live.json",
+          "data/raw_candidates_live.json"
+        ],
+        "summary": {
+          "zh": "74分及定投动作适合作为核心筛选结论，但风险控制由原始88降至48，且估值依据缺失，置信度应维持中等。",
+          "en": "The 74 score and DCA action are reasonable for a core screen, but risk control falls from raw 88 to 48 and valuation support is absent; confidence should remain medium."
+        },
+        "conflicts": [
+          {
+            "severity": "medium",
+            "description": "Raw versus scored momentum changes 70→64 and risk control 88→48; the transformation is not explained."
+          },
+          {
+            "severity": "low",
+            "description": "Most live news is generic or promotional ETF commentary rather than material fund evidence."
+          }
+        ],
+        "missingDataWarnings": [
+          "No live valuation multiples, valuation methodology, or benchmark comparison.",
+          "No numeric expense ratio or tracking-error evidence appears in the authorized files."
+        ],
+        "familySuitability": {
+          "zh": "适合作为平衡增长研究组合的主要美股核心，但仍需搭配非股票防御资产并控制与其他美股仓位重叠。",
+          "en": "Suitable as the main U.S. equity core for balanced-growth research, subject to defensive non-equity allocation and overlap control."
+        },
+        "provider": "codex_public_equity_investing_skill",
+        "workflow": "Public Equity Investing long-short-pitch workflow; internal screen-grade audit using only the two authorized local snapshots, not personal investment advice.",
+        "status": "reviewed"
+      }
+    },
+    {
+      "ticker": "VFIAX",
+      "name": "Vanguard 500 Index Fund Admiral Shares",
+      "type": "fund",
+      "market": "US",
+      "exchange": null,
+      "country": "US",
+      "horizon": "ultra",
+      "action": "dca",
+      "score": 74,
+      "confidence": "medium",
+      "price": 678.51001,
+      "currency": "USD",
+      "expectedRange": {
+        "low": 0.06,
+        "high": 0.1,
+        "period": "12m"
+      },
+      "positionHint": "Long-term DCA",
+      "factorScores": {
+        "fundamentals": 74,
+        "valuation": 72,
+        "momentum": 56,
+        "fundQuality": 91,
+        "macroSensitivity": 71,
+        "riskControl": 49
+      },
+      "priceSignals": {
+        "status": "ready",
+        "points": 79,
+        "oneWeekReturn": 0,
+        "oneMonthReturn": -0.006341188021773636,
+        "threeMonthReturn": 0.07818088407360735,
+        "maxDrawdown": -0.16851271444824023,
+        "annualizedVolatility": 0.16011185901568797
+      },
+      "reason": {
+        "zh": "最新结构化评分 74/100；相对优势为基金质量 91、基本面 74，主要约束为风险控制 49。 指数基金费用低、透明度高，适合长期定投观察。",
+        "en": "Latest structured score is 74/100; relative strengths are fund quality 91 and fundamentals 74, while the main constraint is risk control 49. Low-fee index fund with high transparency, suitable for long-term DCA review."
+      },
+      "structuredAnalysis": {
+        "generatedAt": "2026-06-30T12:56:31.903Z",
+        "provider": "comasset_deterministic_factor_analysis",
+        "score": 74,
+        "strongestFactors": [
+          {
+            "factor": "fundQuality",
+            "value": 91
+          },
+          {
+            "factor": "fundamentals",
+            "value": 74
+          }
+        ],
+        "weakestFactor": {
+          "factor": "riskControl",
+          "value": 49
+        },
+        "summary": {
+          "zh": "最新结构化评分 74/100；相对优势为基金质量 91、基本面 74，主要约束为风险控制 49。",
+          "en": "Latest structured score is 74/100; relative strengths are fund quality 91 and fundamentals 74, while the main constraint is risk control 49."
+        }
+      },
+      "risks": {
+        "zh": [
+          "与 VTI 和 QQQM 可能存在持仓重叠",
+          "集中在美国大盘股",
+          "市场下跌时缺少防御机制"
+        ],
+        "en": [
+          "May overlap with VTI and QQQM",
+          "Concentrated in U.S. large caps",
+          "Limited defensive mechanism in market drawdowns"
+        ]
+      },
+      "exitRules": {
+        "zh": [
+          "费用率优势消失",
+          "家庭组合美股大盘暴露过高",
+          "出现更优替代基金"
+        ],
+        "en": [
+          "Fee advantage disappears",
+          "Family portfolio has excessive U.S. large-cap exposure",
+          "A better replacement fund appears"
+        ]
+      },
+      "holdings": {
+        "asOf": "2026-03-31",
+        "sourceType": "sec_nport",
+        "source": "https://www.sec.gov/Archives/edgar/data/36405/000003640526000325/primary_doc.xml",
+        "holdingsCount": 519,
+        "top10Weight": 0.36486060307465,
+        "sectorExposure": {
+          "Equity": 0.9977008773954797,
+          "Short-Term Investment Vehicle": 0.00366614204114,
+          "DE": -0.00000506901968
+        },
+        "topHoldings": [
+          {
+            "ticker": "67066G104",
+            "name": "NVIDIA Corp",
+            "weight": 0.0757745758236,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 617520783,
+            "marketValue": 107695624555.2,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "037833100",
+            "name": "Apple Inc",
+            "weight": 0.06661925479514,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 373078146,
+            "marketValue": 94683502673.34,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "594918104",
+            "name": "Microsoft Corp",
+            "weight": 0.0491477118553,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 188702055,
+            "marketValue": 69851839699.35,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "023135106",
+            "name": "Amazon.com Inc",
+            "weight": 0.03637863159489,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 248252818,
+            "marketValue": 51703614404.86,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "02079K305",
+            "name": "Alphabet Inc",
+            "weight": 0.02993385189783,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 147947856,
+            "marketValue": 42543885471.36,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "11135F101",
+            "name": "Broadcom Inc",
+            "weight": 0.02623863507016,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 120487252,
+            "marketValue": 37292009366.52,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "02079K107",
+            "name": "Alphabet Inc",
+            "weight": 0.02398670780465,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 118843435,
+            "marketValue": 34091427764.1,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "30303M102",
+            "name": "Meta Platforms Inc",
+            "weight": 0.022375584798700002,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 55584566,
+            "marketValue": 31801597745.58,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "88160R101",
+            "name": "Tesla Inc",
+            "weight": 0.01869425969651,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 71471326,
+            "marketValue": 26569465440.5,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "084670702",
+            "name": "Berkshire Hathaway Inc",
+            "weight": 0.01571138973787,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 46598543,
+            "marketValue": 22330021805.6,
+            "identifierType": "CUSIP"
+          }
+        ]
+      },
+      "newsEvents": {
+        "status": "ready",
+        "asOf": "2026-06-30T12:56:30.263Z",
+        "itemCount": 8,
+        "highImpactCount": 0,
+        "latestPublishedAt": "2026-06-29T21:22:19.000Z",
+        "items": [
+          {
+            "id": "yahoo-rss-0a34fe2f-3c78-395c-b36d-fa9dbb65c5ff",
+            "ticker": "VFIAX",
+            "kind": "news",
+            "category": "management",
+            "headline": "Is “VOO And Chill” Actually A Good Way to Invest?",
+            "summary": "The Vanguard S&P 500 ETF (VOO) is the largest ETF on the U.S. market, with just over $1 trillion in assets under management. It got there because of several compounding factors: the strong performance of its underlying benchmark, the S&P 500 index, Vanguard’s brand reputation and economies of scale, an ultra-low 0.03% expense ratio, and, ... Is “VOO And Chill” Actually A Good Way to Invest?",
+            "publisher": "247wallst.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-24T12:45:54.000Z",
+            "sourceUrl": "https://247wallst.com/investing/2026/06/24/is-voo-and-chill-actually-a-good-way-to-invest/?.tsrc=rss",
+            "relatedTickers": [
+              "VFIAX"
+            ],
+            "confidence": "medium",
+            "impact": "medium",
+            "decisionPressure": 69,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 3,
+            "actionabilityScore": 3,
+            "priority": "medium"
+          },
+          {
+            "id": "yahoo-rss-f9a9c40a-8c49-3846-9ebf-ba1db97d233f",
+            "ticker": "VFIAX",
+            "kind": "news",
+            "category": "other",
+            "headline": "The Tool Giving Independent Advisors an Edge Over Big Banks",
+            "summary": "The 351 exchange has quietly crossed into the mainstream and advisors who aren't paying attention may already be behind. Ryan Kirlin of Alpha Architect breaks down why this tax-smart ETF strategy is the most powerful tool in the independent advisor's arsenal right now.",
+            "publisher": "etf.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-29T21:22:19.000Z",
+            "sourceUrl": "http://www.etf.com/sections/conferences/tool-giving-independent-advisors-edge-over-big-banks?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss&.tsrc=rss",
+            "relatedTickers": [
+              "VFIAX"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-fdf0c626-b3e3-3573-8428-77a8aa49cdf6",
+            "ticker": "VFIAX",
+            "kind": "news",
+            "category": "macro",
+            "headline": "You’re 55 With $250K Sitting in Cash While Inflation Eats It Alive. These 3 Funds Put It to Work",
+            "summary": "You’re 55. You’ve got $250,000 sitting in a savings account or a CD, feeling responsible. Then you check the latest inflation report: headline PCE running at 4.07% year over year as of May 2026, accelerating from 2.88% in January. Meanwhile the national average 12-month CD pays 1.65% APY. Your “safe” money is losing ground every ... You’re 55 With $250K Sitting in Cash While Inflation Eats It Alive. These 3 Funds Put It to Work",
+            "publisher": "247wallst.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-29T21:17:04.000Z",
+            "sourceUrl": "https://247wallst.com/investing/etf/2026/06/29/youre-55-with-250k-sitting-in-cash-while-inflation-eats-it-alive-these-3-funds-put-it-to-work/?.tsrc=rss",
+            "relatedTickers": [
+              "VFIAX"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-998eec3b-5494-39cc-a9b4-848b7cd646b7",
+            "ticker": "VFIAX",
+            "kind": "news",
+            "category": "other",
+            "headline": "ETF League Tables: Vanguard Sheds $11.6B",
+            "summary": "Table below reflects daily flows on June 26, 2026 and asset totals as of that date.",
+            "publisher": "etf.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-29T21:00:35.000Z",
+            "sourceUrl": "http://www.etf.com/sections/etf-league-tables/etf-league-tables-vanguard-sheds-116b?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss&.tsrc=rss",
+            "relatedTickers": [
+              "VFIAX"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-3b4bbd64-2045-3220-96b8-f6dc0264f134",
+            "ticker": "VFIAX",
+            "kind": "news",
+            "category": "other",
+            "headline": "ETFs Cross $1 Trillion in 2026 Inflows",
+            "summary": "US-listed funds hit the milestone half way through the year.",
+            "publisher": "etf.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-29T21:00:17.000Z",
+            "sourceUrl": "http://www.etf.com/sections/weekly-etf-flows/etfs-cross-1-trillion-2026-inflows?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss&.tsrc=rss",
+            "relatedTickers": [
+              "VFIAX"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-8b656e9a-bbba-32d3-bfa8-2ba649a2c2f4",
+            "ticker": "VFIAX",
+            "kind": "news",
+            "category": "other",
+            "headline": "VOO Became the First ETF to Hit $1 Trillion, but Nearly 40% of It Is Now Tech",
+            "summary": "The Vanguard S&P 500 ETF (NYSEARCA:VOO) just became the first exchange-traded fund in history to cross one trillion dollars in assets, a milestone State Street had penciled in as one of its headline 2026 predictions. The interesting part is what investors think they own when they buy VOO versus what is actually sitting inside the ... VOO Became the First ETF to Hit $1 Trillion, but Nearly 40% of It Is Now Tech",
+            "publisher": "247wallst.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-26T19:00:23.000Z",
+            "sourceUrl": "https://247wallst.com/investing/2026/06/26/voo-became-the-first-etf-to-hit-1-trillion-but-nearly-40-of-it-is-now-tech/?.tsrc=rss",
+            "relatedTickers": [
+              "VFIAX"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-3347ccce-4a95-3469-a6a1-fd2e2aafeca4",
+            "ticker": "VFIAX",
+            "kind": "news",
+            "category": "other",
+            "headline": "VTI vs VOO: Total Market or S 500 — Does the Difference Actually Matter?",
+            "summary": "VTI and VOO are the two most popular index ETFs in the world. Both cost 0.03%. Both will make you wealthy over time. The question of which one to own is the most common first question in investing — and the answer is less dramatic than the debate suggests.",
+            "publisher": "etf.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-24T22:16:37.000Z",
+            "sourceUrl": "http://www.etf.com/sections/news/vti-vs-voo-total-market-or-sp-500-does-difference-actually-matter?utm_source=yahoo-financeutm_medium=rssutm_campaign=yahoo-finance-rss&.tsrc=rss",
+            "relatedTickers": [
+              "VFIAX"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-1ab552c9-b6e6-3fe6-83ab-ffda90ab3b5c",
+            "ticker": "VFIAX",
+            "kind": "news",
+            "category": "other",
+            "headline": "Higher S&P 500 Forecasts Signal Buying Opportunity: ETFs to Consider",
+            "summary": "Markets remain volatile, but rising forecasts suggest opportunities for long-term ETF investors.",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-24T15:14:00.000Z",
+            "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/higher-p-500-forecasts-signal-151400556.html?.tsrc=rss",
+            "relatedTickers": [
+              "VFIAX"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          }
+        ]
+      },
+      "codexAudit": {
+        "skillVersion": "codex-public-equity-investing-0.1.29",
+        "calledAt": "2026-06-30T12:58:13.441Z",
+        "inputScope": [
+          "snapshots/scored-live.json",
+          "data/raw_candidates_live.json"
+        ],
+        "summary": {
+          "zh": "74分及定投动作总体合理，但风险控制86降至49、动量69降至56，且估值与费用证据未展示。",
+          "en": "The 74 score and DCA action are broadly reasonable, but risk control drops 86→49 and momentum 69→56 without displayed valuation or fee evidence."
+        },
+        "conflicts": [
+          {
+            "severity": "medium",
+            "description": "Large unexplained raw-to-scored reductions in momentum and risk control weaken score reproducibility."
+          },
+          {
+            "severity": "low",
+            "description": "Live evidence largely discusses VOO or ETFs rather than VFIAX-specific fund developments."
+          }
+        ],
+        "missingDataWarnings": [
+          "No live valuation calculation or index-relative valuation evidence.",
+          "No numeric expense ratio, minimum investment, distribution, or tracking-error data."
+        ],
+        "familySuitability": {
+          "zh": "可作为美股大盘核心，但与VTI高度重复；平衡增长组合通常应二选一，而非同时作为主要仓位。",
+          "en": "Viable as a U.S. large-cap core, but highly redundant with VTI; a balanced-growth portfolio should generally treat them as alternatives."
+        },
+        "provider": "codex_public_equity_investing_skill",
+        "workflow": "Public Equity Investing long-short-pitch workflow; internal screen-grade audit using only the two authorized local snapshots, not personal investment advice.",
+        "status": "reviewed"
+      }
+    },
+    {
+      "ticker": "QQQM",
+      "name": "Invesco NASDAQ 100 ETF",
+      "type": "etf",
+      "market": "US",
+      "exchange": null,
+      "country": "US",
+      "horizon": "long",
+      "action": "watch",
+      "score": 70,
+      "confidence": "medium",
+      "price": 298.049988,
+      "currency": "USD",
+      "expectedRange": {
+        "low": 0.07,
+        "high": 0.15,
+        "period": "12m"
+      },
+      "positionHint": "Growth sleeve",
+      "factorScores": {
+        "fundamentals": 80,
+        "valuation": 61,
+        "momentum": 76,
+        "fundQuality": 88,
+        "macroSensitivity": 66,
+        "riskControl": 35
+      },
+      "priceSignals": {
+        "status": "ready",
+        "points": 79,
+        "oneWeekReturn": 0.024402734858797626,
+        "oneMonthReturn": 0.02770764044957308,
+        "threeMonthReturn": 0.18598928664657488,
+        "maxDrawdown": -0.21213048013171565,
+        "annualizedVolatility": 0.208839302896466
+      },
+      "reason": {
+        "zh": "最新结构化评分 70/100；相对优势为基金质量 88、基本面 80，主要约束为风险控制 35。 成长股敞口清晰，费用低于同类核心科技指数产品。",
+        "en": "Latest structured score is 70/100; relative strengths are fund quality 88 and fundamentals 80, while the main constraint is risk control 35. Clear growth exposure with a lower fee than comparable core tech index products."
+      },
+      "structuredAnalysis": {
+        "generatedAt": "2026-06-30T12:56:31.903Z",
+        "provider": "comasset_deterministic_factor_analysis",
+        "score": 70,
+        "strongestFactors": [
+          {
+            "factor": "fundQuality",
+            "value": 88
+          },
+          {
+            "factor": "fundamentals",
+            "value": 80
+          }
+        ],
+        "weakestFactor": {
+          "factor": "riskControl",
+          "value": 35
+        },
+        "summary": {
+          "zh": "最新结构化评分 70/100；相对优势为基金质量 88、基本面 80，主要约束为风险控制 35。",
+          "en": "Latest structured score is 70/100; relative strengths are fund quality 88 and fundamentals 80, while the main constraint is risk control 35."
+        }
+      },
+      "risks": {
+        "zh": [
+          "科技权重集中",
+          "利率上行压制估值",
+          "与 MSFT/NVDA 持仓重叠"
+        ],
+        "en": [
+          "Concentrated tech exposure",
+          "Rising rates may pressure valuation",
+          "Overlap with MSFT/NVDA holdings"
+        ]
+      },
+      "exitRules": {
+        "zh": [
+          "组合科技暴露过高",
+          "动量转弱且宏观环境不支持成长股",
+          "跟踪误差异常"
+        ],
+        "en": [
+          "Portfolio tech exposure becomes too high",
+          "Momentum weakens while macro turns hostile to growth",
+          "Tracking error becomes abnormal"
+        ]
+      },
+      "holdings": {
+        "asOf": "2026-02-28",
+        "sourceType": "sec_nport",
+        "source": "https://www.sec.gov/Archives/edgar/data/1378872/000137887226000874/primary_doc.xml",
+        "holdingsCount": 105,
+        "top10Weight": 0.46691907341565003,
+        "sectorExposure": {
+          "Equity": 0.9960632982306499,
+          "Short-Term Investment Vehicle": 0.008854342872689998,
+          "DE": -0.0000448405102
+        },
+        "topHoldings": [
+          {
+            "ticker": "67066G104",
+            "name": "NVIDIA Corp.",
+            "weight": 0.08370170075577,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 33486366,
+            "marketValue": 5933449191.54,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "037833100",
+            "name": "Apple Inc.",
+            "weight": 0.07588497309852,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 20362392,
+            "marketValue": 5379336718.56,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "594918104",
+            "name": "Microsoft Corp.",
+            "weight": 0.05674438565854,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 10242140,
+            "marketValue": 4022498063.6,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "023135106",
+            "name": "Amazon.com, Inc.",
+            "weight": 0.043640953772859994,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 14731531,
+            "marketValue": 3093621510,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "88160R101",
+            "name": "Tesla, Inc.",
+            "weight": 0.03905382965601,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 6877964,
+            "marketValue": 2768449289.64,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "30303M102",
+            "name": "Meta Platforms, Inc.",
+            "weight": 0.03700538269169,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 4047084,
+            "marketValue": 2623238907.12,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "02079K305",
+            "name": "Alphabet Inc.",
+            "weight": 0.03525970464124,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 8017357,
+            "marketValue": 2499491218.32,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "931142103",
+            "name": "Walmart Inc.",
+            "weight": 0.03355893153175,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 18592628,
+            "marketValue": 2378926752.6,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "02079K107",
+            "name": "Alphabet Inc.",
+            "weight": 0.03273413718915,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 7450980,
+            "marketValue": 2320458701.4,
+            "identifierType": "CUSIP"
+          },
+          {
+            "ticker": "11135F101",
+            "name": "Broadcom Inc.",
+            "weight": 0.02933507442012,
+            "sector": "Equity",
+            "country": "US",
+            "shares": 6507607,
+            "marketValue": 2079505816.85,
+            "identifierType": "CUSIP"
+          }
+        ]
+      },
+      "newsEvents": {
+        "status": "ready",
+        "asOf": "2026-06-30T12:56:30.263Z",
+        "itemCount": 8,
+        "highImpactCount": 1,
+        "latestPublishedAt": "2026-06-30T01:18:47.000Z",
+        "items": [
+          {
+            "id": "yahoo-rss-232a03be-42df-3a59-8c9c-19bec6709735",
+            "ticker": "QQQM",
+            "kind": "news",
+            "category": "earnings",
+            "headline": "What Future Earnings Are QQQM's Companies Forecasting?",
+            "summary": "The companies inside this popular tech fund are sending a surprisingly one-sided signal about their earnings to come.",
+            "publisher": "trefis.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-30T01:18:47.000Z",
+            "sourceUrl": "https://www.trefis.com/articles/604958/what-future-earnings-are-qqqms-companies-forecasting/2026-06-29?.tsrc=rss",
+            "relatedTickers": [
+              "QQQM"
+            ],
+            "confidence": "medium",
+            "impact": "high",
+            "decisionPressure": 91,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 4,
+            "actionabilityScore": 4,
+            "priority": "high"
+          },
+          {
+            "id": "yahoo-rss-f52d71b0-1cd5-3b60-8ad0-ddfc98935cd3",
+            "ticker": "QQQM",
+            "kind": "news",
+            "category": "capital_markets",
+            "headline": "The Case for Holding QQQM in a Roth IRA",
+            "summary": "QQQM barely pays a dividend, so most investors assume the Roth math is trivial. They are missing the place where the real tax bill hides.",
+            "publisher": "247wallst.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-25T14:35:23.000Z",
+            "sourceUrl": "https://247wallst.com/investing/2026/06/25/the-case-for-holding-qqqm-in-a-roth-ira/?.tsrc=rss",
+            "relatedTickers": [
+              "QQQM"
+            ],
+            "confidence": "medium",
+            "impact": "medium",
+            "decisionPressure": 69,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 3,
+            "actionabilityScore": 3,
+            "priority": "medium"
+          },
+          {
+            "id": "yahoo-rss-d6137da8-51c0-3b89-9a6d-74b514e24779",
+            "ticker": "QQQM",
+            "kind": "news",
+            "category": "product",
+            "headline": "Why TQQQ’s 112% Gain Masks a Structural Cost That Compounds Every Single Day",
+            "summary": "If you bought ProShares UltraPro QQQ (NASDAQ:TQQQ) thinking you were getting three times the Nasdaq-100 for the long haul, the fund’s own math has a different plan for your money. The product is engineered to deliver 3x the index daily, not annually, and that one word quietly siphons returns every time volatility flares. What You’re ... Why TQQQ’s 112% Gain Masks a Structural Cost That Compounds Every Single Day",
+            "publisher": "247wallst.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-19T00:26:20.000Z",
+            "sourceUrl": "https://247wallst.com/investing/2026/06/18/why-tqqqs-112-gain-masks-a-structural-cost-that-compounds-every-single-day/?.tsrc=rss",
+            "relatedTickers": [
+              "QQQM"
+            ],
+            "confidence": "medium",
+            "impact": "medium",
+            "decisionPressure": 63,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 3,
+            "actionabilityScore": 3,
+            "priority": "medium"
+          },
+          {
+            "id": "yahoo-rss-55228427-8b9b-3d7f-a994-e06bcef0033f",
+            "ticker": "QQQM",
+            "kind": "news",
+            "category": "other",
+            "headline": "SpaceX Set for Rapid Entry into Nasdaq-100: ETFs in Focus",
+            "summary": "SpaceX is set for a rapid Nasdaq-100 entry, potentially sparking billions in passive inflows. Which ETFs stand to benefit the most?",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-29T14:00:00.000Z",
+            "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/spacex-set-rapid-entry-nasdaq-140000927.html?.tsrc=rss",
+            "relatedTickers": [
+              "QQQM"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-75e36d46-f9e4-3a20-a096-c8147a490d96",
+            "ticker": "QQQM",
+            "kind": "news",
+            "category": "other",
+            "headline": "Nasdaq-100 ETFs Keep Sizzling: Can the Rally Last?",
+            "summary": "The Invesco QQQ ETF has more than doubled the S&P 500's 10-year returns. Can its tech-heavy portfolio continue to outperform over the next decade?",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-29T13:42:00.000Z",
+            "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-100-etfs-keep-sizzling-134200838.html?.tsrc=rss",
+            "relatedTickers": [
+              "QQQM"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-4f5ba68a-7c42-30a4-a096-646676b87ffe",
+            "ticker": "QQQM",
+            "kind": "news",
+            "category": "other",
+            "headline": "JEPQ’s 0.35% Fee Hides a 9-Point Performance Gap: What Monthly Income Really Costs",
+            "summary": "JEPQ markets itself as a premium income machine on the Nasdaq-100. The pitch sells. The math is less convincing. Over the past year, holders collected fat monthly checks and still trailed the index the fund is built on by roughly nine percentage points. The JPMorgan Nasdaq Equity Premium Income ETF (NASDAQ:JEPQ) charges a 0.35% net ... JEPQ’s 0.35% Fee Hides a 9-Point Performance Gap: What Monthly Income Really Costs",
+            "publisher": "247wallst.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-23T22:25:44.000Z",
+            "sourceUrl": "https://247wallst.com/investing/2026/06/23/jepqs-0-35-fee-hides-a-9-point-performance-gap-what-monthly-income-really-costs/?.tsrc=rss",
+            "relatedTickers": [
+              "QQQM"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-ba5f3e69-04ef-3c49-b2e9-66dbb8647c69",
+            "ticker": "QQQM",
+            "kind": "news",
+            "category": "other",
+            "headline": "Should Invesco NASDAQ 100 ETF (QQQM) Be on Your Investing Radar?",
+            "summary": "Style Box ETF report for QQQM",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-23T10:20:02.000Z",
+            "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/invesco-nasdaq-100-etf-qqqm-102002169.html?.tsrc=rss",
+            "relatedTickers": [
+              "QQQM"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 43,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-ba3397f3-cc96-32a3-bcc1-dd3197e44933",
+            "ticker": "QQQM",
+            "kind": "news",
+            "category": "other",
+            "headline": "QQQ vs QQQM: Same Nasdaq-100 Index, One Clear Winner for Long-Term Investors",
+            "summary": "QQQ and QQQM track the identical Nasdaq-100 index. The only material differences are expense ratio, share price, and options liquidity. Here's which one belongs in your portfolio, and why most long-term investors should make the switch.",
+            "publisher": "etf.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-22T19:42:57.000Z",
+            "sourceUrl": "http://www.etf.com/sections/news/qqq-vs-qqqm-same-nasdaq-100-index-one-clear-winner-long-term-investors?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss&.tsrc=rss",
+            "relatedTickers": [
+              "QQQM"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 43,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          }
+        ]
+      },
+      "codexAudit": {
+        "skillVersion": "codex-public-equity-investing-0.1.29",
+        "calledAt": "2026-06-30T12:58:13.441Z",
+        "inputScope": [
+          "snapshots/scored-live.json",
+          "data/raw_candidates_live.json"
+        ],
+        "summary": {
+          "zh": "70分反映质量与动量优势；由原始买入降为观察较审慎，因为风险控制73降至35且前十大持仓占46.7%。",
+          "en": "The 70 score captures quality and momentum; downgrading raw buy to watch is prudent because risk control falls 73→35 and the top ten represent 46.7%."
+        },
+        "conflicts": [
+          {
+            "severity": "high",
+            "description": "Raw action is buy while the scored action is watch; risk control changes 73→35 and momentum 84→76 without an explained bridge."
+          },
+          {
+            "severity": "medium",
+            "description": "Several news items are comparative or adjacent-product commentary rather than issuer-level evidence."
+          }
+        ],
+        "missingDataWarnings": [
+          "No live index valuation, earnings-growth aggregate, or valuation methodology.",
+          "No numeric expense ratio or current sector-allocation table."
+        ],
+        "familySuitability": {
+          "zh": "仅适合作为受限成长卫星仓；不宜替代广泛市场核心，并需控制与MSFT及VTI的重叠。",
+          "en": "Suitable only as a capped growth satellite, not a broad-market core; overlap with MSFT and VTI requires control."
+        },
+        "provider": "codex_public_equity_investing_skill",
+        "workflow": "Public Equity Investing long-short-pitch workflow; internal screen-grade audit using only the two authorized local snapshots, not personal investment advice.",
+        "status": "reviewed"
+      },
+      "reviewOverride": {
+        "reason": "Codex Public Equity Investing audit reported a high-severity conflict; action was downgraded to watch.",
+        "appliedAt": "2026-06-30T12:58:13.441Z"
+      }
+    },
+    {
+      "ticker": "O39.SI",
+      "name": "Oversea-Chinese Banking Corporation Limited",
+      "type": "stock",
+      "market": "Singapore",
+      "exchange": "SGX",
+      "country": "SG",
+      "horizon": "ultra",
+      "action": "watch",
+      "score": 66,
+      "confidence": "low",
+      "price": 24.790001,
+      "currency": "SGD",
+      "expectedRange": {
+        "low": 0.04,
+        "high": 0.09,
+        "period": "12m"
+      },
+      "positionHint": "Singapore bank income watch",
+      "factorScores": {
+        "fundamentals": 78,
+        "valuation": 70,
+        "momentum": 66,
+        "fundQuality": null,
+        "macroSensitivity": 73,
+        "riskControl": 50
+      },
+      "priceSignals": {
+        "status": "ready",
+        "points": 79,
+        "oneWeekReturn": -0.0028157681892290176,
+        "oneMonthReturn": 0.03550542875917184,
+        "threeMonthReturn": 0.13232120539264414,
+        "maxDrawdown": -0.15341223349297162,
+        "annualizedVolatility": 0.1742620944207621
+      },
+      "reason": {
+        "zh": "最新结构化评分 66/100；相对优势为基本面 78、宏观适应性 73，主要约束为风险控制 50。 新加坡大型银行，收益和分红稳定性较适合超长期收入型观察。",
+        "en": "Latest structured score is 66/100; relative strengths are fundamentals 78 and macro resilience 73, while the main constraint is risk control 50. Large Singapore bank with earnings and dividend stability, suitable for ultra-long income-oriented monitoring."
+      },
+      "structuredAnalysis": {
+        "generatedAt": "2026-06-30T12:56:31.903Z",
+        "provider": "comasset_deterministic_factor_analysis",
+        "score": 66,
+        "strongestFactors": [
+          {
+            "factor": "fundamentals",
+            "value": 78
+          },
+          {
+            "factor": "macroSensitivity",
+            "value": 73
+          }
+        ],
+        "weakestFactor": {
+          "factor": "riskControl",
+          "value": 50
+        },
+        "summary": {
+          "zh": "最新结构化评分 66/100；相对优势为基本面 78、宏观适应性 73，主要约束为风险控制 50。",
+          "en": "Latest structured score is 66/100; relative strengths are fundamentals 78 and macro resilience 73, while the main constraint is risk control 50."
+        }
+      },
+      "risks": {
+        "zh": [
+          "利率下行可能压缩银行收益",
+          "区域经济放缓可能影响贷款增长",
+          "本地财务和拨备数据需要人工复核"
+        ],
+        "en": [
+          "Falling rates may compress bank earnings",
+          "Regional slowdown may affect loan growth",
+          "Local financial and provisioning data needs manual review"
+        ]
+      },
+      "exitRules": {
+        "zh": [
+          "不良贷款率持续上行",
+          "分红政策明显保守化",
+          "估值显著高于历史中枢"
+        ],
+        "en": [
+          "Non-performing loans trend higher",
+          "Dividend policy turns materially more conservative",
+          "Valuation rises materially above historical norms"
+        ]
+      },
+      "newsEvents": {
+        "status": "ready",
+        "asOf": "2026-06-30T12:56:30.263Z",
+        "itemCount": 8,
+        "highImpactCount": 2,
+        "latestPublishedAt": "2026-06-30T09:30:00.000Z",
+        "items": [
+          {
+            "id": "yahoo-rss-85d989ac-b902-346a-a5f3-3a5cf51e0a51",
+            "ticker": "O39.SI",
+            "kind": "news",
+            "category": "earnings",
+            "headline": "Why Singapore Banks Remain the Market’s Shock-Proof Income Engine",
+            "summary": "Discover why resilient Singapore banks consistently deliver stable profits and attractive dividends, making them the ultimate defensive income engine for your investment portfolio. The post Why Singapore Banks Remain the Market’s Shock-Proof Income Engine appeared first on The Smart Investor.",
+            "publisher": "sg.finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-30T09:30:00.000Z",
+            "sourceUrl": "https://sg.finance.yahoo.com/news/why-singapore-banks-remain-market-093000353.html?.tsrc=rss",
+            "relatedTickers": [
+              "O39.SI"
+            ],
+            "confidence": "medium",
+            "impact": "high",
+            "decisionPressure": 91,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 4,
+            "actionabilityScore": 4,
+            "priority": "high"
+          },
+          {
+            "id": "yahoo-rss-3f395cc4-68f5-37ec-ab9c-2b4386bc44cd",
+            "ticker": "O39.SI",
+            "kind": "news",
+            "category": "regulatory",
+            "headline": "Beyond Blue-Chip: 3 SGX Stocks Quietly Buying Back Their Own Shares",
+            "summary": "While headline buybacks grab attention, these three lesser-known SGX stocks are using strong cash flow to reward shareholders through share repurchases. The post Beyond Blue-Chip: 3 SGX Stocks Quietly Buying Back Their Own Shares appeared first on The Smart Investor.",
+            "publisher": "sg.finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-17T03:30:00.000Z",
+            "sourceUrl": "https://sg.finance.yahoo.com/news/beyond-blue-chip-3-sgx-033000605.html?.tsrc=rss",
+            "relatedTickers": [
+              "O39.SI"
+            ],
+            "confidence": "medium",
+            "impact": "high",
+            "decisionPressure": 85,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 4,
+            "actionabilityScore": 4,
+            "priority": "high"
+          },
+          {
+            "id": "yahoo-rss-a85e76af-dd24-3949-b8e1-ab1b12009955",
+            "ticker": "O39.SI",
+            "kind": "news",
+            "category": "product",
+            "headline": "OCBC launches free ESG tool for more sustainable SMEs and supply chains",
+            "summary": "OCBC PULSE is the second zero-cost platform to help SMEs become more sustainable to be launched in as many months. A similar initiative, Green 100, was launched in May.",
+            "publisher": "sg.finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-17T23:54:04.000Z",
+            "sourceUrl": "https://sg.finance.yahoo.com/news/ocbc-launches-free-esg-tool-235404485.html?.tsrc=rss",
+            "relatedTickers": [
+              "O39.SI"
+            ],
+            "confidence": "medium",
+            "impact": "medium",
+            "decisionPressure": 63,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 3,
+            "actionabilityScore": 3,
+            "priority": "medium"
+          },
+          {
+            "id": "yahoo-rss-0dd9b39a-b8c6-3d07-8775-e088e2835673",
+            "ticker": "O39.SI",
+            "kind": "news",
+            "category": "other",
+            "headline": "XTransfer and OCBC Win Regional Best Payments and Collections Solution",
+            "summary": "XTransfer, the World's Leading B2B Cross-Border Trade Payment Platform, today announced that, together with OCBC, it has been awarded \"Best Payments and Collections Solution, Regional\" at The Asset Triple A Treasurise Awards 2026for the second consecutive year. The award recognises the two organisations' continued innovation and close collaboration in delivering efficient, secure, and convenient cross-border payment and collection solutions that empower SMEs engaged in international trade.",
+            "publisher": "sg.finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-25T08:29:00.000Z",
+            "sourceUrl": "https://sg.finance.yahoo.com/news/xtransfer-ocbc-win-regional-best-082900203.html?.tsrc=rss",
+            "relatedTickers": [
+              "O39.SI"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-b83ec1f5-c2bf-380b-aafb-3b4b048b509e",
+            "ticker": "O39.SI",
+            "kind": "news",
+            "category": "other",
+            "headline": "MAS and ABS to enhance Singapore's national instant payments infrastructure",
+            "summary": "The four areas, which were identified through consultations with 37 organisations and benchmarking against 11 jurisdictions, include improving interoperability between PayNow and NETS' QR codes.",
+            "publisher": "sg.finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-25T04:32:00.000Z",
+            "sourceUrl": "https://sg.finance.yahoo.com/news/mas-abs-enhance-singapores-national-043200342.html?.tsrc=rss",
+            "relatedTickers": [
+              "O39.SI"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-e62fc0a7-301a-362a-9e90-0ef091ce6c7a",
+            "ticker": "O39.SI",
+            "kind": "news",
+            "category": "other",
+            "headline": "Singapore Shares Open Flat Amid Mixed Broader Asian Markets",
+            "summary": "Singapore shares opened flat with positive bias on Wednesday, tracking mixed sentiment across major",
+            "publisher": "sg.finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-24T01:57:54.000Z",
+            "sourceUrl": "https://sg.finance.yahoo.com/news/singapore-shares-open-flat-amid-015754658.html?.tsrc=rss",
+            "relatedTickers": [
+              "O39.SI"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-e1ed7345-e14b-3195-83bc-4401f68b0284",
+            "ticker": "O39.SI",
+            "kind": "news",
+            "category": "other",
+            "headline": "Why I’m Swapping One Singapore Bank for This US Tech Giant",
+            "summary": "Singapore banks have been stellar performers over the past few years. But as valuations rise and new opportunities emerge, it may be time to consider whether a high-quality US technology company offers a better risk-reward proposition today. The post Why I’m Swapping One Singapore Bank for This US Tech Giant appeared first on The Smart Investor.",
+            "publisher": "sg.finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-23T23:30:00.000Z",
+            "sourceUrl": "https://sg.finance.yahoo.com/news/why-m-swapping-one-singapore-233000356.html?.tsrc=rss",
+            "relatedTickers": [
+              "O39.SI"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-be38740a-1a23-3caf-af54-4d88db18c883",
+            "ticker": "O39.SI",
+            "kind": "news",
+            "category": "macro",
+            "headline": "OCBC boosts hiring for Indonesia wealth business as assets rise",
+            "summary": "The economic headwinds and accelerating inflation are hitting the bank's corporate clients, especially small and medium-sized companies.",
+            "publisher": "sg.finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-22T19:07:56.000Z",
+            "sourceUrl": "https://sg.finance.yahoo.com/news/ocbc-boosts-hiring-indonesia-wealth-190756619.html?.tsrc=rss",
+            "relatedTickers": [
+              "O39.SI"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 43,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          }
+        ]
+      },
+      "codexAudit": {
+        "skillVersion": "codex-public-equity-investing-0.1.29",
+        "calledAt": "2026-06-30T12:58:13.441Z",
+        "inputScope": [
+          "snapshots/scored-live.json",
+          "data/raw_candidates_live.json"
+        ],
+        "summary": {
+          "zh": "66分及观察动作方向合理，但本地基本面和估值无底层数据；原始风险控制72变为50，降低了可复核性。",
+          "en": "The 66 score and watch action are directionally reasonable, but local fundamentals and valuation lack underlying data; risk control changes 72→50."
+        },
+        "conflicts": [
+          {
+            "severity": "medium",
+            "description": "Raw confidence is medium versus scored low, while momentum changes 58→66 and risk control 72→50 without explanation."
+          },
+          {
+            "severity": "low",
+            "description": "Some high-impact news is broad Singapore-bank commentary rather than OCBC-specific operating evidence."
+          }
+        ],
+        "missingDataWarnings": [
+          "Live fundamentals input is explicitly null: no NIM, CET1, asset-quality, provisioning, or dividend data.",
+          "No live valuation multiples or bank-relative valuation evidence."
+        ],
+        "familySuitability": {
+          "zh": "可作为小比例新加坡收入与地域分散观察仓，但在财务数据补齐前不宜作为核心。",
+          "en": "Potential small Singapore income and geographic-diversification sleeve, but not core-suitable until financial evidence is supplied."
+        },
+        "provider": "codex_public_equity_investing_skill",
+        "workflow": "Public Equity Investing long-short-pitch workflow; internal screen-grade audit using only the two authorized local snapshots, not personal investment advice.",
+        "status": "reviewed"
+      }
+    },
+    {
+      "ticker": "D05.SI",
+      "name": "DBS Group Holdings Ltd",
+      "type": "stock",
+      "market": "Singapore",
+      "exchange": "SGX",
+      "country": "SG",
+      "horizon": "ultra",
+      "action": "watch",
+      "score": 65,
+      "confidence": "low",
+      "price": 65.400002,
+      "currency": "SGD",
+      "expectedRange": {
+        "low": 0.04,
+        "high": 0.1,
+        "period": "12m"
+      },
+      "positionHint": "Singapore bank core watch",
+      "factorScores": {
+        "fundamentals": 82,
+        "valuation": 68,
+        "momentum": 68,
+        "fundQuality": null,
+        "macroSensitivity": 73,
+        "riskControl": 44
+      },
+      "priceSignals": {
+        "status": "ready",
+        "points": 79,
+        "oneWeekReturn": -0.00045847470579252203,
+        "oneMonthReturn": 0.025399859288175897,
+        "threeMonthReturn": 0.1563278261424743,
+        "maxDrawdown": -0.17061798746728374,
+        "annualizedVolatility": 0.19311604377996727
+      },
+      "reason": {
+        "zh": "最新结构化评分 65/100；相对优势为基本面 82、宏观适应性 73，主要约束为风险控制 44。 新加坡大型银行，资本实力和分红属性适合作为新加坡市场核心观察。",
+        "en": "Latest structured score is 65/100; relative strengths are fundamentals 82 and macro resilience 73, while the main constraint is risk control 44. Large Singapore bank with capital strength and dividend characteristics, suitable as a core Singapore-market watch candidate."
+      },
+      "structuredAnalysis": {
+        "generatedAt": "2026-06-30T12:56:31.903Z",
+        "provider": "comasset_deterministic_factor_analysis",
+        "score": 65,
+        "strongestFactors": [
+          {
+            "factor": "fundamentals",
+            "value": 82
+          },
+          {
+            "factor": "macroSensitivity",
+            "value": 73
+          }
+        ],
+        "weakestFactor": {
+          "factor": "riskControl",
+          "value": 44
+        },
+        "summary": {
+          "zh": "最新结构化评分 65/100；相对优势为基本面 82、宏观适应性 73，主要约束为风险控制 44。",
+          "en": "Latest structured score is 65/100; relative strengths are fundamentals 82 and macro resilience 73, while the main constraint is risk control 44."
+        }
+      },
+      "risks": {
+        "zh": [
+          "净息差受利率周期影响",
+          "新加坡和亚洲信贷周期可能拖累资产质量",
+          "缺少自动化本地财务数据接入，需人工复核"
+        ],
+        "en": [
+          "Net interest margin is sensitive to the rate cycle",
+          "Singapore and Asia credit cycles may pressure asset quality",
+          "Local financial data is not yet automated and requires manual review"
+        ]
+      },
+      "exitRules": {
+        "zh": [
+          "资产质量明显恶化",
+          "分红能力或资本充足率转弱",
+          "家庭组合金融板块暴露过高"
+        ],
+        "en": [
+          "Asset quality deteriorates materially",
+          "Dividend capacity or capital adequacy weakens",
+          "Family portfolio has excessive financial-sector exposure"
+        ]
+      },
+      "newsEvents": {
+        "status": "ready",
+        "asOf": "2026-06-30T12:56:30.263Z",
+        "itemCount": 8,
+        "highImpactCount": 2,
+        "latestPublishedAt": "2026-06-30T09:43:21.000Z",
+        "items": [
+          {
+            "id": "yahoo-rss-85d989ac-b902-346a-a5f3-3a5cf51e0a51",
+            "ticker": "D05.SI",
+            "kind": "news",
+            "category": "earnings",
+            "headline": "Why Singapore Banks Remain the Market’s Shock-Proof Income Engine",
+            "summary": "Discover why resilient Singapore banks consistently deliver stable profits and attractive dividends, making them the ultimate defensive income engine for your investment portfolio. The post Why Singapore Banks Remain the Market’s Shock-Proof Income Engine appeared first on The Smart Investor.",
+            "publisher": "sg.finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-30T09:30:00.000Z",
+            "sourceUrl": "https://sg.finance.yahoo.com/news/why-singapore-banks-remain-market-093000353.html?.tsrc=rss",
+            "relatedTickers": [
+              "D05.SI"
+            ],
+            "confidence": "medium",
+            "impact": "high",
+            "decisionPressure": 91,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 4,
+            "actionabilityScore": 4,
+            "priority": "high"
+          },
+          {
+            "id": "yahoo-rss-0856d4be-e745-32dc-ae16-3340dd8bc15a",
+            "ticker": "D05.SI",
+            "kind": "news",
+            "category": "regulatory",
+            "headline": "Singapore Lines Up JPMorgan, Deutsche Bank For Gold-Clearing Push",
+            "summary": "Singapore's SGX plans a gold-clearing system by end-2026 as banks join its bullion market expansion.",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-15T13:24:17.000Z",
+            "sourceUrl": "https://finance.yahoo.com/markets/commodities/articles/singapore-lines-jpmorgan-deutsche-bank-132417069.html?.tsrc=rss",
+            "relatedTickers": [
+              "D05.SI"
+            ],
+            "confidence": "medium",
+            "impact": "high",
+            "decisionPressure": 85,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 4,
+            "actionabilityScore": 4,
+            "priority": "high"
+          },
+          {
+            "id": "yahoo-rss-1514543b-0b86-358d-ae49-10f95d29a1de",
+            "ticker": "D05.SI",
+            "kind": "news",
+            "category": "product",
+            "headline": "Thailand seen as Southeast Asia's surprise AI stock winner",
+            "summary": "Delta is now Southeast Asia's second-most valuable company in the MSCI Asean Index, behind DBS.",
+            "publisher": "sg.finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-24T19:24:35.000Z",
+            "sourceUrl": "https://sg.finance.yahoo.com/news/thailand-seen-southeast-asias-surprise-192435502.html?.tsrc=rss",
+            "relatedTickers": [
+              "D05.SI"
+            ],
+            "confidence": "medium",
+            "impact": "medium",
+            "decisionPressure": 69,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 3,
+            "actionabilityScore": 3,
+            "priority": "medium"
+          },
+          {
+            "id": "yahoo-rss-01d80970-d135-3e9a-b62b-80802963f9ae",
+            "ticker": "D05.SI",
+            "kind": "news",
+            "category": "other",
+            "headline": "Singapore Shares Incur Losses as Confusion Reigns Over US-Iran Potential Meeting",
+            "summary": "Singapore shares crashed nearly 1% at the close on Tuesday, with Iran denying claims of requesting a",
+            "publisher": "sg.finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-30T09:43:21.000Z",
+            "sourceUrl": "https://sg.finance.yahoo.com/news/singapore-shares-incur-losses-confusion-094321750.html?.tsrc=rss",
+            "relatedTickers": [
+              "D05.SI"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-fa642cfb-515d-3939-8e2c-f0405fe5adb8",
+            "ticker": "D05.SI",
+            "kind": "news",
+            "category": "other",
+            "headline": "2 Stocks That Are Smashing New All-Time Highs This Year",
+            "summary": "Record-breaking share prices have put these two Singapore stocks in focus, but business fundamentals will determine whether the momentum can continue. The post 2 Stocks That Are Smashing New All-Time Highs This Year appeared first on The Smart Investor.",
+            "publisher": "sg.finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-29T06:00:00.000Z",
+            "sourceUrl": "https://sg.finance.yahoo.com/news/2-stocks-smashing-time-highs-060000024.html?.tsrc=rss",
+            "relatedTickers": [
+              "D05.SI"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-e62fc0a7-301a-362a-9e90-0ef091ce6c7a",
+            "ticker": "D05.SI",
+            "kind": "news",
+            "category": "other",
+            "headline": "Singapore Shares Open Flat Amid Mixed Broader Asian Markets",
+            "summary": "Singapore shares opened flat with positive bias on Wednesday, tracking mixed sentiment across major",
+            "publisher": "sg.finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-24T01:57:54.000Z",
+            "sourceUrl": "https://sg.finance.yahoo.com/news/singapore-shares-open-flat-amid-015754658.html?.tsrc=rss",
+            "relatedTickers": [
+              "D05.SI"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-a8f2706e-e913-3d04-8497-ec706c66713b",
+            "ticker": "D05.SI",
+            "kind": "news",
+            "category": "other",
+            "headline": "DBS vs. NVIDIA: Which One Protects Your Wealth Better?",
+            "summary": "Both DBS and NVIDIA have rewarded shareholders handsomely over the years. But when markets turn volatile, which stock is better equipped to preserve and grow your wealth? The post DBS vs. NVIDIA: Which One Protects Your Wealth Better? appeared first on The Smart Investor.",
+            "publisher": "sg.finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-17T23:30:00.000Z",
+            "sourceUrl": "https://sg.finance.yahoo.com/news/dbs-vs-nvidia-one-protects-233000947.html?.tsrc=rss",
+            "relatedTickers": [
+              "D05.SI"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 43,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-d3f631e8-b1ee-3274-9b5e-3933dee6a775",
+            "ticker": "D05.SI",
+            "kind": "news",
+            "category": "other",
+            "headline": "ETFs vs Stocks: What Beginners Need to Know",
+            "summary": "Should beginners buy ETFs or individual stocks? Here’s a simple guide to understanding the differences, risks, and which approach may suit new investors better. The post ETFs vs Stocks: What Beginners Need to Know appeared first on The Smart Investor.",
+            "publisher": "sg.finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-16T03:30:00.000Z",
+            "sourceUrl": "https://sg.finance.yahoo.com/news/etfs-vs-stocks-beginners-know-033000117.html?.tsrc=rss",
+            "relatedTickers": [
+              "D05.SI"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 43,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          }
+        ]
+      },
+      "codexAudit": {
+        "skillVersion": "codex-public-equity-investing-0.1.29",
+        "calledAt": "2026-06-30T12:58:13.441Z",
+        "inputScope": [
+          "snapshots/scored-live.json",
+          "data/raw_candidates_live.json"
+        ],
+        "summary": {
+          "zh": "65分及观察动作尚可，但82分基本面缺少本地财务支撑；风险控制70降至44，与低置信度相符但不可复算。",
+          "en": "The 65 score and watch action are plausible, but fundamentals of 82 lack local financial support; risk control falls 70→44 and cannot be reproduced."
+        },
+        "conflicts": [
+          {
+            "severity": "medium",
+            "description": "Raw confidence is medium versus scored low; momentum changes 62→68 and risk control 70→44 without an audit trail."
+          },
+          {
+            "severity": "medium",
+            "description": "High-impact evidence includes broad banking commentary and a gold-clearing story with unclear direct earnings materiality."
+          }
+        ],
+        "missingDataWarnings": [
+          "Live fundamentals input is null: no NIM, CET1, credit-cost, asset-quality, or dividend evidence.",
+          "No live valuation multiples or peer-relative valuation evidence."
+        ],
+        "familySuitability": {
+          "zh": "可作为有限的新加坡银行收入卫星仓研究对象，但缺失财务与估值证据阻止核心配置判断。",
+          "en": "A possible limited Singapore-bank income satellite, but missing financial and valuation evidence prevents a core-suitability conclusion."
+        },
+        "provider": "codex_public_equity_investing_skill",
+        "workflow": "Public Equity Investing long-short-pitch workflow; internal screen-grade audit using only the two authorized local snapshots, not personal investment advice.",
+        "status": "reviewed"
+      }
+    },
+    {
+      "ticker": "C6L.SI",
+      "name": "Singapore Airlines Limited",
+      "type": "stock",
+      "market": "Singapore",
+      "exchange": "SGX",
+      "country": "SG",
+      "horizon": "short",
+      "action": "watch",
+      "score": 65,
+      "confidence": "low",
+      "price": 7.68,
+      "currency": "SGD",
+      "expectedRange": {
+        "low": -0.03,
+        "high": 0.08,
+        "period": "3m"
+      },
+      "positionHint": "Cyclical travel watch",
+      "factorScores": {
+        "fundamentals": 64,
+        "valuation": 60,
+        "momentum": 79,
+        "fundQuality": null,
+        "macroSensitivity": 65,
+        "riskControl": 54
+      },
+      "priceSignals": {
+        "status": "ready",
+        "points": 79,
+        "oneWeekReturn": 0.0039215686274509665,
+        "oneMonthReturn": 0.10186513629842175,
+        "threeMonthReturn": 0.15662650602409633,
+        "maxDrawdown": -0.12395543175487467,
+        "annualizedVolatility": 0.18029658310069302
+      },
+      "reason": {
+        "zh": "最新结构化评分 65/100；相对优势为价格动量 79、宏观适应性 65，主要约束为风险控制 54。 航空股受旅游需求和油价影响大，更适合作为短期周期观察而非核心持仓。",
+        "en": "Latest structured score is 65/100; relative strengths are price momentum 79 and macro resilience 65, while the main constraint is risk control 54. Airline exposure is highly sensitive to travel demand and fuel prices, making it more suitable as a short-term cyclical watch than a core holding."
+      },
+      "structuredAnalysis": {
+        "generatedAt": "2026-06-30T12:56:31.903Z",
+        "provider": "comasset_deterministic_factor_analysis",
+        "score": 65,
+        "strongestFactors": [
+          {
+            "factor": "momentum",
+            "value": 79
+          },
+          {
+            "factor": "macroSensitivity",
+            "value": 65
+          }
+        ],
+        "weakestFactor": {
+          "factor": "riskControl",
+          "value": 54
+        },
+        "summary": {
+          "zh": "最新结构化评分 65/100；相对优势为价格动量 79、宏观适应性 65，主要约束为风险控制 54。",
+          "en": "Latest structured score is 65/100; relative strengths are price momentum 79 and macro resilience 65, while the main constraint is risk control 54."
+        }
+      },
+      "risks": {
+        "zh": [
+          "油价和航油成本波动",
+          "客运需求周期性强",
+          "短期新闻和运力数据未接入，置信度较低"
+        ],
+        "en": [
+          "Oil and jet-fuel costs are volatile",
+          "Passenger demand is cyclical",
+          "Short-term news and capacity data are not integrated, lowering confidence"
+        ]
+      },
+      "exitRules": {
+        "zh": [
+          "油价快速上行压缩利润",
+          "客座率或票价趋势转弱",
+          "短期动量跌破观察条件"
+        ],
+        "en": [
+          "Oil prices rise quickly and compress margins",
+          "Load factor or ticket-pricing trends weaken",
+          "Short-term momentum breaks below watch conditions"
+        ]
+      },
+      "newsEvents": {
+        "status": "ready",
+        "asOf": "2026-06-30T12:56:30.263Z",
+        "itemCount": 8,
+        "highImpactCount": 4,
+        "latestPublishedAt": "2026-06-24T13:50:34.000Z",
+        "items": [
+          {
+            "id": "yahoo-rss-b5034825-7f0a-369a-a909-e9c91a79e20b",
+            "ticker": "C6L.SI",
+            "kind": "news",
+            "category": "regulatory",
+            "headline": "Airbus A380 Wing Crack Checks Expand to 16 Aircraft",
+            "summary": "EU regulators ordered additional inspections after potential wing cracks were found on certain A380 aircraft.",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-24T13:50:34.000Z",
+            "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/airbus-a380-wing-crack-checks-135034179.html?.tsrc=rss",
+            "relatedTickers": [
+              "C6L.SI"
+            ],
+            "confidence": "medium",
+            "impact": "high",
+            "decisionPressure": 91,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 4,
+            "actionabilityScore": 4,
+            "priority": "high"
+          },
+          {
+            "id": "yahoo-rss-2d653dc1-c201-3924-a97a-a93a690ddab2",
+            "ticker": "C6L.SI",
+            "kind": "news",
+            "category": "corporate_action",
+            "headline": "Why Southwest Airlines (LUV) Is Up 7.2% After New Singapore Airlines Interline Deal And Network Push",
+            "summary": "In early June 2026, Singapore Airlines announced an interline partnership with Southwest Airlines, enabling single-ticket global journeys via shared U.S. gateways and opening connections from Singapore’s network of more than 130 destinations to nearly 120 airports served by Southwest, alongside Southwest’s 2026 launches at five new airports and expansion to eight overseas carrier partnerships. This combination of a broader international footprint with Singapore Airlines and aggressive Week...",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-12T21:14:09.000Z",
+            "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/why-southwest-airlines-luv-7-211409595.html?.tsrc=rss",
+            "relatedTickers": [
+              "C6L.SI"
+            ],
+            "confidence": "medium",
+            "impact": "high",
+            "decisionPressure": 85,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 4,
+            "actionabilityScore": 4,
+            "priority": "high"
+          },
+          {
+            "id": "yahoo-rss-fd3a3301-681e-3143-8cdd-0ac3d94653e1",
+            "ticker": "C6L.SI",
+            "kind": "news",
+            "category": "corporate_action",
+            "headline": "SOUTHWEST AIRLINES BEGINS INTERLINE PARTNERSHIP WITH SINGAPORE AIRLINES",
+            "summary": "Southwest Airlines Co. (NYSE: LUV) and Singapore Airlines (SIA) have partnered to offer travelers around the globe single-ticket journeys to and from the United States, connecting to places where Southwest and Singapore Airlines fly. Southwest Executives shared the news of the interline partnership during the International Air Transport Association (IATA) Annual General Meeting in Brazil.",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-08T19:30:00.000Z",
+            "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/southwest-airlines-begins-interline-partnership-193000924.html?.tsrc=rss",
+            "relatedTickers": [
+              "C6L.SI"
+            ],
+            "confidence": "medium",
+            "impact": "high",
+            "decisionPressure": 85,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 4,
+            "actionabilityScore": 4,
+            "priority": "high"
+          },
+          {
+            "id": "yahoo-rss-bd424e15-7ec6-39d4-8fce-90a2aa61da40",
+            "ticker": "C6L.SI",
+            "kind": "news",
+            "category": "earnings",
+            "headline": "We Think That There Are More Issues For Singapore Airlines (SGX:C6L) Than Just Sluggish Earnings",
+            "summary": "The subdued market reaction suggests that Singapore Airlines Limited's ( SGX:C6L ) recent earnings didn't contain any...",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-05-21T22:11:26.000Z",
+            "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/think-more-issues-singapore-airlines-221126872.html?.tsrc=rss",
+            "relatedTickers": [
+              "C6L.SI"
+            ],
+            "confidence": "medium",
+            "impact": "high",
+            "decisionPressure": 80,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 4,
+            "actionabilityScore": 4,
+            "priority": "high"
+          },
+          {
+            "id": "yahoo-rss-4e4b9908-7c8a-3e59-aa32-ced68a5ee379",
+            "ticker": "C6L.SI",
+            "kind": "news",
+            "category": "management",
+            "headline": "Air India CEO says successor will have 'hands full'",
+            "summary": "By Doyinsola Oladipo NEW YORK, May 21 (Reuters) - Air India CEO Campbell Wilson said on Thursday that his successor will have his or her \"hands full,\" as the carrier grapples with a ban on the usage",
+            "publisher": "sg.finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-05-21T20:28:07.000Z",
+            "sourceUrl": "https://sg.finance.yahoo.com/news/air-india-ceo-says-successor-183309997.html?.tsrc=rss",
+            "relatedTickers": [
+              "C6L.SI"
+            ],
+            "confidence": "medium",
+            "impact": "medium",
+            "decisionPressure": 58,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 3,
+            "actionabilityScore": 3,
+            "priority": "medium"
+          },
+          {
+            "id": "yahoo-rss-533214c6-0790-3e54-a645-3966756f6fd2",
+            "ticker": "C6L.SI",
+            "kind": "news",
+            "category": "other",
+            "headline": "Factbox-Air India's long history as it continues to face fallout from deadly crash",
+            "summary": "June 11 (Reuters) - Indian investigators are expected to delay issuing a final report into a deadly Air India Boeing 787 crash by the one-year anniversary on Friday, citing the need to complete an",
+            "publisher": "sg.finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-11T09:08:11.000Z",
+            "sourceUrl": "https://sg.finance.yahoo.com/news/factbox-air-indias-long-history-090811544.html?.tsrc=rss",
+            "relatedTickers": [
+              "C6L.SI"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 43,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-285677f0-2ad5-37e5-9fc0-3f115f6da084",
+            "ticker": "C6L.SI",
+            "kind": "news",
+            "category": "other",
+            "headline": "Wizz Air to offer Starlink in-flight internet from 2027",
+            "summary": "Wizz Air said on Monday that it would offer Elon Musk's Starlink ‌satellite internet across its fleet from next ‌year, becoming the first European ultra-low-cost carrier to do so. The airline ​did not disclose the terms of its deal with Starlink. • Wizz Air's announcement comes as Musk's SpaceX, Starlink's parent company, is set to go public this week.",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-08T10:37:31.000Z",
+            "sourceUrl": "https://finance.yahoo.com/sectors/technology/articles/wizz-air-offer-starlink-flight-103731689.html?.tsrc=rss",
+            "relatedTickers": [
+              "C6L.SI"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 43,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-d66ed119-9baa-3291-a174-c650fc673973",
+            "ticker": "C6L.SI",
+            "kind": "news",
+            "category": "other",
+            "headline": "Radar failure suspected in deadly 2024 Singapore Airlines turbulence",
+            "summary": "A Singapore Airlines flight that hit severe turbulence in 2024, killing one passenger and injuring dozens more, may have suffered from a malfunctioning weather radar, according to the final report.",
+            "publisher": "sg.finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-05-19T22:23:41.000Z",
+            "sourceUrl": "https://sg.finance.yahoo.com/news/radar-failure-suspected-deadly-2024-222341345.html?.tsrc=rss",
+            "relatedTickers": [
+              "C6L.SI"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 38,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          }
+        ]
+      },
+      "codexAudit": {
+        "skillVersion": "codex-public-equity-investing-0.1.29",
+        "calledAt": "2026-06-30T12:58:13.441Z",
+        "inputScope": [
+          "snapshots/scored-live.json",
+          "data/raw_candidates_live.json"
+        ],
+        "summary": {
+          "zh": "65分及观察动作符合周期股定位，但动量由58升至79；同时原始说明称短期新闻未接入，而新闻状态实际为ready。",
+          "en": "The 65 score and watch action fit a cyclical screen, but momentum rises 58→79; the raw narrative says short-term news is absent while news status is ready."
+        },
+        "conflicts": [
+          {
+            "severity": "medium",
+            "description": "The stated absence of short-term news conflicts with eight ready news items, including four marked high impact."
+          },
+          {
+            "severity": "medium",
+            "description": "Several items concern Air India or Wizz Air and are weakly related to Singapore Airlines despite ticker tagging."
+          },
+          {
+            "severity": "medium",
+            "description": "Raw-to-scored momentum changes 58→79 without methodology."
+          }
+        ],
+        "missingDataWarnings": [
+          "Live fundamentals input is null; capacity, load factor, yields, fuel hedging, and balance-sheet evidence are absent.",
+          "No live valuation multiples or normalized-cycle valuation evidence."
+        ],
+        "familySuitability": {
+          "zh": "不适合作为平衡增长家庭研究组合核心；最多作为很小的周期观察仓。",
+          "en": "Unsuitable as a balanced-growth family portfolio core; at most a very small cyclical watch sleeve."
+        },
+        "provider": "codex_public_equity_investing_skill",
+        "workflow": "Public Equity Investing long-short-pitch workflow; internal screen-grade audit using only the two authorized local snapshots, not personal investment advice.",
+        "status": "reviewed"
+      }
+    },
+    {
+      "ticker": "Z74.SI",
+      "name": "Singapore Telecommunications Limited",
+      "type": "stock",
+      "market": "Singapore",
+      "exchange": "SGX",
+      "country": "SG",
+      "horizon": "long",
+      "action": "watch",
+      "score": 58,
+      "confidence": "low",
+      "price": 4.41,
+      "currency": "SGD",
+      "expectedRange": {
+        "low": 0.03,
+        "high": 0.09,
+        "period": "12m"
+      },
+      "positionHint": "Telecom turnaround watch",
+      "factorScores": {
+        "fundamentals": 66,
+        "valuation": 72,
+        "momentum": 44,
+        "fundQuality": null,
+        "macroSensitivity": 69,
+        "riskControl": 42
+      },
+      "priceSignals": {
+        "status": "ready",
+        "points": 79,
+        "oneWeekReturn": -0.004514672686230181,
+        "oneMonthReturn": 0.027972027972027913,
+        "threeMonthReturn": -0.09631147540983598,
+        "maxDrawdown": -0.18042226487524005,
+        "annualizedVolatility": 0.1944657960026634
+      },
+      "reason": {
+        "zh": "最新结构化评分 58/100；相对优势为估值 72、宏观适应性 69，主要约束为风险控制 42。 电信现金流属性较强，可作为新加坡防御型股票观察，但增长弹性有限。",
+        "en": "Latest structured score is 58/100; relative strengths are valuation 72 and macro resilience 69, while the main constraint is risk control 42. Telecom cash-flow profile offers defensive Singapore exposure, though growth optionality is limited."
+      },
+      "structuredAnalysis": {
+        "generatedAt": "2026-06-30T12:56:31.903Z",
+        "provider": "comasset_deterministic_factor_analysis",
+        "score": 58,
+        "strongestFactors": [
+          {
+            "factor": "valuation",
+            "value": 72
+          },
+          {
+            "factor": "macroSensitivity",
+            "value": 69
+          }
+        ],
+        "weakestFactor": {
+          "factor": "riskControl",
+          "value": 42
+        },
+        "summary": {
+          "zh": "最新结构化评分 58/100；相对优势为估值 72、宏观适应性 69，主要约束为风险控制 42。",
+          "en": "Latest structured score is 58/100; relative strengths are valuation 72 and macro resilience 69, while the main constraint is risk control 42."
+        }
+      },
+      "risks": {
+        "zh": [
+          "核心电信业务增长慢",
+          "区域投资和汇率波动影响利润",
+          "转型进展需要继续验证"
+        ],
+        "en": [
+          "Core telecom growth is slow",
+          "Regional investments and FX volatility affect earnings",
+          "Turnaround progress still needs validation"
+        ]
+      },
+      "exitRules": {
+        "zh": [
+          "自由现金流转弱",
+          "分红覆盖不足",
+          "转型业务不能改善回报率"
+        ],
+        "en": [
+          "Free cash flow weakens",
+          "Dividend coverage becomes insufficient",
+          "Transformation businesses fail to improve returns"
+        ]
+      },
+      "newsEvents": {
+        "status": "ready",
+        "asOf": "2026-06-30T12:56:30.263Z",
+        "itemCount": 8,
+        "highImpactCount": 2,
+        "latestPublishedAt": "2026-06-25T09:30:00.000Z",
+        "items": [
+          {
+            "id": "yahoo-rss-1ccd669d-cb29-3ae2-aca8-ad218696d2c1",
+            "ticker": "Z74.SI",
+            "kind": "news",
+            "category": "corporate_action",
+            "headline": "Singtel's partial sale of Gulf Development stake reaps $140 million gain",
+            "summary": "Singtel has sold a 2.8% stake in Gulf Development for a gain of $140 million, and still retains a 4.95% stake valued at $1.8 billion",
+            "publisher": "sg.finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-22T20:21:59.000Z",
+            "sourceUrl": "https://sg.finance.yahoo.com/news/singtels-partial-sale-gulf-development-202159873.html?.tsrc=rss",
+            "relatedTickers": [
+              "Z74.SI"
+            ],
+            "confidence": "medium",
+            "impact": "high",
+            "decisionPressure": 85,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 4,
+            "actionabilityScore": 4,
+            "priority": "high"
+          },
+          {
+            "id": "yahoo-rss-3f395cc4-68f5-37ec-ab9c-2b4386bc44cd",
+            "ticker": "Z74.SI",
+            "kind": "news",
+            "category": "regulatory",
+            "headline": "Beyond Blue-Chip: 3 SGX Stocks Quietly Buying Back Their Own Shares",
+            "summary": "While headline buybacks grab attention, these three lesser-known SGX stocks are using strong cash flow to reward shareholders through share repurchases. The post Beyond Blue-Chip: 3 SGX Stocks Quietly Buying Back Their Own Shares appeared first on The Smart Investor.",
+            "publisher": "sg.finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-17T03:30:00.000Z",
+            "sourceUrl": "https://sg.finance.yahoo.com/news/beyond-blue-chip-3-sgx-033000605.html?.tsrc=rss",
+            "relatedTickers": [
+              "Z74.SI"
+            ],
+            "confidence": "medium",
+            "impact": "high",
+            "decisionPressure": 85,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 4,
+            "actionabilityScore": 4,
+            "priority": "high"
+          },
+          {
+            "id": "yahoo-rss-fca9797f-0d5d-38a5-9535-a6a7bc0663bd",
+            "ticker": "Z74.SI",
+            "kind": "news",
+            "category": "management",
+            "headline": "Connecting Asia’s Digital Future: An Interview with Singtel’s Arthur Lang",
+            "summary": "In this exclusive interview, Singtel CFO Arthur Lang explains how the group is evolving beyond traditional telecom services to drive future growth. The post Connecting Asia’s Digital Future: An Interview with Singtel’s Arthur Lang appeared first on The Smart Investor.",
+            "publisher": "sg.finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-25T09:30:00.000Z",
+            "sourceUrl": "https://sg.finance.yahoo.com/news/connecting-asia-digital-future-interview-093000533.html?.tsrc=rss",
+            "relatedTickers": [
+              "Z74.SI"
+            ],
+            "confidence": "medium",
+            "impact": "medium",
+            "decisionPressure": 69,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 3,
+            "actionabilityScore": 3,
+            "priority": "medium"
+          },
+          {
+            "id": "yahoo-rss-9d72a35f-3334-3eea-ac9e-8e5a33133e2e",
+            "ticker": "Z74.SI",
+            "kind": "news",
+            "category": "capital_markets",
+            "headline": "Singtel Raises S$1 Billion, Moves Closer To S$9 Billion Asset Target",
+            "summary": "The telecom group sold a 2.8% Gulf Development stake and will use proceeds for buybacks, dividends, and digital infrastructure.",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-24T08:10:19.000Z",
+            "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/singtel-raises-1-billion-moves-081019798.html?.tsrc=rss",
+            "relatedTickers": [
+              "Z74.SI"
+            ],
+            "confidence": "medium",
+            "impact": "medium",
+            "decisionPressure": 69,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 3,
+            "actionabilityScore": 3,
+            "priority": "medium"
+          },
+          {
+            "id": "yahoo-rss-696373b4-df7f-38ba-b77c-5a11c259c268",
+            "ticker": "Z74.SI",
+            "kind": "news",
+            "category": "management",
+            "headline": "Matt Williams to replace Nikhil Eapen as new StarHub CEO",
+            "summary": "The CEO succession has been managed smoothly in line with Nikhil's own plans: StarHub chairman Olivier Lim",
+            "publisher": "sg.finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-23T16:03:05.000Z",
+            "sourceUrl": "https://sg.finance.yahoo.com/news/matt-williams-replace-nikhil-eapen-160305576.html?.tsrc=rss",
+            "relatedTickers": [
+              "Z74.SI"
+            ],
+            "confidence": "medium",
+            "impact": "medium",
+            "decisionPressure": 69,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 3,
+            "actionabilityScore": 3,
+            "priority": "medium"
+          },
+          {
+            "id": "yahoo-rss-d76b1221-3a36-3b78-84f7-dcee8811fa0b",
+            "ticker": "Z74.SI",
+            "kind": "news",
+            "category": "product",
+            "headline": "Grab (GRAB) to Consolidate Superbank Following Increased Shareholding in Indonesia",
+            "summary": "Grab Holdings Ltd. (NASDAQ:GRAB) is one of the penny stocks with explosive growth potential. On May 20, Grab is set to consolidate PT Super Bank Indonesia Tbk (“Superbank”) into its financial services segment following the transfer of Singtel’s stake to GXS Bank. This move increases Grab’s direct and indirect shareholding to over 50%, marking a […]",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-20T17:28:07.000Z",
+            "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/grab-grab-consolidate-superbank-following-172807475.html?.tsrc=rss",
+            "relatedTickers": [
+              "Z74.SI"
+            ],
+            "confidence": "medium",
+            "impact": "medium",
+            "decisionPressure": 63,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 3,
+            "actionabilityScore": 3,
+            "priority": "medium"
+          },
+          {
+            "id": "yahoo-rss-1285ee16-6f7f-306e-805a-4970126d9fab",
+            "ticker": "Z74.SI",
+            "kind": "news",
+            "category": "other",
+            "headline": "Singapore Shares Extend Gains as US-Iran Negotiate Peace Framework;",
+            "summary": "Singapore shares remained in the green on Wednesday as investors assessed the details of peace negot",
+            "publisher": "sg.finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-24T09:48:03.000Z",
+            "sourceUrl": "https://sg.finance.yahoo.com/news/singapore-shares-extend-gains-us-094803907.html?.tsrc=rss",
+            "relatedTickers": [
+              "Z74.SI"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-7f26c143-2fc0-36e3-9203-f5bfe58ed582",
+            "ticker": "Z74.SI",
+            "kind": "news",
+            "category": "other",
+            "headline": "Singapore Shares Remain Resilient Despite Regional Downturn; Trek 2000 International Down 8%",
+            "summary": "Singapore shares remained marginally in the green zone on Tuesday, despite broader regional losses b",
+            "publisher": "sg.finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-23T09:34:20.000Z",
+            "sourceUrl": "https://sg.finance.yahoo.com/news/singapore-shares-remain-resilient-despite-093420754.html?.tsrc=rss",
+            "relatedTickers": [
+              "Z74.SI"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 43,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          }
+        ]
+      },
+      "codexAudit": {
+        "skillVersion": "codex-public-equity-investing-0.1.29",
+        "calledAt": "2026-06-30T12:58:13.441Z",
+        "inputScope": [
+          "snapshots/scored-live.json",
+          "data/raw_candidates_live.json"
+        ],
+        "summary": {
+          "zh": "58分及观察动作偏保守且合理；动量55降至44、风险控制67降至42，但估值72缺少底层依据。",
+          "en": "The 58 score and watch action are conservatively reasonable; momentum falls 55→44 and risk control 67→42, while valuation 72 lacks underlying support."
+        },
+        "conflicts": [
+          {
+            "severity": "medium",
+            "description": "Raw confidence is medium versus scored low, with unexplained momentum and risk-control reductions."
+          },
+          {
+            "severity": "high",
+            "description": "News tagged to Z74.SI includes StarHub CEO succession and Grab/Superbank items, creating material relevance contamination."
+          }
+        ],
+        "missingDataWarnings": [
+          "Live fundamentals input is null; segment cash flow, leverage, dividends, and asset-sale progress are absent.",
+          "No live valuation multiples, sum-of-parts analysis, or peer comparison."
+        ],
+        "familySuitability": {
+          "zh": "可作为小比例防御型新加坡卫星观察仓，但低增长、证据污染和数据缺口限制适用性。",
+          "en": "Potential small defensive Singapore satellite, but low growth, contaminated evidence, and data gaps limit suitability."
+        },
+        "provider": "codex_public_equity_investing_skill",
+        "workflow": "Public Equity Investing long-short-pitch workflow; internal screen-grade audit using only the two authorized local snapshots, not personal investment advice.",
+        "status": "reviewed"
+      },
+      "reviewOverride": {
+        "reason": "Codex Public Equity Investing audit reported a high-severity conflict; action was downgraded to watch.",
+        "appliedAt": "2026-06-30T12:58:13.441Z"
+      }
+    },
+    {
+      "ticker": "COST",
+      "name": "Costco Wholesale Corporation",
+      "type": "stock",
+      "market": "US",
+      "exchange": null,
+      "country": "US",
+      "horizon": "long",
+      "action": "watch",
+      "score": 55,
+      "confidence": "low",
+      "price": 946.679993,
+      "currency": "USD",
+      "expectedRange": {
+        "low": 0.05,
+        "high": 0.12,
+        "period": "12m"
+      },
+      "positionHint": "Quality watch",
+      "factorScores": {
+        "fundamentals": 71,
+        "valuation": 55,
+        "momentum": 40,
+        "fundQuality": null,
+        "macroSensitivity": 74,
+        "riskControl": 37
+      },
+      "priceSignals": {
+        "status": "ready",
+        "points": 79,
+        "oneWeekReturn": -0.0061519570152887,
+        "oneMonthReturn": -0.025919106598203068,
+        "threeMonthReturn": -0.05049356752515621,
+        "maxDrawdown": -0.19950456935228433,
+        "annualizedVolatility": 0.2103232106225893
+      },
+      "reason": {
+        "zh": "最新结构化评分 55/100；相对优势为宏观适应性 74、基本面 71，主要约束为风险控制 37。 会员制零售质量高，但估值安全边际需要继续观察。",
+        "en": "Latest structured score is 55/100; relative strengths are macro resilience 74 and fundamentals 71, while the main constraint is risk control 37. High-quality membership retail model, but valuation margin needs monitoring."
+      },
+      "structuredAnalysis": {
+        "generatedAt": "2026-06-30T12:56:31.903Z",
+        "provider": "comasset_deterministic_factor_analysis",
+        "score": 55,
+        "strongestFactors": [
+          {
+            "factor": "macroSensitivity",
+            "value": 74
+          },
+          {
+            "factor": "fundamentals",
+            "value": 71
+          }
+        ],
+        "weakestFactor": {
+          "factor": "riskControl",
+          "value": 37
+        },
+        "summary": {
+          "zh": "最新结构化评分 55/100；相对优势为宏观适应性 74、基本面 71，主要约束为风险控制 37。",
+          "en": "Latest structured score is 55/100; relative strengths are macro resilience 74 and fundamentals 71, while the main constraint is risk control 37."
+        }
+      },
+      "risks": {
+        "zh": [
+          "估值溢价高",
+          "消费放缓可能影响客单价",
+          "海外扩张执行风险"
+        ],
+        "en": [
+          "Premium valuation",
+          "Consumer slowdown may affect basket size",
+          "Execution risk in overseas expansion"
+        ]
+      },
+      "exitRules": {
+        "zh": [
+          "同店销售明显转弱",
+          "会员续费率下降",
+          "估值继续扩张而盈利未跟上"
+        ],
+        "en": [
+          "Comparable sales weaken materially",
+          "Membership renewal rate declines",
+          "Valuation expands without earnings support"
+        ]
+      },
+      "newsEvents": {
+        "status": "ready",
+        "asOf": "2026-06-30T12:56:30.263Z",
+        "itemCount": 10,
+        "highImpactCount": 5,
+        "latestPublishedAt": "2026-06-30T10:25:00.000Z",
+        "items": [
+          {
+            "id": "sec-0000909832-26-000051-cost-20260510.htm",
+            "ticker": "COST",
+            "kind": "filing_event",
+            "category": "earnings",
+            "headline": "10-Q: 10-Q",
+            "summary": "Official 10-Q filing by COSTCO WHOLESALE CORP /NEW.",
+            "publisher": "U.S. Securities and Exchange Commission",
+            "aggregator": null,
+            "publishedAt": "2026-06-03T21:00:00.000Z",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000051/cost-20260510.htm",
+            "relatedTickers": [
+              "COST"
+            ],
+            "confidence": "high",
+            "impact": "high",
+            "decisionPressure": 94,
+            "sourceType": "regulatory_filing",
+            "sourceRank": 3,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 4,
+            "actionabilityScore": 4,
+            "priority": "high",
+            "filing": {
+              "form": "10-Q",
+              "accessionNumber": "0000909832-26-000051",
+              "filingDate": "2026-06-03"
+            }
+          },
+          {
+            "id": "yahoo-rss-24089416-d616-3ba9-84a7-1b252e696b44",
+            "ticker": "COST",
+            "kind": "news",
+            "category": "earnings",
+            "headline": "Why the Stock Market’s Staggering Quarterly Gains Will Be Tough to Match",
+            "summary": "Trump’s control over federal government gets split decision, Comcast spinoff could spark media deals, Constellation earnings are coming, and more news to start your day.",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-30T10:25:00.000Z",
+            "sourceUrl": "https://finance.yahoo.com/m/24089416-d616-3ba9-84a7-1b252e696b44/why-the-stock-market%E2%80%99s.html?.tsrc=rss",
+            "relatedTickers": [
+              "COST"
+            ],
+            "confidence": "medium",
+            "impact": "high",
+            "decisionPressure": 91,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 4,
+            "actionabilityScore": 4,
+            "priority": "high"
+          },
+          {
+            "id": "yahoo-rss-e674c192-d219-3670-9797-006a1203f0d5",
+            "ticker": "COST",
+            "kind": "news",
+            "category": "earnings",
+            "headline": "Costco (COST) Is Using AI To Triple Digital Traffic And Lift Conversions",
+            "summary": "Costco Wholesale (NasdaqGS:COST) is using artificial intelligence to refine online product listings and improve its digital product search. The company reports that AI-driven online traffic roughly tripled in the most recent fiscal quarter, with the highest conversion rates among its digital channels. This shift highlights Costco’s focus on strengthening its digital customer experience alongside its traditional warehouse model. For members and investors watching Costco Wholesale, the new AI...",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-29T17:15:04.000Z",
+            "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/costco-cost-using-ai-triple-171504413.html?.tsrc=rss",
+            "relatedTickers": [
+              "COST"
+            ],
+            "confidence": "medium",
+            "impact": "high",
+            "decisionPressure": 91,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 4,
+            "actionabilityScore": 4,
+            "priority": "high"
+          },
+          {
+            "id": "yahoo-rss-619a623d-4b80-3712-b961-1b78d9fe5266",
+            "ticker": "COST",
+            "kind": "news",
+            "category": "earnings",
+            "headline": "Walmart vs Costco: This Is The Better Stock To Buy",
+            "summary": "Walmart (NYSE: WMT) and Costco (NASDAQ: COST) just delivered earnings that show two very different retail playbooks working at once. Walmart leaned on advertising, marketplace, and faster delivery to expand its empire. Costco kept doing what it does best: opening clubs, renewing members, and pushing Kirkland deeper into the cart. Both reports beat the Street, ... Walmart vs Costco: This Is The Better Stock To Buy",
+            "publisher": "247wallst.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-29T13:52:03.000Z",
+            "sourceUrl": "https://247wallst.com/investing/2026/06/29/walmart-vs-costco-this-is-the-better-stock-to-buy/?.tsrc=rss",
+            "relatedTickers": [
+              "COST"
+            ],
+            "confidence": "medium",
+            "impact": "high",
+            "decisionPressure": 91,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 4,
+            "actionabilityScore": 4,
+            "priority": "high"
+          },
+          {
+            "id": "yahoo-rss-cf666477-20c1-3216-a8be-630c1f6a43c3",
+            "ticker": "COST",
+            "kind": "news",
+            "category": "earnings",
+            "headline": "Costco’s Secret Growth Engine May Be Running Out of Gas",
+            "summary": "Costco's gas-driven comp growth topped 12% in May, but with gas prices down more than 20% from their high, COST is losing a key tailwind ahead of Q4 results.",
+            "publisher": "marketbeat.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-28T13:50:00.000Z",
+            "sourceUrl": "https://www.marketbeat.com/articles/costcos-secret-growth-engine-may-be-running-out-of-gas/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+            "relatedTickers": [
+              "COST"
+            ],
+            "confidence": "medium",
+            "impact": "high",
+            "decisionPressure": 91,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 4,
+            "actionabilityScore": 4,
+            "priority": "high"
+          },
+          {
+            "id": "yahoo-rss-2c3ae06d-0edc-3288-bdf4-a5ee55081c85",
+            "ticker": "COST",
+            "kind": "news",
+            "category": "product",
+            "headline": "Costco made several changes to get members to its warehouses more",
+            "summary": "Costco's core product, selling items in bulk, works against the idea of visiting the chain multiple times a week. If you bought 36 cans of Coke, a four-pound tube of ground beef, and a 12-pack of toothbrushes, you probably don't need to go back quickly. Rising gas prices changed that as members ...",
+            "publisher": "thestreet.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-29T14:37:00.000Z",
+            "sourceUrl": "https://www.thestreet.com/retail/costco-made-several-changes-to-get-members-to-its-warehouses-more?.tsrc=rss",
+            "relatedTickers": [
+              "COST"
+            ],
+            "confidence": "medium",
+            "impact": "medium",
+            "decisionPressure": 69,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 3,
+            "actionabilityScore": 3,
+            "priority": "medium"
+          },
+          {
+            "id": "yahoo-rss-93b2edfb-cc1f-3e43-b22b-595bd305bc82",
+            "ticker": "COST",
+            "kind": "news",
+            "category": "product",
+            "headline": "Can AI Search Become Costco's Next Digital Growth Driver?",
+            "summary": "Costco refines product pages for AI search as early traffic triples, converts best and supports a fast-growing digital channel.",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-29T12:22:00.000Z",
+            "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/ai-search-become-costcos-next-122200522.html?.tsrc=rss",
+            "relatedTickers": [
+              "COST"
+            ],
+            "confidence": "medium",
+            "impact": "medium",
+            "decisionPressure": 69,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 3,
+            "actionabilityScore": 3,
+            "priority": "medium"
+          },
+          {
+            "id": "yahoo-rss-cda0e835-7c20-33b5-90d7-91d3107710ba",
+            "ticker": "COST",
+            "kind": "news",
+            "category": "other",
+            "headline": "Alexander’s Leases 135,000 Square Feet to Target at its Rego Park Shopping Center; Center is 99% Leased",
+            "summary": "PARAMUS, N.J., June 29, 2026 (GLOBE NEWSWIRE) -- Alexander’s, Inc. (NYSE: ALX) announced today that it has completed a 15-year lease (with renewal options) with Target Corporation at its Rego Park Shopping Center located on Junction Blvd at the Long Island Expressway, in the middle of densely populated Queens, New York. Rego Park Shopping Center is a multi-level, 600,000 square foot, blockbuster, open-air shopping center anchored by Costco, Burlington, Best Buy, Marshalls, T.J. Maxx, Aldi and Pe",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-29T21:22:00.000Z",
+            "sourceUrl": "https://finance.yahoo.com/real-estate/articles/alexander-leases-135-000-square-212200850.html?.tsrc=rss",
+            "relatedTickers": [
+              "COST"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-6d45808a-f7f2-35a2-87fe-1ec7cf3c1d09",
+            "ticker": "COST",
+            "kind": "news",
+            "category": "other",
+            "headline": "'Big Short' Star Steve Eisman Warns Middle Class Is 'Starting To Crack', Tax Refunds 'Went Into The Gas Tank'",
+            "summary": "Steve Eisman, who shorted subprime mortgages ahead of the 2008 crash, says the American middle class is showing signs of stress as gas prices erode household budgets following a strong tax refund season. Prediction markets do not yet agree. Polymarket...",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-28T21:30:59.000Z",
+            "sourceUrl": "https://finance.yahoo.com/economy/articles/big-short-star-steve-eisman-213059401.html?.tsrc=rss",
+            "relatedTickers": [
+              "COST"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "sec-0000909832-26-000046-cost-20260528.htm",
+            "ticker": "COST",
+            "kind": "filing_event",
+            "category": "corporate_event",
+            "headline": "8-K: 8-K",
+            "summary": "Official 8-K filing by COSTCO WHOLESALE CORP /NEW.",
+            "publisher": "U.S. Securities and Exchange Commission",
+            "aggregator": null,
+            "publishedAt": "2026-05-28T21:00:00.000Z",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000046/cost-20260528.htm",
+            "relatedTickers": [
+              "COST"
+            ],
+            "confidence": "high",
+            "impact": "low",
+            "decisionPressure": 47,
+            "sourceType": "regulatory_filing",
+            "sourceRank": 3,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low",
+            "filing": {
+              "form": "8-K",
+              "accessionNumber": "0000909832-26-000046",
+              "filingDate": "2026-05-28"
+            }
+          }
+        ]
+      },
+      "codexAudit": {
+        "skillVersion": "codex-public-equity-investing-0.1.29",
+        "calledAt": "2026-06-30T12:58:13.441Z",
+        "inputScope": [
+          "snapshots/scored-live.json",
+          "data/raw_candidates_live.json"
+        ],
+        "summary": {
+          "zh": "55分及观察动作符合等待安全边际的逻辑；但原始动量72降至40、风险控制79降至37，变化幅度削弱确定性评分的可信度。",
+          "en": "The 55 score and watch action fit a wait-for-margin-of-safety stance, but momentum drops 72→40 and risk control 79→37, weakening deterministic-score credibility."
+        },
+        "conflicts": [
+          {
+            "severity": "high",
+            "description": "Large unexplained raw-to-scored changes in momentum and risk control materially drive the low score."
+          },
+          {
+            "severity": "medium",
+            "description": "Several news items are generic market, Target-lease, or consumer-stress stories rather than direct Costco evidence."
+          }
+        ],
+        "missingDataWarnings": [
+          "No live P/E, free-cash-flow yield, growth-adjusted valuation, or peer comparison.",
+          "SEC fundamentals are named as an input, but the authorized files contain no underlying statements or same-store-sales series."
+        ],
+        "familySuitability": {
+          "zh": "商业质量可支持长期观察，但在估值证据缺失且趋势偏弱时，仅适合作为候选卫星仓。",
+          "en": "Business quality supports long-term monitoring, but absent valuation evidence and weak scored trends limit it to a candidate satellite."
+        },
+        "provider": "codex_public_equity_investing_skill",
+        "workflow": "Public Equity Investing long-short-pitch workflow; internal screen-grade audit using only the two authorized local snapshots, not personal investment advice.",
+        "status": "reviewed"
+      },
+      "reviewOverride": {
+        "reason": "Codex Public Equity Investing audit reported a high-severity conflict; action was downgraded to watch.",
+        "appliedAt": "2026-06-30T12:58:13.441Z"
+      }
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft Corporation",
+      "type": "stock",
+      "market": "US",
+      "exchange": null,
+      "country": "US",
+      "horizon": "ultra",
+      "action": "watch",
+      "score": 54,
+      "confidence": "low",
+      "price": 368.570007,
+      "currency": "USD",
+      "expectedRange": {
+        "low": 0.09,
+        "high": 0.18,
+        "period": "12m"
+      },
+      "positionHint": "Core compounder",
+      "factorScores": {
+        "fundamentals": 98,
+        "valuation": 68,
+        "momentum": 31,
+        "fundQuality": null,
+        "macroSensitivity": 69,
+        "riskControl": 7
+      },
+      "priceSignals": {
+        "status": "ready",
+        "points": 79,
+        "oneWeekReturn": -0.011797179366176525,
+        "oneMonthReturn": -0.11543908728560226,
+        "threeMonthReturn": -0.0040491802921202025,
+        "maxDrawdown": -0.31580081762739465,
+        "annualizedVolatility": 0.2796832974890828
+      },
+      "reason": {
+        "zh": "最新结构化评分 54/100；相对优势为基本面 98、宏观适应性 69，主要约束为风险控制 7。 云业务、AI 产品化和自由现金流质量支持 2 年以上持有逻辑。",
+        "en": "Latest structured score is 54/100; relative strengths are fundamentals 98 and macro resilience 69, while the main constraint is risk control 7. Cloud growth, AI monetization, and free cash flow quality support a 2+ year holding case."
+      },
+      "structuredAnalysis": {
+        "generatedAt": "2026-06-30T12:56:31.903Z",
+        "provider": "comasset_deterministic_factor_analysis",
+        "score": 54,
+        "strongestFactors": [
+          {
+            "factor": "fundamentals",
+            "value": 98
+          },
+          {
+            "factor": "macroSensitivity",
+            "value": 69
+          }
+        ],
+        "weakestFactor": {
+          "factor": "riskControl",
+          "value": 7
+        },
+        "summary": {
+          "zh": "最新结构化评分 54/100；相对优势为基本面 98、宏观适应性 69，主要约束为风险控制 7。",
+          "en": "Latest structured score is 54/100; relative strengths are fundamentals 98 and macro resilience 69, while the main constraint is risk control 7."
+        }
+      },
+      "risks": {
+        "zh": [
+          "估值处于历史偏高区间",
+          "AI 资本开支回报需要持续验证",
+          "美元走强可能影响海外收入"
+        ],
+        "en": [
+          "Valuation is above historical norms",
+          "AI capex returns need continued validation",
+          "A stronger dollar may pressure overseas revenue"
+        ]
+      },
+      "exitRules": {
+        "zh": [
+          "云业务增速连续两个季度显著放缓",
+          "自由现金流率明显恶化",
+          "估值扩张脱离盈利增长"
+        ],
+        "en": [
+          "Cloud growth slows materially for two quarters",
+          "Free cash flow margin deteriorates",
+          "Valuation expansion detaches from earnings growth"
+        ]
+      },
+      "newsEvents": {
+        "status": "ready",
+        "asOf": "2026-06-30T12:56:30.263Z",
+        "itemCount": 10,
+        "highImpactCount": 1,
+        "latestPublishedAt": "2026-06-30T12:28:36.000Z",
+        "items": [
+          {
+            "id": "yahoo-rss-cc046f9a-e343-3f82-905f-71264a43abf3",
+            "ticker": "MSFT",
+            "kind": "news",
+            "category": "corporate_action",
+            "headline": "Tesla Faces New Autonomy Challenger",
+            "summary": "Uber, Stellantis and Nissan partnerships add momentum.",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-30T12:19:47.000Z",
+            "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/tesla-faces-autonomy-challenger-121947795.html?.tsrc=rss",
+            "relatedTickers": [
+              "MSFT"
+            ],
+            "confidence": "medium",
+            "impact": "high",
+            "decisionPressure": 91,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 4,
+            "actionabilityScore": 4,
+            "priority": "high"
+          },
+          {
+            "id": "yahoo-rss-61f2b65d-2360-3bb4-9245-701d7dcaa9df",
+            "ticker": "MSFT",
+            "kind": "news",
+            "category": "product",
+            "headline": "Magnificent Seven stocks lose $2.3 trillion in June 2026",
+            "summary": "The tech group is down 10% this month as investors grow impatient waiting for returns on hundreds of billions in AI infrastructure spending",
+            "publisher": "qz.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-30T12:13:43.000Z",
+            "sourceUrl": "https://qz.com/magnificent-seven-stocks-trillion-loss-ai-spending-063026?.tsrc=rss",
+            "relatedTickers": [
+              "MSFT"
+            ],
+            "confidence": "medium",
+            "impact": "medium",
+            "decisionPressure": 69,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 3,
+            "actionabilityScore": 3,
+            "priority": "medium"
+          },
+          {
+            "id": "yahoo-rss-8845336d-4407-3503-b1e2-dfb0e97fd613",
+            "ticker": "MSFT",
+            "kind": "news",
+            "category": "product",
+            "headline": "TransAct Technologies Launches the Next Generation Enterprise-Grade BOHA! SaaS Platform",
+            "summary": "HAMDEN, Conn., June 30, 2026--TransAct Technologies Incorporated (Nasdaq: TACT), a leading provider of SaaS platform and integrated hardware solutions, today announced the launch of its next-generation BOHA!® SaaS platform, delivering a major advancement in enterprise foodservice technology. The launch marks a major milestone in TransAct’s strategy to accelerate innovation and modernize back-of-house operations through a scalable cloud platform for customers worldwide.",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-30T12:00:00.000Z",
+            "sourceUrl": "https://finance.yahoo.com/technology/articles/transact-technologies-launches-next-generation-120000451.html?.tsrc=rss",
+            "relatedTickers": [
+              "MSFT"
+            ],
+            "confidence": "medium",
+            "impact": "medium",
+            "decisionPressure": 69,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 3,
+            "actionabilityScore": 3,
+            "priority": "medium"
+          },
+          {
+            "id": "sec-0001193125-26-258667-d26760d8k.htm",
+            "ticker": "MSFT",
+            "kind": "filing_event",
+            "category": "corporate_event",
+            "headline": "8-K: 8-K",
+            "summary": "Official 8-K filing by MICROSOFT CORP.",
+            "publisher": "U.S. Securities and Exchange Commission",
+            "aggregator": null,
+            "publishedAt": "2026-06-05T21:00:00.000Z",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/789019/000119312526258667/d26760d8k.htm",
+            "relatedTickers": [
+              "MSFT"
+            ],
+            "confidence": "high",
+            "impact": "low",
+            "decisionPressure": 52,
+            "sourceType": "regulatory_filing",
+            "sourceRank": 3,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low",
+            "filing": {
+              "form": "8-K",
+              "accessionNumber": "0001193125-26-258667",
+              "filingDate": "2026-06-05"
+            }
+          },
+          {
+            "id": "yahoo-rss-4c81480e-279c-3929-ba0d-6ae0e1f103b9",
+            "ticker": "MSFT",
+            "kind": "news",
+            "category": "other",
+            "headline": "Magnificent 7 stocks lose $2.3 trillion in June",
+            "summary": "Investing.com -- The \"Magnificent 7\" group of technology companies lost approximately $2.3 trillion in market value this month as investors increased scrutiny of large infrastructure spending by these firms.",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-30T12:28:36.000Z",
+            "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/magnificent-7-stocks-lose-2-122836497.html?.tsrc=rss",
+            "relatedTickers": [
+              "MSFT"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-2da6871c-9de2-3a3b-8af7-a0213f0315db",
+            "ticker": "MSFT",
+            "kind": "news",
+            "category": "other",
+            "headline": "Why the Dow’s Tech Revolution Is a Blessing and a Curse",
+            "summary": "If the Dow’s ascent to 52,000 were a World Cup match, then Alphabet involvement was akin to a soccer player being substituted on in the final moments and scoring the fourth goal in a 4-0 win. After a stellar debut, Alphabet will be an important part of the squad moving forward. Its inclusion means the Dow now contains five of the so-called Magnificent Seven—alongside Microsoft Amazon Apple and Nvidia That inevitably raises questions about whether the index is becoming too tech-heavy.",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-30T12:24:00.000Z",
+            "sourceUrl": "https://finance.yahoo.com/m/2da6871c-9de2-3a3b-8af7-a0213f0315db/why-the-dow%E2%80%99s-tech-revolution.html?.tsrc=rss",
+            "relatedTickers": [
+              "MSFT"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-6c3b082d-e25c-32c6-9612-9f814f9f9661",
+            "ticker": "MSFT",
+            "kind": "news",
+            "category": "other",
+            "headline": "This Stock Will Dominate The Second Half of 2026",
+            "summary": "My buy order on Microsoft (NASDAQ:MSFT) has fired five times this year, and the sixth sits queued for Monday morning. The stock is down. The headlines are nervous. I keep adding, and I am writing this to explain exactly why. What pulls me back is simple. Microsoft sits at the center of the agentic computing ... This Stock Will Dominate The Second Half of 2026",
+            "publisher": "247wallst.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-30T12:13:39.000Z",
+            "sourceUrl": "https://247wallst.com/investing/2026/06/30/this-stock-will-dominate-the-second-half-of-2026-2/?.tsrc=rss",
+            "relatedTickers": [
+              "MSFT"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-d040412e-3bca-3514-b35e-7e8044557f80",
+            "ticker": "MSFT",
+            "kind": "news",
+            "category": "other",
+            "headline": "Invesco QQQ Is Magnificent, but This 1 ETF Might Be Even Better Right Now",
+            "summary": "This ETF provides investors with a way to stay invested in the Nasdaq-100 while reducing high-concentration risk.",
+            "publisher": "fool.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-30T12:06:00.000Z",
+            "sourceUrl": "https://www.fool.com/investing/2026/06/30/invesco-qqq-magnificent-this-etf-might-better-qqqe/?.tsrc=rss",
+            "relatedTickers": [
+              "MSFT"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "yahoo-rss-a4bcbb78-91ea-3b1a-99cf-5a795fc24ee4",
+            "ticker": "MSFT",
+            "kind": "news",
+            "category": "other",
+            "headline": "Dow Builds on 52,000 Breakthrough as Markets Rise to Close a Strong First Half",
+            "summary": "U.S. stocks were headed for modest gains early Tuesday as markets look to close out the first half of the year on a positive note. Dow Jones Industrial Average futures were up 103 points, or 0.2%. S&P 500 futures were up 0.",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-06-30T11:30:06.000Z",
+            "sourceUrl": "https://finance.yahoo.com/m/a4bcbb78-91ea-3b1a-99cf-5a795fc24ee4/dow-builds-on-52%2C000.html?.tsrc=rss",
+            "relatedTickers": [
+              "MSFT"
+            ],
+            "confidence": "medium",
+            "impact": "low",
+            "decisionPressure": 49,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
+          },
+          {
+            "id": "sec-0001193125-26-224155-d125909d8k.htm",
+            "ticker": "MSFT",
+            "kind": "filing_event",
+            "category": "corporate_event",
+            "headline": "8-K: 8-K",
+            "summary": "Official 8-K filing by MICROSOFT CORP.",
+            "publisher": "U.S. Securities and Exchange Commission",
+            "aggregator": null,
+            "publishedAt": "2026-05-14T21:00:00.000Z",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/789019/000119312526224155/d125909d8k.htm",
+            "relatedTickers": [
+              "MSFT"
+            ],
+            "confidence": "high",
+            "impact": "low",
+            "decisionPressure": 47,
+            "sourceType": "regulatory_filing",
+            "sourceRank": 3,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-06-30T12:56:30.263Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low",
+            "filing": {
+              "form": "8-K",
+              "accessionNumber": "0001193125-26-224155",
+              "filingDate": "2026-05-14"
+            }
+          }
+        ]
+      },
+      "codexAudit": {
+        "skillVersion": "codex-public-equity-investing-0.1.29",
+        "calledAt": "2026-06-30T12:58:13.441Z",
+        "inputScope": [
+          "snapshots/scored-live.json",
+          "data/raw_candidates_live.json"
+        ],
+        "summary": {
+          "zh": "54分与观察动作和原始98分基本面形成强烈张力；原始买入/高置信度变为观察/低置信度，风险控制86降至7。",
+          "en": "The 54 score and watch action sharply conflict with raw fundamentals of 98: raw buy/high confidence becomes watch/low confidence, while risk control collapses 86→7."
+        },
+        "conflicts": [
+          {
+            "severity": "high",
+            "description": "Action changes buy→watch and confidence high→low; momentum changes 77→31 and risk control 86→7 without a reproducible bridge."
+          },
+          {
+            "severity": "high",
+            "description": "The news set contains Tesla and TransAct items plus broad market stories, materially contaminating ticker-specific live evidence."
+          },
+          {
+            "severity": "medium",
+            "description": "The legacy audit cites a thin valuation margin, but no valuation calculation is present in either authorized file."
+          }
+        ],
+        "missingDataWarnings": [
+          "No live P/E, free-cash-flow yield, Azure growth series, capex trend, or valuation methodology.",
+          "SEC fundamentals are named as an input, but underlying filings and calculations are absent from the authorized snapshots."
+        ],
+        "familySuitability": {
+          "zh": "可作为高质量成长候选，但当前审计仅支持观察；若与QQQM或VTI并持，必须控制科技集中度。",
+          "en": "A high-quality growth candidate, but this audit supports watch only; technology concentration must be controlled alongside QQQM or VTI."
+        },
+        "provider": "codex_public_equity_investing_skill",
+        "workflow": "Public Equity Investing long-short-pitch workflow; internal screen-grade audit using only the two authorized local snapshots, not personal investment advice.",
+        "status": "reviewed"
+      },
+      "reviewOverride": {
+        "reason": "Codex Public Equity Investing audit reported a high-severity conflict; action was downgraded to watch.",
+        "appliedAt": "2026-06-30T12:58:13.441Z"
+      }
+    }
+  ],
+  "factorValues": {
+    "fundamentals": 77,
+    "valuation": 67,
+    "momentum": 58,
+    "fundQuality": 90,
+    "macroSensitivity": 70,
+    "riskControl": 41
+  },
+  "simulationAssumptions": {
+    "mixed": {
+      "monthlyReturns": [
+        0.018,
+        0.011,
+        -0.016,
+        0.028,
+        0.021,
+        0.012,
+        0.031,
+        -0.011,
+        0.024,
+        0.019,
+        0.017,
+        0.022
+      ],
+      "volatility": 0.145,
+      "trades": [
+        "VTI",
+        "VFIAX",
+        "QQQM",
+        "O39.SI",
+        "D05.SI"
+      ]
+    },
+    "ultra": {
+      "monthlyReturns": [
+        0.012,
+        0.009,
+        -0.01,
+        0.018,
+        0.015,
+        0.011,
+        0.019,
+        -0.007,
+        0.017,
+        0.014,
+        0.013,
+        0.016
+      ],
+      "volatility": 0.105,
+      "trades": [
+        "VTI",
+        "VFIAX",
+        "O39.SI",
+        "D05.SI"
+      ]
+    },
+    "benchmark": {
+      "monthlyReturns": [
+        0.01,
+        0.006,
+        -0.013,
+        0.017,
+        0.012,
+        0.008,
+        0.018,
+        -0.009,
+        0.014,
+        0.011,
+        0.01,
+        0.013
+      ],
+      "volatility": 0.128,
+      "trades": [
+        "SPY"
+      ]
+    },
+    "qqq": {
+      "monthlyReturns": [
+        0.014,
+        0.011,
+        -0.019,
+        0.024,
+        0.019,
+        0.01,
+        0.026,
+        -0.014,
+        0.021,
+        0.016,
+        0.014,
+        0.018
+      ],
+      "volatility": 0.17,
+      "trades": [
+        "QQQ"
+      ]
+    },
+    "cash": {
+      "monthlyReturns": [
+        0.0032,
+        0.0032,
+        0.0032,
+        0.0032,
+        0.0032,
+        0.0032,
+        0.0032,
+        0.0032,
+        0.0032,
+        0.0032,
+        0.0032,
+        0.0032
+      ],
+      "volatility": 0.01,
+      "trades": [
+        "CASH"
+      ]
+    }
+  },
+  "inputFingerprint": "77d85255f486173da76c90b950f79655c8d7c7016211f61e93a6f30dbc02c86c",
+  "codexAuditRun": {
+    "provider": "codex_public_equity_investing_skill",
+    "workflow": "Public Equity Investing long-short-pitch workflow; internal screen-grade audit using only the two authorized local snapshots, not personal investment advice.",
+    "reviewed": [
+      "VTI",
+      "VFIAX",
+      "QQQM",
+      "O39.SI",
+      "D05.SI",
+      "C6L.SI",
+      "Z74.SI",
+      "COST",
+      "MSFT"
+    ],
+    "completedAt": "2026-06-30T12:58:13.494Z",
+    "source": "data/codex_public_equity_audit.json"
+  }
+};

@@ -1,0 +1,65 @@
+{
+  "rawDir": "data/issuer_holdings/raw",
+  "targets": [
+    {
+      "ticker": "VTI",
+      "issuer": "Vanguard",
+      "type": "etf",
+      "productUrl": "https://investor.vanguard.com/investment-products/etfs/profile/vti",
+      "advisorUrl": "https://advisors.vanguard.com/investments/products/vti/vanguard-total-stock-market-etf",
+      "issuerCsvUrl": null,
+      "expenseRatio": 0.0003,
+      "sec": {
+        "cik": "0000036405",
+        "seriesId": "S000002848",
+        "classId": "C000007808",
+        "maxFilings": 80
+      }
+    },
+    {
+      "ticker": "VFIAX",
+      "issuer": "Vanguard",
+      "type": "fund",
+      "productUrl": "https://investor.vanguard.com/investment-products/mutual-funds/profile/vfiax",
+      "advisorUrl": "https://advisors.vanguard.com/investments/products/vfiax/vanguard-500-index-fund-admiral-shares",
+      "issuerCsvUrl": null,
+      "expenseRatio": 0.0004,
+      "sec": {
+        "cik": "0000036405",
+        "seriesId": "S000002839",
+        "classId": "C000007774",
+        "maxFilings": 80
+      }
+    },
+    {
+      "ticker": "QQQM",
+      "issuer": "Invesco",
+      "type": "etf",
+      "productUrl": "https://www.invesco.com/us/en/financial-products/etfs/invesco-nasdaq-100-etf.html",
+      "advisorUrl": null,
+      "issuerCsvUrl": null,
+      "expenseRatio": 0.0015,
+      "sec": {
+        "cik": "0001378872",
+        "seriesId": "S000069448",
+        "classId": "C000221604",
+        "maxFilings": 120
+      }
+    },
+    {
+      "ticker": "AIQ",
+      "issuer": "Global X",
+      "type": "etf",
+      "productUrl": "https://www.globalxetfs.com/funds/aiq",
+      "advisorUrl": null,
+      "issuerCsvUrl": null,
+      "expenseRatio": 0.0068,
+      "sec": {
+        "cik": "0001432353",
+        "seriesId": "S000061326",
+        "classId": "C000198548",
+        "maxFilings": 120
+      }
+    }
+  ]
+}

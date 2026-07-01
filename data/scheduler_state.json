@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "jobs": {
+    "marketData": {
+      "nextDueAt": "2026-07-01T17:29:16.500Z",
+      "lastStartedAt": "2026-07-01T11:29:16.503Z",
+      "lastRunId": "20260701T112916Z-sources"
+    },
+    "recommendations": {
+      "nextDueAt": "2026-07-07T12:48:46.679Z"
+    },
+    "watchlist": {
+      "nextDueAt": "2026-07-01T12:48:46.679Z"
+    }
+  }
+}

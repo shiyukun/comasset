@@ -1,0 +1,127 @@
+{
+  "runId": "20260630T125856Z-watchlist",
+  "scope": "watchlist",
+  "trigger": "manual_web",
+  "requestedBy": "thomas",
+  "status": "completed",
+  "startedAt": "2026-06-30T12:58:56.430Z",
+  "completedAt": "2026-06-30T12:59:11.890Z",
+  "changed": true,
+  "sourceChanges": [
+    "data/live_prices.json"
+  ],
+  "outputs": {
+    "watchlist": {
+      "changed": true,
+      "generatedAt": "2026-06-30T12:59:11.771Z",
+      "itemCount": 3
+    }
+  },
+  "logs": [
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/fetch_prices_yahoo.js",
+        "data/raw_candidates.json",
+        "data/live_prices.json",
+        "18",
+        "data/custom_watchlist.json"
+      ],
+      "startedAt": "2026-06-30T12:58:56.479Z",
+      "completedAt": "2026-06-30T12:58:57.436Z",
+      "code": 0,
+      "stdout": "Fetched 16 price series into data/live_prices.json.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/fetch_fundamentals_sec.js",
+        "data/raw_candidates.json",
+        "data/sec_ticker_map.json",
+        "data/live_fundamentals.json",
+        "data/custom_watchlist.json"
+      ],
+      "startedAt": "2026-06-30T12:58:57.436Z",
+      "completedAt": "2026-06-30T12:59:00.054Z",
+      "code": 0,
+      "stdout": "Fetched 4 SEC company facts into data/live_fundamentals.json.",
+      "stderr": "D05.SI: outside SEC companyfacts coverage\nO39.SI: outside SEC companyfacts coverage\nZ74.SI: outside SEC companyfacts coverage\nC6L.SI: outside SEC companyfacts coverage"
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/fetch_holdings_official.js",
+        "config/holdings_sources.json",
+        "data/live_holdings.json"
+      ],
+      "startedAt": "2026-06-30T12:59:00.054Z",
+      "completedAt": "2026-06-30T12:59:07.470Z",
+      "code": 0,
+      "stdout": "Imported official holdings for 4/4 funds into data/live_holdings.json.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/fetch_news_events.js",
+        "data/raw_candidates.json",
+        "data/sec_ticker_map.json",
+        "data/live_news_events.json",
+        "60",
+        "8",
+        "data/custom_watchlist.json"
+      ],
+      "startedAt": "2026-06-30T12:59:07.470Z",
+      "completedAt": "2026-06-30T12:59:11.576Z",
+      "code": 0,
+      "stdout": "Fetched news/events for 12/12 symbols into data/live_news_events.json.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/build_data_status.js",
+        "web/data_status.js"
+      ],
+      "startedAt": "2026-06-30T12:59:11.576Z",
+      "completedAt": "2026-06-30T12:59:11.654Z",
+      "code": 0,
+      "stdout": "Built web/data_status.js from live source coverage.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/build_custom_watchlist.js"
+      ],
+      "startedAt": "2026-06-30T12:59:11.729Z",
+      "completedAt": "2026-06-30T12:59:11.781Z",
+      "code": 0,
+      "stdout": "Built custom watchlist analysis for 3 items.\n- data/custom_watchlist_live.json\n- web/watchlist.js\n- web/watchlist.json",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "scripts/validate_custom_watchlist.js"
+      ],
+      "startedAt": "2026-06-30T12:59:11.781Z",
+      "completedAt": "2026-06-30T12:59:11.821Z",
+      "code": 0,
+      "stdout": "Validated 3 custom watchlist items; none appear in 9 recommendations.",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "../../../../bin/bash",
+        "scripts/build_static_site.sh"
+      ],
+      "startedAt": "2026-06-30T12:59:11.822Z",
+      "completedAt": "2026-06-30T12:59:11.890Z",
+      "code": 0,
+      "stdout": "Built static site at /Users/thomas/Documents/comasset/dist/aws-site",
+      "stderr": ""
+    }
+  ]
+}
