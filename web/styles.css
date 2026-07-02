@@ -256,6 +256,29 @@ main {
   color: #fff;
 }
 
+.logout-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: var(--surface);
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.logout-button:hover {
+  border-color: #b78d8d;
+  color: var(--red);
+}
+
+.logout-button:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
 .view {
   display: none;
 }

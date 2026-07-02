@@ -10,6 +10,9 @@ mkdir -p "${OUTPUT_DIR}"
 
 for file in \
   index.html \
+  login.html \
+  login.css \
+  login.js \
   styles.css \
   app.js \
   config.js \

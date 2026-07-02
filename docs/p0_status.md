@@ -51,7 +51,7 @@ Current `2026-W26-scored` recommendations all have `codexAudit.status = "reviewe
 
 ## 5. Family Members and Permissions
 
-Status: implemented for P0 local use.
+Status: implemented with a single backend login plus local research-view roles.
 
 - Role and permission config: `config/app_config.json` and `web/config.js`.
 - UI member switcher: `web/index.html`.
@@ -60,13 +60,18 @@ Status: implemented for P0 local use.
 
 P0 behavior:
 
+- The Node service requires the single configured account before serving pages, snapshot JSON, health data, or refresh APIs.
+- Password material is stored only as a salted scrypt hash in the Git-ignored local `config/auth.json`.
+- Sessions use in-memory, 12-hour HttpOnly/SameSite cookies; restarting the service requires a new login.
+- Login attempts are rate-limited to reduce online guessing.
+
 - `admin`: view research, edit family notes, switch member context, and run the manual weekly pipeline.
 - `reviewer`: view research, edit their own notes, and switch member context.
 - `viewer`: view research and switch member context only.
 - Notes are stored per member in browser `localStorage`.
 - Local audit log records member switches and note saves in browser `localStorage`.
 
-This is not backend authentication. It is a local access model for a static, family-internal MVP.
+The family-role switcher remains a research-view control inside the authenticated application. It is not a second set of login accounts.
 
 ## 6. Real News and Events
 
@@ -109,7 +114,7 @@ The scheduler runs only while the local Node service is running. S3 static hosti
 ## Backlog
 
 - Database-backed API for snapshots and member state.
-- Real login/authentication and database-backed permissions.
+- Database-backed sessions, per-person login accounts, and server-side member state if the product expands beyond one shared account.
 - GitHub publish / PR workflow.
 - Automated SGX/company-announcement fundamentals.
 - Longer snapshot history before interpreting backtest performance.

@@ -1,6 +1,6 @@
 window.comassetDataStatus = {
-  "asOf": "2026-07-01 19:29 SGT",
-  "generatedAt": "2026-07-01T11:29:19.569Z",
+  "asOf": "2026-07-02 21:38 SGT",
+  "generatedAt": "2026-07-02T13:38:25.350Z",
   "sources": [
     {
       "id": "prices",
@@ -10,7 +10,7 @@ window.comassetDataStatus = {
       "cadence": "6 hours",
       "cadenceZh": "每 6 小时",
       "status": "ready",
-      "lastUpdated": "2026-07-01 19:29 SGT",
+      "lastUpdated": "2026-07-02 21:38 SGT",
       "coverage": 1,
       "notes": {
         "zh": "覆盖 16/16 条行情及基准序列。",
@@ -25,7 +25,7 @@ window.comassetDataStatus = {
       "cadence": "Weekly",
       "cadenceZh": "每周",
       "status": "ready",
-      "lastUpdated": "2026-06-30 20:59 SGT",
+      "lastUpdated": "2026-07-02 21:38 SGT",
       "coverage": 1,
       "notes": {
         "zh": "SEC 可覆盖美国股票 3/3；新加坡股票仍需 SGX 数据源。",
@@ -40,7 +40,7 @@ window.comassetDataStatus = {
       "cadence": "Monthly",
       "cadenceZh": "每月",
       "status": "ready",
-      "lastUpdated": "2026-06-30 20:59 SGT",
+      "lastUpdated": "2026-07-02 21:38 SGT",
       "coverage": 1,
       "notes": {
         "zh": "官方持仓覆盖 4/4 只 ETF/基金。",
@@ -70,7 +70,7 @@ window.comassetDataStatus = {
       "cadence": "6 hours",
       "cadenceZh": "每 6 小时",
       "status": "ready",
-      "lastUpdated": "2026-07-01 19:29 SGT",
+      "lastUpdated": "2026-07-02 21:38 SGT",
       "coverage": 1,
       "notes": {
         "zh": "新闻或监管事件覆盖 12/12 个研究标的。",

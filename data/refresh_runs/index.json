@@ -1,6 +1,26 @@
 {
   "runs": [
     {
+      "runId": "20260702T133807Z-watchlist",
+      "scope": "watchlist",
+      "trigger": "scheduler:watchlist",
+      "status": "completed",
+      "startedAt": "2026-07-02T13:38:08.001Z",
+      "completedAt": "2026-07-02T13:38:25.627Z",
+      "snapshotId": null,
+      "changed": true
+    },
+    {
+      "runId": "20260702T133707Z-sources",
+      "scope": "sources",
+      "trigger": "scheduler:marketData",
+      "status": "completed",
+      "startedAt": "2026-07-02T13:37:07.999Z",
+      "completedAt": "2026-07-02T13:37:12.837Z",
+      "snapshotId": null,
+      "changed": false
+    },
+    {
       "runId": "20260701T112916Z-sources",
       "scope": "sources",
       "trigger": "scheduler:marketData",
@@ -91,5 +111,5 @@
       "changed": true
     }
   ],
-  "updatedAt": "2026-07-01T11:29:19.686Z"
+  "updatedAt": "2026-07-02T13:38:25.628Z"
 }

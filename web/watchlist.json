@@ -1,7 +1,7 @@
 {
   "version": "watchlist-v2",
-  "generatedAt": "2026-06-30T12:59:11.771Z",
-  "asOf": "2026-06-30",
+  "generatedAt": "2026-07-02T13:38:25.497Z",
+  "asOf": "2026-07-02",
   "mode": "custom_watchlist_analysis",
   "recommendationPolicy": "These items are user-selected research targets and are excluded from recommendation ranking and backtest selection.",
   "horizonAnalysisPolicy": "Screen-grade Public Equity Investing judgments for research use; not account-specific trade instructions.",
@@ -30,8 +30,8 @@
           "action": "hold",
           "confidence": "medium",
           "rationale": {
-            "zh": "实时数据复核 61/100：动量 64、基本面或基金质量 55、风险韧性 90，事件扣分 8。 Q1 收入和盈利能力继续改善，但台湾 foodpanda 交易、银行业务扩张和贷款组合快速增长会在未来两个季度带来整合与信用成本不确定性。已有仓位以持有观察为主，不追涨。",
-            "en": "Live-data review 61/100: momentum 64, fundamentals or fund quality 55, risk resilience 90, and event penalty 8. Q1 revenue and profitability improved, but the Taiwan foodpanda transaction, banking expansion, and rapid loan-book growth add integration and credit-cost uncertainty over the next two quarters. Hold existing exposure rather than chase it."
+            "zh": "实时数据复核 66/100：动量 74、基本面或基金质量 55、风险韧性 90，事件扣分 8。 Q1 收入和盈利能力继续改善，但台湾 foodpanda 交易、银行业务扩张和贷款组合快速增长会在未来两个季度带来整合与信用成本不确定性。已有仓位以持有观察为主，不追涨。",
+            "en": "Live-data review 66/100: momentum 74, fundamentals or fund quality 55, risk resilience 90, and event penalty 8. Q1 revenue and profitability improved, but the Taiwan foodpanda transaction, banking expansion, and rapid loan-book growth add integration and credit-cost uncertainty over the next two quarters. Hold existing exposure rather than chase it."
           },
           "upgradeTrigger": {
             "zh": "维持 2026 年收入与 Adjusted EBITDA 指引，且信用成本、并购整合和自由现金流没有恶化。",
@@ -41,10 +41,10 @@
             "zh": "下调全年指引、金融服务亏损重新扩大，或连续两个季度自由现金流转弱。",
             "en": "A full-year guidance cut, renewed widening of Financial Services losses, or two consecutive quarters of weaker free cash flow."
           },
-          "liveScore": 61,
+          "liveScore": 66,
           "analysisProvider": "comasset_deterministic_horizon_analysis_v1",
           "analysisInputs": {
-            "momentum": 64,
+            "momentum": 74,
             "fundamentals": 55,
             "risk": 90,
             "eventPenalty": 8
@@ -54,8 +54,8 @@
           "action": "hold",
           "confidence": "medium",
           "rationale": {
-            "zh": "实时数据复核 60/100：动量 64、基本面或基金质量 55、风险韧性 90，事件扣分 8。 若 2026 年 20%-22% 收入增长和 40%-44% Adjusted EBITDA 增长兑现，平台经营杠杆和回购有望支撑未来一年的风险回报，适合分批建立而不是一次性重仓。",
-            "en": "Live-data review 60/100: momentum 64, fundamentals or fund quality 55, risk resilience 90, and event penalty 8. If 2026 revenue growth of 20%-22% and Adjusted EBITDA growth of 40%-44% are delivered, platform operating leverage and the buyback should support one-year risk/reward. Build gradually rather than in one step."
+            "zh": "实时数据复核 63/100：动量 74、基本面或基金质量 55、风险韧性 90，事件扣分 8。 若 2026 年 20%-22% 收入增长和 40%-44% Adjusted EBITDA 增长兑现，平台经营杠杆和回购有望支撑未来一年的风险回报，适合分批建立而不是一次性重仓。",
+            "en": "Live-data review 63/100: momentum 74, fundamentals or fund quality 55, risk resilience 90, and event penalty 8. If 2026 revenue growth of 20%-22% and Adjusted EBITDA growth of 40%-44% are delivered, platform operating leverage and the buyback should support one-year risk/reward. Build gradually rather than in one step."
           },
           "upgradeTrigger": {
             "zh": "Deliveries 利润率继续扩张，金融服务接近盈亏平衡，且并购没有显著摊薄回报。",
@@ -65,10 +65,10 @@
             "zh": "用户增长依赖更高补贴，贷款损失率快速上升，或资本配置偏离现金回报纪律。",
             "en": "User growth requires materially higher incentives, loan losses rise sharply, or capital allocation departs from cash-return discipline."
           },
-          "liveScore": 60,
+          "liveScore": 63,
           "analysisProvider": "comasset_deterministic_horizon_analysis_v1",
           "analysisInputs": {
-            "momentum": 64,
+            "momentum": 74,
             "fundamentals": 55,
             "risk": 90,
             "eventPenalty": 8
@@ -78,8 +78,8 @@
           "action": "hold",
           "confidence": "medium",
           "rationale": {
-            "zh": "实时数据复核 60/100：动量 64、基本面或基金质量 55、风险韧性 90，事件扣分 8。 东南亚移动出行、配送、广告和金融服务的交叉销售仍有长期复利空间；核心前提是金融服务风险可控、并购整合不破坏现金流。长期仅建议分批买进。",
-            "en": "Live-data review 60/100: momentum 64, fundamentals or fund quality 55, risk resilience 90, and event penalty 8. Cross-selling across Southeast Asian mobility, deliveries, advertising, and financial services retains long-duration compounding potential. The case requires controlled financial-services risk and M&A that does not impair cash flow; use phased buying only."
+            "zh": "实时数据复核 61/100：动量 74、基本面或基金质量 55、风险韧性 90，事件扣分 8。 东南亚移动出行、配送、广告和金融服务的交叉销售仍有长期复利空间；核心前提是金融服务风险可控、并购整合不破坏现金流。长期仅建议分批买进。",
+            "en": "Live-data review 61/100: momentum 74, fundamentals or fund quality 55, risk resilience 90, and event penalty 8. Cross-selling across Southeast Asian mobility, deliveries, advertising, and financial services retains long-duration compounding potential. The case requires controlled financial-services risk and M&A that does not impair cash flow; use phased buying only."
           },
           "upgradeTrigger": {
             "zh": "持续正向自由现金流、核心业务份额稳定，并证明新市场扩张可以获得合理资本回报。",
@@ -89,10 +89,10 @@
             "zh": "监管限制削弱平台经济性，金融服务出现结构性信用损失，或长期 ROIC 无法覆盖资本成本。",
             "en": "Regulation impairs platform economics, Financial Services develops structural credit losses, or long-run ROIC fails to cover the cost of capital."
           },
-          "liveScore": 60,
+          "liveScore": 61,
           "analysisProvider": "comasset_deterministic_horizon_analysis_v1",
           "analysisInputs": {
-            "momentum": 64,
+            "momentum": 74,
             "fundamentals": 55,
             "risk": 90,
             "eventPenalty": 8
@@ -155,17 +155,17 @@
       "priceSignals": {
         "status": "ready",
         "points": 79,
-        "price": 3.74,
-        "asOf": "2026-06-29",
-        "oneWeekReturn": 0.05352112676056353,
-        "oneMonthReturn": 0.11976047904191622,
-        "threeMonthReturn": 0.016304347826086918,
+        "price": 3.925,
+        "asOf": "2026-07-02",
+        "oneWeekReturn": 0.10563380281690149,
+        "oneMonthReturn": 0.1751497005988023,
+        "threeMonthReturn": 0.06657608695652173,
         "maxDrawdown": -0.4835680751173709,
-        "annualizedVolatility": 0.43880686767086374
+        "annualizedVolatility": 0.4452274073641137
       },
       "newsEvents": {
         "status": "ready",
-        "asOf": "2026-06-30T12:59:07.509Z",
+        "asOf": "2026-07-02T13:38:23.030Z",
         "itemCount": 8,
         "highImpactCount": 2,
         "items": [
@@ -191,7 +191,7 @@
             "evidenceLabel": "Fact",
             "timingConfidence": "confirmed",
             "dateType": "hard_date",
-            "lastChecked": "2026-06-30T12:59:07.509Z",
+            "lastChecked": "2026-07-02T13:38:23.030Z",
             "materialityScore": 4,
             "actionabilityScore": 4,
             "priority": "high"
@@ -218,7 +218,7 @@
             "evidenceLabel": "Fact",
             "timingConfidence": "confirmed",
             "dateType": "hard_date",
-            "lastChecked": "2026-06-30T12:59:07.509Z",
+            "lastChecked": "2026-07-02T13:38:23.030Z",
             "materialityScore": 4,
             "actionabilityScore": 4,
             "priority": "high"
@@ -239,13 +239,13 @@
             ],
             "confidence": "medium",
             "impact": "medium",
-            "decisionPressure": 69,
+            "decisionPressure": 63,
             "sourceType": "ticker_news_feed",
             "sourceRank": 5,
             "evidenceLabel": "Fact",
             "timingConfidence": "confirmed",
             "dateType": "hard_date",
-            "lastChecked": "2026-06-30T12:59:07.509Z",
+            "lastChecked": "2026-07-02T13:38:23.030Z",
             "materialityScore": 3,
             "actionabilityScore": 3,
             "priority": "medium"
@@ -272,7 +272,7 @@
             "evidenceLabel": "Fact",
             "timingConfidence": "confirmed",
             "dateType": "hard_date",
-            "lastChecked": "2026-06-30T12:59:07.509Z",
+            "lastChecked": "2026-07-02T13:38:23.030Z",
             "materialityScore": 3,
             "actionabilityScore": 3,
             "priority": "medium"
@@ -299,7 +299,7 @@
             "evidenceLabel": "Fact",
             "timingConfidence": "confirmed",
             "dateType": "hard_date",
-            "lastChecked": "2026-06-30T12:59:07.509Z",
+            "lastChecked": "2026-07-02T13:38:23.030Z",
             "materialityScore": 2,
             "actionabilityScore": 2,
             "priority": "low"
@@ -326,7 +326,7 @@
             "evidenceLabel": "Fact",
             "timingConfidence": "confirmed",
             "dateType": "hard_date",
-            "lastChecked": "2026-06-30T12:59:07.509Z",
+            "lastChecked": "2026-07-02T13:38:23.030Z",
             "materialityScore": 2,
             "actionabilityScore": 2,
             "priority": "low"
@@ -347,13 +347,13 @@
             ],
             "confidence": "medium",
             "impact": "low",
-            "decisionPressure": 49,
+            "decisionPressure": 43,
             "sourceType": "ticker_news_feed",
             "sourceRank": 5,
             "evidenceLabel": "Fact",
             "timingConfidence": "confirmed",
             "dateType": "hard_date",
-            "lastChecked": "2026-06-30T12:59:07.509Z",
+            "lastChecked": "2026-07-02T13:38:23.030Z",
             "materialityScore": 2,
             "actionabilityScore": 2,
             "priority": "low"
@@ -374,13 +374,13 @@
             ],
             "confidence": "medium",
             "impact": "low",
-            "decisionPressure": 49,
+            "decisionPressure": 43,
             "sourceType": "ticker_news_feed",
             "sourceRank": 5,
             "evidenceLabel": "Fact",
             "timingConfidence": "confirmed",
             "dateType": "hard_date",
-            "lastChecked": "2026-06-30T12:59:07.509Z",
+            "lastChecked": "2026-07-02T13:38:23.030Z",
             "materialityScore": 2,
             "actionabilityScore": 2,
             "priority": "low"
@@ -390,7 +390,7 @@
       "holdings": null,
       "fundamentals": {
         "status": "ready",
-        "asOf": "2026-06-30T12:59:00.040Z",
+        "asOf": "2026-07-02T13:38:13.496Z",
         "metrics": {
           "revenueGrowth": null,
           "netIncomeGrowth": null,
@@ -405,11 +405,11 @@
       "workflowAudit": {
         "workflow": "Comasset deterministic horizon refresh",
         "version": "0.1.29",
-        "reviewedAt": "2026-06-30T12:59:11.771Z",
+        "reviewedAt": "2026-07-02T13:38:25.497Z",
         "classification": "user_selected_watchlist_horizon_actions",
         "recommendationExcluded": true,
-        "horizonAnalysisAsOf": "2026-06-30",
-        "refreshedAt": "2026-06-30T12:59:11.771Z",
+        "horizonAnalysisAsOf": "2026-07-02",
+        "refreshedAt": "2026-07-02T13:38:25.497Z",
         "codexBaselineWorkflow": "Codex Public Equity Investing long-short-pitch",
         "codexReviewStatus": "needs_review_after_data_refresh"
       }
@@ -432,8 +432,8 @@
           "action": "hold",
           "confidence": "low",
           "rationale": {
-            "zh": "实时数据复核 60/100：动量 63、基本面或基金质量 55、风险韧性 90，事件扣分 8。 上市后只有极短价格历史，当前价格仍高于 135 美元 IPO 价，而公司 Q1 仍录得重大净亏损和资本开支压力。短期更适合降低已有暴露、回避新增，等待价格发现和首批上市公司财报。",
-            "en": "Live-data review 60/100: momentum 63, fundamentals or fund quality 55, risk resilience 90, and event penalty 8. Post-IPO price history is extremely short, the current price remains above the $135 IPO price, and Q1 still showed a major net loss and heavy capital demands. Reduce existing exposure or avoid new exposure while price discovery and the first public-company reports develop."
+            "zh": "实时数据复核 61/100：动量 57、基本面或基金质量 55、风险韧性 90，事件扣分 4。 上市后只有极短价格历史，当前价格仍高于 135 美元 IPO 价，而公司 Q1 仍录得重大净亏损和资本开支压力。短期更适合降低已有暴露、回避新增，等待价格发现和首批上市公司财报。",
+            "en": "Live-data review 61/100: momentum 57, fundamentals or fund quality 55, risk resilience 90, and event penalty 4. Post-IPO price history is extremely short, the current price remains above the $135 IPO price, and Q1 still showed a major net loss and heavy capital demands. Reduce existing exposure or avoid new exposure while price discovery and the first public-company reports develop."
           },
           "upgradeTrigger": {
             "zh": "至少两个季度证明 Connectivity 利润增长可以覆盖 Space 与 AI 的亏损和资本投入。",
@@ -443,21 +443,21 @@
             "zh": "AI 亏损继续加速、Starlink ARPU 下滑快于用户增长贡献，或 IPO 后稀释和解禁压力上升。",
             "en": "AI losses continue to accelerate, Starlink ARPU declines faster than subscriber growth offsets, or post-IPO dilution and lockup pressure increase."
           },
-          "liveScore": 60,
+          "liveScore": 61,
           "analysisProvider": "comasset_deterministic_horizon_analysis_v1",
           "analysisInputs": {
-            "momentum": 63,
+            "momentum": 57,
             "fundamentals": 55,
             "risk": 90,
-            "eventPenalty": 8
+            "eventPenalty": 4
           }
         },
         "oneYear": {
           "action": "hold",
           "confidence": "low",
           "rationale": {
-            "zh": "实时数据复核 60/100：动量 63、基本面或基金质量 55、风险韧性 90，事件扣分 8。 Connectivity 业务增长和盈利能力很强，但 Space、AI、数据中心及发射基础设施投入令合并报表波动极大。一年视角应等待 2-4 个公开季度建立估值锚，再决定是否增加暴露。",
-            "en": "Live-data review 60/100: momentum 63, fundamentals or fund quality 55, risk resilience 90, and event penalty 8. Connectivity growth and profitability are strong, but Space, AI, data-center, and launch-infrastructure investment make consolidated results highly volatile. Over one year, wait for two to four public quarters to establish a valuation anchor before adding exposure."
+            "zh": "实时数据复核 62/100：动量 57、基本面或基金质量 55、风险韧性 90，事件扣分 4。 Connectivity 业务增长和盈利能力很强，但 Space、AI、数据中心及发射基础设施投入令合并报表波动极大。一年视角应等待 2-4 个公开季度建立估值锚，再决定是否增加暴露。",
+            "en": "Live-data review 62/100: momentum 57, fundamentals or fund quality 55, risk resilience 90, and event penalty 4. Connectivity growth and profitability are strong, but Space, AI, data-center, and launch-infrastructure investment make consolidated results highly volatile. Over one year, wait for two to four public quarters to establish a valuation anchor before adding exposure."
           },
           "upgradeTrigger": {
             "zh": "Starlink 用户、ARPU 和利润率形成可持续组合，Starship 进度改善，且自由现金流路径变得可验证。",
@@ -467,21 +467,21 @@
             "zh": "合并经营亏损继续扩大、资本开支缺乏回报证据，或治理和股权稀释风险恶化。",
             "en": "Further widening of consolidated operating losses, capex without evidence of returns, or worsening governance and dilution risk."
           },
-          "liveScore": 60,
+          "liveScore": 62,
           "analysisProvider": "comasset_deterministic_horizon_analysis_v1",
           "analysisInputs": {
-            "momentum": 63,
+            "momentum": 57,
             "fundamentals": 55,
             "risk": 90,
-            "eventPenalty": 8
+            "eventPenalty": 4
           }
         },
         "twoPlusYears": {
           "action": "hold",
           "confidence": "low",
           "rationale": {
-            "zh": "实时数据复核 60/100：动量 63、基本面或基金质量 55、风险韧性 90，事件扣分 8。 Starlink、可重复使用发射和 Starship 具备长期战略价值，但当前缺少足够上市历史、分部自由现金流和可靠估值锚，尚不足以给出长期买进判断。保留观察仓位，等待证据。",
-            "en": "Live-data review 60/100: momentum 63, fundamentals or fund quality 55, risk resilience 90, and event penalty 8. Starlink, reusable launch, and Starship have long-duration strategic value, but public history, segment free cash flow, and a reliable valuation anchor remain insufficient for a long-term buy call. Keep only a monitoring position and wait for evidence."
+            "zh": "实时数据复核 63/100：动量 57、基本面或基金质量 55、风险韧性 90，事件扣分 4。 Starlink、可重复使用发射和 Starship 具备长期战略价值，但当前缺少足够上市历史、分部自由现金流和可靠估值锚，尚不足以给出长期买进判断。保留观察仓位，等待证据。",
+            "en": "Live-data review 63/100: momentum 57, fundamentals or fund quality 55, risk resilience 90, and event penalty 4. Starlink, reusable launch, and Starship have long-duration strategic value, but public history, segment free cash flow, and a reliable valuation anchor remain insufficient for a long-term buy call. Keep only a monitoring position and wait for evidence."
           },
           "upgradeTrigger": {
             "zh": "Connectivity 自由现金流能够稳定资助 Space 与 AI，Starship 单位经济性得到验证，估值回报开始可计算。",
@@ -491,13 +491,13 @@
             "zh": "Starship 商业化长期延迟、资本需求持续超预期，或公司治理导致少数股东回报受损。",
             "en": "Persistent Starship commercialization delays, capital needs that repeatedly exceed expectations, or governance that impairs minority shareholder returns."
           },
-          "liveScore": 60,
+          "liveScore": 63,
           "analysisProvider": "comasset_deterministic_horizon_analysis_v1",
           "analysisInputs": {
-            "momentum": 63,
+            "momentum": 57,
             "fundamentals": 55,
             "risk": 90,
-            "eventPenalty": 8
+            "eventPenalty": 4
           }
         }
       },
@@ -564,31 +564,31 @@
       "priceSignals": {
         "status": "ready",
         "points": 4,
-        "price": 164.190002,
-        "asOf": "2026-06-29",
-        "oneWeekReturn": 0.07152650451025266,
+        "price": 158.75,
+        "asOf": "2026-07-02",
+        "oneWeekReturn": 0.03602430427525438,
         "oneMonthReturn": null,
         "threeMonthReturn": null,
         "maxDrawdown": -0.17172975135135138,
-        "annualizedVolatility": 1.2080207588791252
+        "annualizedVolatility": 1.1744807094510472
       },
       "newsEvents": {
         "status": "ready",
-        "asOf": "2026-06-30T12:59:07.509Z",
+        "asOf": "2026-07-02T13:38:23.030Z",
         "itemCount": 14,
-        "highImpactCount": 2,
+        "highImpactCount": 1,
         "items": [
           {
-            "id": "yahoo-rss-e6a54843-ec2b-37cc-afa0-32a6d4648ae8",
+            "id": "yahoo-rss-d387a3ba-18e3-358a-950c-b53a6d5f6c09",
             "ticker": "SPCX",
             "kind": "news",
-            "category": "regulatory",
-            "headline": "CME Group to Launch Single Stock Futures on July 27",
-            "summary": "CME Group, the world's leading derivatives marketplace, today announced it will launch Single Stock futures across more than 50 of the top U.S. stocks on July 27, pending completion of all regulatory review and processes. This new offering will include 55 larger-sized and 22 Micro-sized futures contracts, providing market participants with additional flexibility to manage their equity exposure.",
+            "category": "earnings",
+            "headline": "Dan Ives Says SpaceX's ‘Demand Flywheel’ is Just Getting Started As Wall Street Veteran Roger Altman Questions How Anyone Can Value the Stock: 'I Don't Think...'",
+            "summary": "Wedbush analyst Dan Ives has initiated coverage on the newly public Space Exploration Technologies Corp. with a highly bullish outlook, betting on the company’s emerging “demand flywheel” just as the stock prepares for massive passive capital inflows from its upcoming...",
             "publisher": "finance.yahoo.com",
             "aggregator": "Yahoo Finance",
-            "publishedAt": "2026-06-30T12:30:00.000Z",
-            "sourceUrl": "https://finance.yahoo.com/markets/options/articles/cme-group-launch-single-stock-123000360.html?.tsrc=rss",
+            "publishedAt": "2026-07-02T11:30:32.000Z",
+            "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/dan-ives-says-spacexs-demand-113032873.html?.tsrc=rss",
             "relatedTickers": [
               "SPCX"
             ],
@@ -600,49 +600,22 @@
             "evidenceLabel": "Fact",
             "timingConfidence": "confirmed",
             "dateType": "hard_date",
-            "lastChecked": "2026-06-30T12:59:07.509Z",
+            "lastChecked": "2026-07-02T13:38:23.030Z",
             "materialityScore": 4,
             "actionabilityScore": 4,
             "priority": "high"
           },
           {
-            "id": "yahoo-rss-b815c177-d09e-3cba-b792-b1902a5c8bbf",
+            "id": "yahoo-rss-1128e11e-2d5e-3e7e-84c8-4c9d207c40f6",
             "ticker": "SPCX",
             "kind": "news",
-            "category": "corporate_action",
-            "headline": "Does Elon Musk's Recent $1 Trillion SpaceX Comment Heavily Hint That a Tesla Merger Is Coming?",
-            "summary": "Elon Musk may have recently given a big hint about what's on the horizon for SpaceX and Tesla.",
-            "publisher": "fool.com",
-            "aggregator": "Yahoo Finance",
-            "publishedAt": "2026-06-30T10:50:00.000Z",
-            "sourceUrl": "https://www.fool.com/investing/2026/06/30/elon-musk-trillion-spacex-comment-tesla-merger/?.tsrc=rss",
-            "relatedTickers": [
-              "SPCX"
-            ],
-            "confidence": "medium",
-            "impact": "high",
-            "decisionPressure": 91,
-            "sourceType": "ticker_news_feed",
-            "sourceRank": 5,
-            "evidenceLabel": "Fact",
-            "timingConfidence": "confirmed",
-            "dateType": "hard_date",
-            "lastChecked": "2026-06-30T12:59:07.509Z",
-            "materialityScore": 4,
-            "actionabilityScore": 4,
-            "priority": "high"
-          },
-          {
-            "id": "yahoo-rss-65b7d8d1-5e14-383c-9584-1961738b738e",
-            "ticker": "SPCX",
-            "kind": "news",
-            "category": "product",
-            "headline": "How SpaceX Stock Is Impacting Tesla Shares",
-            "summary": "SpaceX stock and Tesla shares are doing something surprising: They are rising and falling together. Shares of Elon Musk’s rocket and AI company were down 0.6% in premarket trading at $163.25, while and futures were up 0.1% and 0.2%, respectively. SpaceX stock gained 7.2%, its best day since June 15, which was the second day of trading post-IPO.",
+            "category": "capital_markets",
+            "headline": "Dan Ives' Final Major Call At Wedbush: SpaceX",
+            "summary": "After eight years with Webush securities and 25 years as a top Wall Street technology analyst, Dan Ives announced Thursday plans to move on. Well known as a colorful commentator and a longtime Tesla bull, Ives aims to launch what he described as a \"modern merchant bank,\" aimed at combining research, advisory, capital raising and investing under one roof, the analyst told CNBC. On Tuesday, Ives wrapped up his term at Wedbush by initiating coverage of SpaceX with an outperform rating and $190 price target.",
             "publisher": "finance.yahoo.com",
             "aggregator": "Yahoo Finance",
-            "publishedAt": "2026-06-30T12:11:00.000Z",
-            "sourceUrl": "https://finance.yahoo.com/m/65b7d8d1-5e14-383c-9584-1961738b738e/how-spacex-stock-is-impacting.html?.tsrc=rss",
+            "publishedAt": "2026-07-02T13:07:12.000Z",
+            "sourceUrl": "https://finance.yahoo.com/m/1128e11e-2d5e-3e7e-84c8-4c9d207c40f6/dan-ives%27-final-major-call-at.html?.tsrc=rss",
             "relatedTickers": [
               "SPCX"
             ],
@@ -654,22 +627,22 @@
             "evidenceLabel": "Fact",
             "timingConfidence": "confirmed",
             "dateType": "hard_date",
-            "lastChecked": "2026-06-30T12:59:07.509Z",
+            "lastChecked": "2026-07-02T13:38:23.030Z",
             "materialityScore": 3,
             "actionabilityScore": 3,
             "priority": "medium"
           },
           {
-            "id": "yahoo-rss-a7e8e097-9cc2-3ea9-9314-a772b46d1a76",
+            "id": "yahoo-rss-da65a433-b7ba-3b63-9c9d-2ae1f8f32381",
             "ticker": "SPCX",
             "kind": "news",
             "category": "product",
-            "headline": "SpaceX (SPCX) Faces Valuation Test as Argus Initiates Coverage With Hold",
-            "summary": "Space Exploration Technologies Corp. (NASDAQ:SPCX) is one of the 14 AI Stocks Making Moves on Wall Street: Nvidia, Micron, and More. On June 26, Argus initiated SpaceX as “Hold,” citing concerns over valuation and volatility. We are initiating coverage of Space Exploration Technologies Corp. (Nasdaq: SPCX) with a HOLD rating. The firm noted how SpaceX’s […]",
+            "headline": "Dow Jones Futures Rise With Tesla, Jobs Report Ahead",
+            "summary": "Stocks fell as Meta buzz hit SpaceX, Micron and many AI stocks. Tesla is near a buy point with deliveries due. The June jobs report also is on tap.",
             "publisher": "finance.yahoo.com",
             "aggregator": "Yahoo Finance",
-            "publishedAt": "2026-06-30T10:27:36.000Z",
-            "sourceUrl": "https://finance.yahoo.com/markets/stocks/articles/spacex-spcx-faces-valuation-test-102736046.html?.tsrc=rss",
+            "publishedAt": "2026-07-02T12:13:33.000Z",
+            "sourceUrl": "https://finance.yahoo.com/m/da65a433-b7ba-3b63-9c9d-2ae1f8f32381/dow-jones-futures-rise-with.html?.tsrc=rss",
             "relatedTickers": [
               "SPCX"
             ],
@@ -681,7 +654,61 @@
             "evidenceLabel": "Fact",
             "timingConfidence": "confirmed",
             "dateType": "hard_date",
-            "lastChecked": "2026-06-30T12:59:07.509Z",
+            "lastChecked": "2026-07-02T13:38:23.030Z",
+            "materialityScore": 3,
+            "actionabilityScore": 3,
+            "priority": "medium"
+          },
+          {
+            "id": "yahoo-rss-d6d7f2bf-5c2f-314b-805e-7a41a08c0ac5",
+            "ticker": "SPCX",
+            "kind": "news",
+            "category": "capital_markets",
+            "headline": "Why OpenAI And Anthropic's Road To IPO Is Getting Bumpier",
+            "summary": "SpaceX stock has pulled back after its record-setting IPO. Anthropic, meanwhile, is increasingly facing government scrutiny for its ability to prevent its models from being used maliciously. \"They're going to be the 300-pound gorillas in the room,\" Ross Carmel, a partner at capital markets law firm Sichenzia Ross Ference Carmel, told Investor's Business Daily.",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-07-02T12:02:57.000Z",
+            "sourceUrl": "https://finance.yahoo.com/m/d6d7f2bf-5c2f-314b-805e-7a41a08c0ac5/why-openai-and-anthropic%27s.html?.tsrc=rss",
+            "relatedTickers": [
+              "SPCX"
+            ],
+            "confidence": "medium",
+            "impact": "medium",
+            "decisionPressure": 69,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-07-02T13:38:23.030Z",
+            "materialityScore": 3,
+            "actionabilityScore": 3,
+            "priority": "medium"
+          },
+          {
+            "id": "yahoo-rss-9a141638-ce2c-3042-bc60-9a63d88ceddd",
+            "ticker": "SPCX",
+            "kind": "news",
+            "category": "product",
+            "headline": "SpaceX Stock Falls After Firm Calls Valuation ‘Catastrophic’",
+            "summary": "SpaceX stock was down slightly early Thursday after a couple of new Wall Street reports that just aren’t very bullish. Shares of Elon Musk’s rocket and AI company were off 0.4% in premarket trading at $157.54, while futures were down 0.1% and futures were up 0.1%. Overall, 13 analysts have launched coverage of SpaceX stock.",
+            "publisher": "finance.yahoo.com",
+            "aggregator": "Yahoo Finance",
+            "publishedAt": "2026-07-02T11:38:00.000Z",
+            "sourceUrl": "https://finance.yahoo.com/m/9a141638-ce2c-3042-bc60-9a63d88ceddd/spacex-stock-falls-after-firm.html?.tsrc=rss",
+            "relatedTickers": [
+              "SPCX"
+            ],
+            "confidence": "medium",
+            "impact": "medium",
+            "decisionPressure": 69,
+            "sourceType": "ticker_news_feed",
+            "sourceRank": 5,
+            "evidenceLabel": "Fact",
+            "timingConfidence": "confirmed",
+            "dateType": "hard_date",
+            "lastChecked": "2026-07-02T13:38:23.030Z",
             "materialityScore": 3,
             "actionabilityScore": 3,
             "priority": "medium"
@@ -708,7 +735,7 @@
             "evidenceLabel": "Fact",
             "timingConfidence": "confirmed",
             "dateType": "hard_date",
-            "lastChecked": "2026-06-30T12:59:07.509Z",
+            "lastChecked": "2026-07-02T13:38:23.030Z",
             "materialityScore": 2,
             "actionabilityScore": 2,
             "priority": "low",
@@ -734,13 +761,13 @@
             ],
             "confidence": "high",
             "impact": "low",
-            "decisionPressure": 58,
+            "decisionPressure": 52,
             "sourceType": "regulatory_filing",
             "sourceRank": 3,
             "evidenceLabel": "Fact",
             "timingConfidence": "confirmed",
             "dateType": "hard_date",
-            "lastChecked": "2026-06-30T12:59:07.509Z",
+            "lastChecked": "2026-07-02T13:38:23.030Z",
             "materialityScore": 2,
             "actionabilityScore": 2,
             "priority": "low",
@@ -772,7 +799,7 @@
             "evidenceLabel": "Fact",
             "timingConfidence": "confirmed",
             "dateType": "hard_date",
-            "lastChecked": "2026-06-30T12:59:07.509Z",
+            "lastChecked": "2026-07-02T13:38:23.030Z",
             "materialityScore": 2,
             "actionabilityScore": 2,
             "priority": "low",
@@ -781,45 +808,13 @@
               "accessionNumber": "0001628280-26-044489",
               "filingDate": "2026-06-22"
             }
-          },
-          {
-            "id": "sec-0001628280-26-043865-spaceexplorationtechnologi.htm",
-            "ticker": "SPCX",
-            "kind": "filing_event",
-            "category": "corporate_event",
-            "headline": "8-K: 8-K",
-            "summary": "Official 8-K filing by SPACE EXPLORATION TECHNOLOGIES CORP.",
-            "publisher": "U.S. Securities and Exchange Commission",
-            "aggregator": null,
-            "publishedAt": "2026-06-17T21:00:00.000Z",
-            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026043865/spaceexplorationtechnologi.htm",
-            "relatedTickers": [
-              "SPCX"
-            ],
-            "confidence": "high",
-            "impact": "low",
-            "decisionPressure": 52,
-            "sourceType": "regulatory_filing",
-            "sourceRank": 3,
-            "evidenceLabel": "Fact",
-            "timingConfidence": "confirmed",
-            "dateType": "hard_date",
-            "lastChecked": "2026-06-30T12:59:07.509Z",
-            "materialityScore": 2,
-            "actionabilityScore": 2,
-            "priority": "low",
-            "filing": {
-              "form": "8-K",
-              "accessionNumber": "0001628280-26-043865",
-              "filingDate": "2026-06-17"
-            }
           }
         ]
       },
       "holdings": null,
       "fundamentals": {
         "status": "ready",
-        "asOf": "2026-06-30T12:59:00.040Z",
+        "asOf": "2026-07-02T13:38:13.496Z",
         "metrics": {
           "revenueGrowth": null,
           "netIncomeGrowth": null,
@@ -836,11 +831,11 @@
       "workflowAudit": {
         "workflow": "Comasset deterministic horizon refresh",
         "version": "0.1.29",
-        "reviewedAt": "2026-06-30T12:59:11.771Z",
+        "reviewedAt": "2026-07-02T13:38:25.497Z",
         "classification": "user_selected_watchlist_horizon_actions",
         "recommendationExcluded": true,
-        "horizonAnalysisAsOf": "2026-06-30",
-        "refreshedAt": "2026-06-30T12:59:11.771Z",
+        "horizonAnalysisAsOf": "2026-07-02",
+        "refreshedAt": "2026-07-02T13:38:25.497Z",
         "codexBaselineWorkflow": "Codex Public Equity Investing long-short-pitch",
         "codexReviewStatus": "needs_review_after_data_refresh"
       }
@@ -862,8 +857,8 @@
           "action": "buy",
           "confidence": "medium",
           "rationale": {
-            "zh": "实时数据复核 70/100：动量 76、基本面或基金质量 75、风险韧性 67，事件扣分 4。 AIQ 三个月涨幅较大后出现短期回撤，且组合约 79% 暴露于信息技术、对标普 500 Beta 约 1.69。半年视角不宜追涨，已有仓位以持有和控制权重为主。",
-            "en": "Live-data review 70/100: momentum 76, fundamentals or fund quality 75, risk resilience 67, and event penalty 4. AIQ has pulled back after a strong three-month advance, while roughly 79% of exposure is in Information Technology and beta versus the S&P 500 is about 1.69. Do not chase over six months; hold existing exposure and control weight."
+            "zh": "实时数据复核 68/100：动量 73、基本面或基金质量 75、风险韧性 67，事件扣分 4。 AIQ 三个月涨幅较大后出现短期回撤，且组合约 79% 暴露于信息技术、对标普 500 Beta 约 1.69。半年视角不宜追涨，已有仓位以持有和控制权重为主。",
+            "en": "Live-data review 68/100: momentum 73, fundamentals or fund quality 75, risk resilience 67, and event penalty 4. AIQ has pulled back after a strong three-month advance, while roughly 79% of exposure is in Information Technology and beta versus the S&P 500 is about 1.69. Do not chase over six months; hold existing exposure and control weight."
           },
           "upgradeTrigger": {
             "zh": "主要持仓盈利预期继续上修，同时组合回撤使估值和风险回报重新具有吸引力。",
@@ -873,10 +868,10 @@
             "zh": "半导体盈利预期下修、AI 资本开支周期放缓，或主题拥挤导致波动显著高于历史区间。",
             "en": "Semiconductor earnings downgrades, a slowdown in the AI capex cycle, or theme crowding that pushes volatility materially above its historical range."
           },
-          "liveScore": 70,
+          "liveScore": 68,
           "analysisProvider": "comasset_deterministic_horizon_analysis_v1",
           "analysisInputs": {
-            "momentum": 76,
+            "momentum": 73,
             "fundamentals": 75,
             "risk": 67,
             "eventPenalty": 4
@@ -886,8 +881,8 @@
           "action": "buy",
           "confidence": "medium",
           "rationale": {
-            "zh": "实时数据复核 69/100：动量 76、基本面或基金质量 75、风险韧性 67，事件扣分 4。 AI 主题基本面仍强，但 0.68% 费用率、科技集中和与 QQQM/MSFT 的持仓重叠削弱了新增配置的边际价值。一年内先持有并复核组合重叠。",
-            "en": "Live-data review 69/100: momentum 76, fundamentals or fund quality 75, risk resilience 67, and event penalty 4. AI fundamentals remain strong, but the 0.68% expense ratio, technology concentration, and overlap with QQQM/MSFT reduce the marginal value of adding exposure. Hold over one year while reviewing portfolio overlap."
+            "zh": "实时数据复核 68/100：动量 73、基本面或基金质量 75、风险韧性 67，事件扣分 4。 AI 主题基本面仍强，但 0.68% 费用率、科技集中和与 QQQM/MSFT 的持仓重叠削弱了新增配置的边际价值。一年内先持有并复核组合重叠。",
+            "en": "Live-data review 68/100: momentum 73, fundamentals or fund quality 75, risk resilience 67, and event penalty 4. AI fundamentals remain strong, but the 0.68% expense ratio, technology concentration, and overlap with QQQM/MSFT reduce the marginal value of adding exposure. Hold over one year while reviewing portfolio overlap."
           },
           "upgradeTrigger": {
             "zh": "与家庭现有科技持仓重叠可控、指数盈利增长超过估值扩张，且再平衡降低单一主题集中。",
@@ -897,10 +892,10 @@
             "zh": "持仓重叠过高、相对 QQQM 持续跑输且费用拖累明显，或估值重新脱离盈利增长。",
             "en": "Excessive holdings overlap, persistent underperformance versus QQQM with visible fee drag, or valuation again disconnecting from earnings growth."
           },
-          "liveScore": 69,
+          "liveScore": 68,
           "analysisProvider": "comasset_deterministic_horizon_analysis_v1",
           "analysisInputs": {
-            "momentum": 76,
+            "momentum": 73,
             "fundamentals": 75,
             "risk": 67,
             "eventPenalty": 4
@@ -910,8 +905,8 @@
           "action": "buy",
           "confidence": "medium",
           "rationale": {
-            "zh": "实时数据复核 68/100：动量 76、基本面或基金质量 75、风险韧性 67，事件扣分 4。 两年以上可以把 AIQ 作为分散化的 AI 产业链卫星仓位，覆盖半导体、平台和基础设施；买进应采用分批方式，并受科技总暴露和 0.68% 费用率约束。",
-            "en": "Live-data review 68/100: momentum 76, fundamentals or fund quality 75, risk resilience 67, and event penalty 4. Over two-plus years, AIQ can serve as a diversified satellite allocation across semiconductors, platforms, and AI infrastructure. Buy gradually, constrained by total technology exposure and the 0.68% expense ratio."
+            "zh": "实时数据复核 68/100：动量 73、基本面或基金质量 75、风险韧性 67，事件扣分 4。 两年以上可以把 AIQ 作为分散化的 AI 产业链卫星仓位，覆盖半导体、平台和基础设施；买进应采用分批方式，并受科技总暴露和 0.68% 费用率约束。",
+            "en": "Live-data review 68/100: momentum 73, fundamentals or fund quality 75, risk resilience 67, and event penalty 4. Over two-plus years, AIQ can serve as a diversified satellite allocation across semiconductors, platforms, and AI infrastructure. Buy gradually, constrained by total technology exposure and the 0.68% expense ratio."
           },
           "upgradeTrigger": {
             "zh": "指数成分盈利持续复利、主题收入兑现度提高，并且相较宽基或 QQQM 的净费后超额回报稳定。",
@@ -924,7 +919,7 @@
           "liveScore": 68,
           "analysisProvider": "comasset_deterministic_horizon_analysis_v1",
           "analysisInputs": {
-            "momentum": 76,
+            "momentum": 73,
             "fundamentals": 75,
             "risk": 67,
             "eventPenalty": 4
@@ -984,17 +979,17 @@
       "priceSignals": {
         "status": "ready",
         "points": 79,
-        "price": 64.220001,
-        "asOf": "2026-06-29",
-        "oneWeekReturn": 0.016943768267814185,
-        "oneMonthReturn": 0.027191314779270614,
-        "threeMonthReturn": 0.30079000001600154,
+        "price": 63.560001,
+        "asOf": "2026-07-02",
+        "oneWeekReturn": 0.006492462185511805,
+        "oneMonthReturn": 0.016634692898272574,
+        "threeMonthReturn": 0.2874215573713097,
         "maxDrawdown": -0.23602912025418443,
-        "annualizedVolatility": 0.26595669150726664
+        "annualizedVolatility": 0.26583147591395206
       },
       "newsEvents": {
         "status": "ready",
-        "asOf": "2026-06-30T12:59:07.509Z",
+        "asOf": "2026-07-02T13:38:23.030Z",
         "itemCount": 8,
         "highImpactCount": 1,
         "items": [
@@ -1020,7 +1015,7 @@
             "evidenceLabel": "Fact",
             "timingConfidence": "confirmed",
             "dateType": "hard_date",
-            "lastChecked": "2026-06-30T12:59:07.509Z",
+            "lastChecked": "2026-07-02T13:38:23.030Z",
             "materialityScore": 4,
             "actionabilityScore": 4,
             "priority": "high"
@@ -1047,7 +1042,7 @@
             "evidenceLabel": "Fact",
             "timingConfidence": "confirmed",
             "dateType": "hard_date",
-            "lastChecked": "2026-06-30T12:59:07.509Z",
+            "lastChecked": "2026-07-02T13:38:23.030Z",
             "materialityScore": 3,
             "actionabilityScore": 3,
             "priority": "medium"
@@ -1068,13 +1063,13 @@
             ],
             "confidence": "medium",
             "impact": "medium",
-            "decisionPressure": 69,
+            "decisionPressure": 63,
             "sourceType": "ticker_news_feed",
             "sourceRank": 5,
             "evidenceLabel": "Fact",
             "timingConfidence": "confirmed",
             "dateType": "hard_date",
-            "lastChecked": "2026-06-30T12:59:07.509Z",
+            "lastChecked": "2026-07-02T13:38:23.030Z",
             "materialityScore": 3,
             "actionabilityScore": 3,
             "priority": "medium"
@@ -1101,7 +1096,7 @@
             "evidenceLabel": "Fact",
             "timingConfidence": "confirmed",
             "dateType": "hard_date",
-            "lastChecked": "2026-06-30T12:59:07.509Z",
+            "lastChecked": "2026-07-02T13:38:23.030Z",
             "materialityScore": 3,
             "actionabilityScore": 3,
             "priority": "medium"
@@ -1128,37 +1123,37 @@
             "evidenceLabel": "Fact",
             "timingConfidence": "confirmed",
             "dateType": "hard_date",
-            "lastChecked": "2026-06-30T12:59:07.509Z",
+            "lastChecked": "2026-07-02T13:38:23.030Z",
             "materialityScore": 3,
             "actionabilityScore": 3,
             "priority": "medium"
           },
           {
-            "id": "yahoo-rss-fc226207-d4d8-3ed4-8844-8ccfe6484d8f",
+            "id": "yahoo-rss-f8c5a055-436e-37ac-b61b-0dcecd435715",
             "ticker": "AIQ",
             "kind": "news",
-            "category": "product",
-            "headline": "These 3 AI ETFs Have Been on a Rocket Ride Higher. Here’s Why I’d Skip Them All and Just Buy QQQ Instead.",
-            "summary": "Why not just trade the Qs?",
-            "publisher": "barchart.com",
+            "category": "other",
+            "headline": "Quantum Computing Just Hit Commercial Viability and Trump’s $2 Billion Quantum Push Has These 3 ETFs Sitting on Top of the Trade",
+            "summary": "The Commerce Department’s $2 billion in planned CHIPS R&D funding for nine quantum companies, announced in May, gave the quantum computing trade something it lacked for a decade: a federal balance sheet behind it. Three exchange-traded funds capture the trade from different angles. The Defiance Quantum ETF (NASDAQ:QTUM) is the closest thing to a pure-play. ... Quantum Computing Just Hit Commercial Viability and Trump’s $2 Billion Quantum Push Has These 3 ETFs Sitting on Top of the Trade",
+            "publisher": "247wallst.com",
             "aggregator": "Yahoo Finance",
-            "publishedAt": "2026-06-16T19:41:57.000Z",
-            "sourceUrl": "https://www.barchart.com/story/news/2501311/these-3-ai-etfs-have-been-on-a-rocket-ride-higher-heres-why-id-skip-them-all-and-just-buy-qqq-instead?.tsrc=rss",
+            "publishedAt": "2026-06-30T13:54:41.000Z",
+            "sourceUrl": "https://247wallst.com/investing/2026/06/30/quantum-computing-just-hit-commercial-viability-and-trumps-2-billion-quantum-push-has-these-3-etfs-sitting-on-top-of-the-trade/?.tsrc=rss",
             "relatedTickers": [
               "AIQ"
             ],
             "confidence": "medium",
-            "impact": "medium",
-            "decisionPressure": 63,
+            "impact": "low",
+            "decisionPressure": 49,
             "sourceType": "ticker_news_feed",
             "sourceRank": 5,
             "evidenceLabel": "Fact",
             "timingConfidence": "confirmed",
             "dateType": "hard_date",
-            "lastChecked": "2026-06-30T12:59:07.509Z",
-            "materialityScore": 3,
-            "actionabilityScore": 3,
-            "priority": "medium"
+            "lastChecked": "2026-07-02T13:38:23.030Z",
+            "materialityScore": 2,
+            "actionabilityScore": 2,
+            "priority": "low"
           },
           {
             "id": "yahoo-rss-cd74b01e-679b-3592-a815-629dd8f323bb",
@@ -1182,7 +1177,7 @@
             "evidenceLabel": "Fact",
             "timingConfidence": "confirmed",
             "dateType": "hard_date",
-            "lastChecked": "2026-06-30T12:59:07.509Z",
+            "lastChecked": "2026-07-02T13:38:23.030Z",
             "materialityScore": 2,
             "actionabilityScore": 2,
             "priority": "low"
@@ -1203,13 +1198,13 @@
             ],
             "confidence": "medium",
             "impact": "low",
-            "decisionPressure": 49,
+            "decisionPressure": 43,
             "sourceType": "ticker_news_feed",
             "sourceRank": 5,
             "evidenceLabel": "Fact",
             "timingConfidence": "confirmed",
             "dateType": "hard_date",
-            "lastChecked": "2026-06-30T12:59:07.509Z",
+            "lastChecked": "2026-07-02T13:38:23.030Z",
             "materialityScore": 2,
             "actionabilityScore": 2,
             "priority": "low"
@@ -1369,11 +1364,11 @@
       "workflowAudit": {
         "workflow": "Comasset deterministic horizon refresh",
         "version": "0.1.29",
-        "reviewedAt": "2026-06-30T12:59:11.771Z",
+        "reviewedAt": "2026-07-02T13:38:25.497Z",
         "classification": "user_selected_watchlist_horizon_actions",
         "recommendationExcluded": true,
-        "horizonAnalysisAsOf": "2026-06-30",
-        "refreshedAt": "2026-06-30T12:59:11.771Z",
+        "horizonAnalysisAsOf": "2026-07-02",
+        "refreshedAt": "2026-07-02T13:38:25.497Z",
         "codexBaselineWorkflow": "Codex Public Equity Investing long-short-pitch",
         "codexReviewStatus": "needs_review_after_data_refresh"
       }

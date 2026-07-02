@@ -3,8 +3,23 @@ const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const os = require("node:os");
 const path = require("node:path");
+const crypto = require("node:crypto");
 const { semanticHashFor } = require("../scripts/refresh_pipeline.js");
-const { createAppServer } = require("../server/comasset_server.js");
+const { createAppServer, createAuthManager } = require("../server/comasset_server.js");
+
+function testAuthConfig() {
+  const salt = Buffer.from("test-auth-salt");
+  return {
+    username: "thomas",
+    password: {
+      salt: salt.toString("hex"),
+      hash: crypto.scryptSync("test-password", salt, 64).toString("hex"),
+      keyLength: 64,
+    },
+    session: { cookieName: "test_session", ttlHours: 1, sameSite: "Strict" },
+    loginRateLimit: { windowMinutes: 15, maxAttempts: 5, blockMinutes: 15 },
+  };
+}
 
 test("semantic hash ignores retrieval-only news timestamps", () => {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), "comasset-refresh-"));
@@ -39,8 +54,20 @@ test("semantic hash ignores retrieval-only news timestamps", () => {
   assert.notEqual(semanticHashFor(first), semanticHashFor(second));
 });
 
-test("local server exposes health and blocks non-admin refresh", async (t) => {
-  const { server } = createAppServer({ schedulerEnabled: false });
+test("auth manager verifies a hash and expires destroyed sessions", () => {
+  const auth = createAuthManager(testAuthConfig());
+  assert.equal(auth.verifyCredentials("thomas", "test-password"), true);
+  assert.equal(auth.verifyCredentials("thomas", "wrong-password"), false);
+  assert.equal(auth.verifyCredentials("another-user", "test-password"), false);
+  const { token } = auth.createSession();
+  const request = { headers: { cookie: `test_session=${token}` }, socket: {} };
+  assert.equal(auth.sessionFromRequest(request).username, "thomas");
+  auth.destroySession(request);
+  assert.equal(auth.sessionFromRequest(request), null);
+});
+
+test("local server protects data and authenticates the single account", async (t) => {
+  const { server } = createAppServer({ schedulerEnabled: false, authConfig: testAuthConfig() });
   try {
     await new Promise((resolve, reject) => {
       server.once("error", reject);
@@ -57,16 +84,46 @@ test("local server exposes health and blocks non-admin refresh", async (t) => {
   const address = server.address();
   const base = `http://127.0.0.1:${address.port}`;
 
-  const health = await fetch(`${base}/api/health`).then((response) => response.json());
+  const anonymousHealth = await fetch(`${base}/api/health`);
+  assert.equal(anonymousHealth.status, 401);
+
+  const anonymousPage = await fetch(`${base}/`, { redirect: "manual" });
+  assert.equal(anonymousPage.status, 302);
+  assert.match(anonymousPage.headers.get("location"), /^\/login\.html/);
+
+  const badLogin = await fetch(`${base}/api/auth/login`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ username: "thomas", password: "wrong-password" }),
+  });
+  assert.equal(badLogin.status, 401);
+
+  const login = await fetch(`${base}/api/auth/login`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ username: "thomas", password: "test-password" }),
+  });
+  assert.equal(login.status, 200);
+  const cookie = login.headers.get("set-cookie").split(";")[0];
+  assert.match(login.headers.get("set-cookie"), /HttpOnly/);
+  assert.match(login.headers.get("set-cookie"), /SameSite=Strict/);
+
+  const health = await fetch(`${base}/api/health`, { headers: { Cookie: cookie } }).then((response) => response.json());
   assert.equal(health.status, "ok");
   assert.equal(health.scheduler.enabled, false);
+  assert.equal(health.authenticatedUser, "thomas");
 
   const forbidden = await fetch(`${base}/api/refresh/watchlist`, {
     method: "POST",
-    headers: { "X-Comasset-Member": "family-viewer" },
+    headers: { Cookie: cookie, "X-Comasset-Member": "family-viewer" },
   });
   assert.equal(forbidden.status, 403);
 
-  const page = await fetch(`${base}/`).then((response) => response.text());
+  const page = await fetch(`${base}/`, { headers: { Cookie: cookie } }).then((response) => response.text());
   assert.match(page, /Comasset Investment Lab/);
+
+  const logout = await fetch(`${base}/api/auth/logout`, { method: "POST", headers: { Cookie: cookie } });
+  assert.equal(logout.status, 200);
+  const expired = await fetch(`${base}/api/auth/session`, { headers: { Cookie: cookie } });
+  assert.equal(expired.status, 401);
 });

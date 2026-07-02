@@ -57,7 +57,7 @@ COMASSET_BUCKET=comasset-investment-lab-your-name \
 
 - CloudFront distribution.
 - HTTPS custom domain.
-- Real login/authentication.
+- A compute-backed authentication service; the local Node login cannot run on a pure S3 website.
 - Backend storage for notes or simulation runs.
 
-For family-private hosting, the next version should use CloudFront with an authentication layer or a small backend login flow before moving family state off localStorage.
+For family-private hosting, run `server/comasset_server.js` behind HTTPS on Lambda/ECS/EC2, or add an equivalent CloudFront authentication layer. A pure S3 website remains public even though the local Node deployment now has a single-account login.

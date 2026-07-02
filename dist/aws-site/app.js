@@ -38,6 +38,8 @@ const translations = {
     refreshRequiresServer: "请通过本地服务打开网站",
     refreshPermissionDenied: "当前成员没有刷新权限",
     codexReviewPending: "待 Codex 复核",
+    logout: "退出",
+    logoutFailed: "退出失败",
     watchlistEyebrow: "用户自选研究",
     watchlistTitle: "GRAB、SpaceX 与 AIQ",
     watchlistSubtitle: "独立分析，不进入推荐评分或历史回测选股池。",
@@ -285,6 +287,8 @@ const translations = {
     refreshRequiresServer: "Open the site through the local server",
     refreshPermissionDenied: "This member cannot run refreshes",
     codexReviewPending: "Codex review pending",
+    logout: "Sign out",
+    logoutFailed: "Sign out failed",
     watchlistEyebrow: "User-selected research",
     watchlistTitle: "GRAB, SpaceX, and AIQ",
     watchlistSubtitle: "Independent analysis, excluded from recommendation scoring and historical backtest selection.",
@@ -1077,6 +1081,28 @@ function sleep(milliseconds) {
   return new Promise((resolve) => setTimeout(resolve, milliseconds));
 }
 
+async function logoutUser() {
+  const button = document.getElementById("logoutButton");
+  button.disabled = true;
+  try {
+    const response = await fetch("/api/auth/logout", { method: "POST" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    window.location.replace("/login.html");
+  } catch (error) {
+    button.disabled = false;
+    button.title = `${t("logoutFailed")}: ${error.message}`;
+  }
+}
+
+async function verifyActiveSession() {
+  try {
+    const response = await fetch("/api/auth/session", { cache: "no-store" });
+    if (!response.ok) window.location.replace(`/login.html?next=${encodeURIComponent(window.location.pathname)}`);
+  } catch (_error) {
+    // A transient local-server interruption should not erase the current research view.
+  }
+}
+
 async function runServerRefresh(scope, statusElement) {
   if (window.location.protocol === "file:") {
     const error = new Error(t("refreshRequiresServer"));
@@ -1088,6 +1114,10 @@ async function runServerRefresh(scope, statusElement) {
     headers: { "X-Comasset-Member": currentMemberId },
   });
   const payload = await response.json().catch(() => ({}));
+  if (response.status === 401) {
+    window.location.replace(`/login.html?next=${encodeURIComponent(window.location.pathname)}`);
+    throw new Error("Authentication required");
+  }
   if (!response.ok) {
     const error = new Error(payload.error || `HTTP ${response.status}`);
     error.code = response.status === 403 ? "PERMISSION_DENIED" : "REFRESH_START_FAILED";
@@ -1966,6 +1996,8 @@ document.querySelectorAll(".filter-tab").forEach((button) => {
 
 document.getElementById("refreshRecommendationsButton").addEventListener("click", refreshRecommendations);
 document.getElementById("refreshWatchlistButton").addEventListener("click", refreshWatchlist);
+document.getElementById("logoutButton").addEventListener("click", logoutUser);
+setInterval(verifyActiveSession, 5 * 60 * 1000);
 
 document.getElementById("simulationForm").addEventListener("input", () => {
   renderSimulation();

@@ -15,17 +15,17 @@
       "runId": "20260630T125606Z-recommendations"
     },
     "watchlist": {
-      "fingerprint": "23124eb39eaf021df278e9167bfe0d01de7b0a7878596e71d90a5496f96cb006",
+      "fingerprint": "a71eb20a428d1bbf44b88295cd0cc86d9c8895e84718064a53323e960db5d8dc",
       "files": {
         "data/custom_watchlist.json": "54fe01f329a315b9e0c23013373be473a76faf8d2fadc2b2b96abbaab4ba2003",
-        "data/live_prices.json": "df9dd1b9425c03acbf0f880b40b91aeaaca80da9846eb2fa55109e9b292b479d",
+        "data/live_prices.json": "bb1f068e39cdd110fb571a39b62fa2aa33f6cba804206512b3d5474bad276920",
         "data/live_fundamentals.json": "ad5e12432775050dd7e4da57de822c38cab1180c9fd3087900883769b3c91ae6",
         "data/live_holdings.json": "572d3021162b86f436e0e4bf9712c4a33072abd81b1856fa01680f5ae3c5a08d",
-        "data/live_news_events.json": "6d8065ad9066fc63c7995786788faea8b8a456744c21e0527955c84409c019a0"
+        "data/live_news_events.json": "e27a39df425089b23d87747d480a4e3de577defe27134e857d9f687e48c006d6"
       },
-      "processedAt": "2026-06-30T12:59:11.822Z",
-      "runId": "20260630T125856Z-watchlist"
+      "processedAt": "2026-07-02T13:38:25.548Z",
+      "runId": "20260702T133807Z-watchlist"
     }
   },
-  "updatedAt": "2026-07-01T11:29:19.685Z"
+  "updatedAt": "2026-07-02T13:38:25.627Z"
 }

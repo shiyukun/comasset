@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>登录 | Comasset Investment Lab</title>
+    <link rel="stylesheet" href="./login.css" />
+    <script src="./login.js" defer></script>
+  </head>
+  <body>
+    <main class="login-shell">
+      <section class="login-panel" aria-labelledby="loginTitle">
+        <div class="login-brand">
+          <span class="login-mark" aria-hidden="true">C</span>
+          <div>
+            <strong>Comasset</strong>
+            <span>Investment Lab</span>
+          </div>
+        </div>
+
+        <div class="login-heading">
+          <p>家庭内部研究系统</p>
+          <h1 id="loginTitle">登录</h1>
+          <span>Sign in to access investment research and refresh tools.</span>
+        </div>
+
+        <form id="loginForm" novalidate>
+          <label for="username">用户名</label>
+          <input id="username" name="username" type="text" value="thomas" autocomplete="username" required />
+
+          <label for="password">密码</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" required autofocus />
+
+          <label class="show-password" for="showPassword">
+            <input id="showPassword" type="checkbox" />
+            <span>显示密码</span>
+          </label>
+
+          <p id="loginError" class="login-error" role="alert" aria-live="polite"></p>
+          <button id="loginButton" type="submit">
+            <span aria-hidden="true">→</span>
+            <span>进入研究台</span>
+          </button>
+        </form>
+
+        <p class="login-footnote">仅限授权家庭成员使用 · Family access only</p>
+      </section>
+    </main>
+  </body>
+</html>

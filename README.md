@@ -32,7 +32,15 @@
 ./scripts/start_local_server.sh
 ```
 
-然后打开 `http://127.0.0.1:4173`。直接打开 `web/index.html` 仍可只读浏览已有快照，但不会执行真实数据刷新。
+然后打开 `http://127.0.0.1:4173`。启用登录后不再支持直接打开 `web/index.html`；那种方式会绕过服务端访问控制，也无法执行真实数据刷新。
+
+## 登录
+
+- 本地服务使用单账号登录，所有页面、快照 JSON、健康状态和刷新 API 都要求有效会话。
+- 密码使用随机盐和 `scrypt` 哈希保存在本机 `config/auth.json`，不会以明文保存。
+- 会话使用 `HttpOnly`、`SameSite=Strict` Cookie，默认有效期 12 小时；服务重启会清空会话。
+- 连续登录失败 5 次会锁定来源地址 15 分钟。
+- `config/auth.json` 已被 Git 忽略，避免把短密码的哈希上传到公开仓库；仓库只保留 `config/auth.example.json`。
 
 ## 自动刷新与主动刷新
 
@@ -65,7 +73,7 @@
 3. 发布到 S3 static website：
    `AWS_REGION=us-west-2 AWS_CLI=/Users/thomas/Library/Python/3.9/bin/aws ./scripts/deploy_aws_s3_static_site.sh`
 
-详细说明见 [docs/aws_deployment.md](docs/aws_deployment.md)。注意：当前 S3 website URL 是公开访问，真正家庭登录和私有访问仍在 backlog。
+详细说明见 [docs/aws_deployment.md](docs/aws_deployment.md)。注意：本地 Node 服务已有登录保护，但纯 S3 website 无法执行该认证；云端私有部署需要把同一服务运行在 Lambda、ECS 或 EC2，并由 HTTPS 入口转发。
 
 ## 数据脚本
 

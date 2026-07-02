@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "username": "replace-with-local-username",
+  "password": {
+    "algorithm": "scrypt",
+    "salt": "replace-with-random-hex-salt",
+    "hash": "replace-with-scrypt-hex-hash",
+    "keyLength": 64
+  },
+  "session": {
+    "cookieName": "comasset_session",
+    "ttlHours": 12,
+    "sameSite": "Strict"
+  },
+  "loginRateLimit": {
+    "windowMinutes": 15,
+    "maxAttempts": 5,
+    "blockMinutes": 15
+  }
+}
